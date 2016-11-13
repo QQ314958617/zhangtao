@@ -1,0 +1,389 @@
+<include file="Common:ad" />
+<link rel="stylesheet" href="__ROOT__/Home/Tpl/default/Public/css/iconfont.css"/>
+<div class="same-title" id="fixed1">
+    <div class="wrap">
+        <div class="ch">
+            新品上市
+        </div>
+        <div class="en">
+            NEW ARRIVAL
+        </div>
+    </div>
+</div>
+<php>
+	$newmap['cid'] = 44;
+	$newmap['is_new'] = 1;
+	$newmap['_logic'] = 'AND';
+	$newList=GetList($newmap,5);
+	get_path_info();
+</php>
+<div class="new-product">
+    <div class="wrap clearfix">
+    	<volist name="newList" id="vo" k="i">
+         <div class="box{$i} same-box fl">
+             <a href="{:U('Product/index')}" class="pr ">
+                 <img src="__ROOT__{$vo.titlepic}" class="hvr-grow" alt=""/>
+                  <div class="bg pa">
+                      <div class="title">
+                         {$vo.title}
+                      </div>
+                      <div class="txt">
+                          {$vo.ftitle}
+                      </div>
+                  </div>
+             </a>
+         </div>
+         </volist>            
+    </div>
+</div>
+<!---当季热卖-->
+<php>
+	$tjmap['cid'] = 45;
+	$tjmap['is_reconmmend'] =1;
+	$tjList=GetList($tjmap);
+</php>
+<div class="same-title" id="fixed2">
+    <div class="wrap">
+        <div class="ch">
+            当季爆款
+        </div>
+        <div class="en">
+            HOT PRODUCTS
+        </div>
+    </div>
+</div>
+<div class="product-list wrap">
+    <ul class="clearfix">
+    	<volist name="tjList" id="vo">
+    		<php>
+    			$img = explode(",",$vo['titlepic']);
+    		</php>
+        <li>
+            <div class="img-box">
+                <a href="{:U('Product/read',array('id'=>$vo['id']))}">
+                <img src="__ROOT__{$img[0]}" class="hvr-grow" alt=""/>
+                </a>
+            </div>
+            <div class="info">
+                <a href="{:U('Product/read',array('id'=>$vo['id']))}">
+                    {$vo.color}{$vo.type}
+                </a>
+            </div>
+        </li>
+        </volist>   
+    </ul>
+</div>
+<!--choose-->
+<php>
+	$mid = explode(" ",$midlist['ftitle']);
+</php>
+<div class="choose" id="fixed3">
+<div class="wrap">
+    <div class="red-btn">
+         >
+    </div>
+    <div class="choose-title">
+       {$midlist['title']}
+    </div>
+    <div class="img-box">
+        <img src="__ROOT__{$midlist['titlepic']}" alt=""/>
+    </div>
+    <div class="txt">
+        <ul>
+        	<volist name="mid" id="vo">
+            <li>
+                {$vo}
+            </li>
+          </volist>
+        </ul>
+    </div>
+</div>
+</div>
+<!--工艺-->
+<div class="same-title" id="fixed4">
+<div class="wrap">
+    <div class="ch">
+        工艺制作
+    </div>
+    <div class="en">
+        PRODUCTION PROCESS
+    </div>
+</div>
+</div>
+<php>
+	$gymap['cid']=31;
+	$gylist=GetList($gymap);
+</php>
+<div class="gongyi-content">
+    <div class="wrap clearfix">
+        <div class="box-big box1 fl"><img src="__ROOT__{$gylist[0]['titlepic']}" class="hvr-grow" alt=""/></div>
+        <div class="box-small box2  fl">
+             <div class="ch">
+              细节决定成败
+             </div>
+            <div class="en">
+                DETAILS DETERMINE SUCCESS OR FAILURE.
+            </div>
+        </div>
+        <div class="box-small box3 fl"><img src="__ROOT__{$gylist[1]['titlepic']}" class="hvr-grow" alt=""/></div>
+        <div class="box-small box4 fl">
+            <div class="ch">
+                专为年轻人量身定制
+            </div>
+            <div class="en">
+                TAILORED FOR YOUNG PEOPLE
+            </div>
+        </div>
+        <div class="box-small box5 fl"><img src="__ROOT__{$gylist[2]['titlepic']}" class="hvr-grow" alt=""/></div>
+        <div class="box-big box6 fl"><img src="__ROOT__{$gylist[3]['titlepic']}" class="hvr-grow" alt=""/></div>
+
+    </div>
+</div>
+<!--新品发布会-->
+<php>
+	$fbmap['cid']=21;
+	$fbList = GetList($fbmap);
+</php>
+<div class="new-product-news" id="fixed5">
+  <div class="wrap">
+      <div class="left fl">
+          <div class="border">
+              <img src="__ROOT__{$new['nav_pic']}" alt=""/>
+          </div>
+      </div>
+      <div class="right fl">
+          <div class="same-title">
+                  <div class="ch">
+                      新品发布
+                  </div>
+                  <div class="en">
+                      NEW PRODUCT LAUNCHES
+                  </div>
+          </div>
+
+          <div class="content-box">
+             <ul>
+             	<volist name="fbList" id="vo" k="i">
+                 <li class="clearfix">
+                      <div class="left fl">
+                         <div class="title clearfix">
+                             <div class="num fl">
+                                 0{$i}
+                             </div>
+                             <div class="news-name fl">
+                                 <div class="num-time">
+                                     {:date('Y-m-d',$vo[published])}
+                                 </div>
+                                 <div class="ch-name">
+                                     {$vo.title}
+                                 </div>
+                             </div>
+                         </div>
+                          <div class="txt">
+                              <a href="{:U('News/read',array('id'=>$vo['id']))}">
+                                  {$vo.content}
+                              </a>
+                          </div>
+                      </div>
+                     <div class="right fl">
+                         <a href="{:U('News/read',array('id'=>$vo['id']))}">
+                             <img src="__ROOT__{$vo.titlepic}" alt=""/>
+                         </a>
+                     </div>
+                 </li>
+                 </volist>
+             </ul>
+          </div>
+
+          <a class="more" href="{:U('News/index')}">MORE+</a>
+      </div>
+  </div>
+</div>
+
+<!--新闻-->
+<div class="news" id="fixed6">
+    <div class="wrap clearfix">
+        <div class="left fl">
+            <div class="news-list-title">
+             <span class="ch"> 最新资讯</span>
+              <span class="en">LATEST NEWS</span>
+            </div>
+            <div class="first-news">
+                <div class="title clearfix">
+                    <a href="" class="fl">
+                        {$first.title}
+                    </a>
+                    <span class="fr">
+                        {:date('Y-m-d',$first['published'])}
+                    </span>
+                </div>
+                <div class="txt">
+                    <a href="{:U('News/read',array('id'=>$first['id']))}">{$first.content}</a>
+                </div>
+            </div>
+            <div class="news-list clearfix">
+                <div class="img-box fl">
+                    <a href="{:U('News/read',array('id'=>$first['id']))}">
+                        <img src="__ROOT__{$first.titlepic}" alt=""/>
+                    </a>
+                </div>
+                <div class="list-box fl">
+                 <ul>
+                 	<volist name="other" id="vo">
+                     <li class="clearfix">
+                         <div class="time fl">
+                            <div class="day">
+                                {:date('d',$vo['published'])}
+                            </div>
+                             <div class="month">
+                                 {:date('m',$vo['published'])}月
+                             </div>
+                         </div>
+                         <div class="txt fl">
+                             <a href="{:U('News/read',array('id'=>$vo['id']))}">
+                                 {$vo.title}
+                             </a>
+                         </div>
+                     </li>
+                     </volist>
+                 </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right fl">
+              <div class="liuyan-title">
+                  <span class="ch">
+                   在线留言
+                  </span>
+                  <span class="en">
+                      ONLINE MESSAGE
+                  </span>
+              </div>
+            <form action="" id="form">
+                <div class="form-control clearfix">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name"/>
+                    <div class="little-box fl">
+                    </div>
+                </div>
+                <div class="form-control clearfix">
+                    <label for="phone">电话：</label>
+                    <input type="text" id="phone"name="phone"/>
+                    <div class="little-box fl">
+                    </div>
+                </div>
+                <div class="form-control clearfix">
+                    <label for="message">留言：</label>
+                    <textarea  id="message" cols="30" rows="10" name="message"></textarea>
+                </div>
+                <div class="button-control">
+                    <button class="submit" type="button">提交</button>
+                    <button class="reset" type="reset">重置</button>
+                </div>
+            </form>
+            <script>
+            	$(".submit").click(function(){
+            		var data = $('#form').serialize();
+            		$.post('index/sign',data,function(status){
+            			alert(status);
+            		})
+            	});
+            </script>
+        </div>
+    </div>
+</div>
+        <div class="fixed-nav">
+            <ul>
+                <li class="fixed1">
+                    <a href="#fixed1">
+                        <span class="iconfont icon-unie64e"></span>
+                         <span class="txt">
+                            新品上市
+                         </span>
+                    </a>
+                </li>
+                <li class="fixed2">
+                    <a href="#fixed2">
+                        <span class="iconfont icon-xinpintuijian"></span>
+                         <span class="txt">
+                            当季爆款
+                         </span>
+                    </a>
+                </li>
+                <li class="fixed3">
+                    <a href="#fixed3">
+                        <span class="iconfont icon-youshi"></span>
+                         <span class="txt">
+                         琦顺优势
+                         </span>
+                    </a>
+                </li>
+                <li class="fixed4">
+                    <a href="#fixed4">
+                        <span class="iconfont icon-iconf"></span>
+                         <span class="txt">
+                         工艺制作
+                         </span>
+                    </a>
+                </li>
+                <li class="fixed5">
+                    <a href="#fixed5">
+                        <span class="iconfont icon-fabu1"></span>
+                         <span class="txt">
+                            新品发布
+                         </span>
+                    </a>
+                </li>
+                <li class="fixed6">
+                <a href="#fixed6">
+                    <span class="iconfont icon-xinwen"></span>
+                         <span class="txt">
+                         新闻资讯
+                         </span>
+                </a>
+            </li>
+                <li class="fixed7">
+                    <a href="javascript:scrollTo(0,0)">
+                        <span class="iconfont icon-iconfonttop"></span>
+                         <span class="txt">
+                         返回顶部
+                         </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+<script>
+    $(function(){
+        $(window).scroll(function(){
+            var T=$(window).scrollTop();
+          if(T>=870 && T<1570){
+              $('.fixed-nav').find('li').removeClass('on');
+              $('.fixed1').addClass('on');
+          }
+            if(T>=1570 && T<2100){
+                $('.fixed-nav').find('li').removeClass('on');
+                $('.fixed2').addClass('on');
+            }
+            if(T>=2100 && T<2885){
+                $('.fixed-nav').find('li').removeClass('on');
+                $('.fixed3').addClass('on');
+            }
+            if(T>=2885 && T<3590){
+                $('.fixed-nav').find('li').removeClass('on');
+                $('.fixed4').addClass('on');
+            }
+            if(T>=3590 && T<4425){
+                $('.fixed-nav').find('li').removeClass('on');
+                $('.fixed5').addClass('on');
+            }
+            if(T>=4425){
+                $('.fixed-nav').find('li').removeClass('on');
+                $('.fixed6').addClass('on');
+            }
+        })
+    })
+</script>

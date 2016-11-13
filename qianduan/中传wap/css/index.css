@@ -1,0 +1,581 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header-default .am-header-left>a>i{
+    font-size: 2rem;
+}
+.am-header-default .am-header-right>a>i,.am-header-icon{
+    font-size: 3rem;
+}
+.am-header .am-header-title{
+    margin: 0 14%;
+}
+.am-header-default{
+    background: #000;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #fff;
+}
+.am-navbar-default a i{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-header .am-header-title img {
+    margin-top: 3px;
+    height: 40px;
+    vertical-align: top;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #f09300;
+    border-bottom-color: #f09300;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #f09300;
+}
+.am-slider-default .am-control-nav{
+    display: none;
+}
+.am-header-default .am-header-title{
+    color: #333;
+}
+.am-header-default .am-header-title a{
+    color: #f09300;
+}
+.am-slider-default{
+    margin: 0 0 10px;
+}
+/**/
+body{
+    background: #f5f5f5;
+}
+.public_title{
+    padding:0 1rem 1rem;
+    background: #fff;
+    font: 1.6rem/2.2rem "droidsansfallback";
+    color: #333;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 3px #999;
+}
+.public_title span{
+    text-transform: uppercase;
+    font: 1.2rem/1.8rem "droidsansfallback";
+    color: #666;
+}
+.media{
+    padding: 0 1rem;
+    background: #fff;
+}
+.media ul li {
+    width: 100%;
+    float: left;
+    padding: 1rem 0 0;
+    margin-bottom: 1rem;
+}
+.media ul li img{
+    max-width: 40%;
+    margin-right: 2%;
+    float: left;
+}
+.media ul li .text{
+    float: left;
+    width: 58%;
+}
+.text{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+}
+.text h3{
+    font: 1.6rem/2.2rem "droidsansfallback";
+    color: #808080;
+    margin-bottom: 0.8rem;
+}
+.media ul li h3{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.film {
+    padding: 2rem 1rem;
+    background: url("../images/waikuang_bg.jpg") repeat-x 0;
+    background-size: auto 100%;
+}
+.film ul li{
+    float: left;
+    width: 31%;
+    margin-left: 1.5%;
+}
+.film ul li img{
+    max-width: 100%;
+}
+.mark{
+    padding: 1rem;
+    background: #fff;
+}
+.mark img{
+    max-width: 40%;
+    margin-right: 2%;
+    float: left;
+}
+.mark .text{
+    width: 58%;
+    padding-top: 1rem;
+}
+.mark .text h4{
+    margin-bottom: 1rem;
+}
+.text h4{
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #666;
+}
+.am-navbar-default a{
+    color: #bc9f64;
+}
+.img img{
+    max-width: 100%;
+}
+.pub_title{
+    font: 1.6rem/2.2rem "droidsansfallback";
+    color: #333;
+    padding: 2rem 1rem 0;
+}
+.xiangmu .text{
+    padding: 0.5rem;
+}
+.xiangmu .am-slider-a1 .am-control-nav{
+    display: block;
+}
+.am-slider-a1 .am-control-nav li a.am-active{
+    background: #ff9900;
+}
+.xiangmu .am-slider-a1 .am-control-nav{
+    bottom: 2px;
+}
+.xiangmu .text a,.xiangmu .text h3{
+    color: #bc9f64;
+}
+.lc{
+    padding: 1rem;
+    background: #f5f5f5;
+    box-shadow: 0 2px 3px #eee;
+}
+.lc ul li{
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.lc ul li img{
+    max-width: 100%;
+}
+.bisai{
+    padding: 1rem;
+    background: #fff;
+}
+.bisai .text{
+    margin-bottom: 1rem;
+}
+.huigu ul li{
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+}
+.huigu ul li img{
+    max-width: 100%;
+}
+.huigu ul li span{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+    display: block;
+    text-align: center;
+}
+.about .text{
+    padding: 0.5rem;
+}
+.about .text p{
+    text-indent: 2em;
+}
+.about ul li{
+    width: 31%;
+    float: left;
+    background: #e6e6e6;
+    margin: 1rem 0 1rem 1.5%;
+    text-align: center;
+}
+.about ul li a{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.about ul li.on{
+    background: #000;
+}
+.about ul li.on a{
+    color: #fff;
+}
+.page_youshi ul li{
+    width: 31%;
+    margin-left: 1.5%;
+    float: left;
+    text-align: center;
+}
+.page_youshi ul li i{
+    font-size: 5rem;
+}
+.page_youshi ul li span{
+    display: block;
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.page_youshi ul li:nth-child(4){
+    margin-left: 18%;
+}
+.about_team .about_team_left{
+    width: 47%;
+    margin-left: 2%;
+}
+.about_team .about_team_left img{
+    max-width: 100%;
+}
+.about_team .about_team_left span{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.wei .img{
+    background: #fff;
+    margin-top: 1rem;
+    box-shadow: 0 2px 3px #ddd;
+}
+.wei .img p{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    padding:0 0.5rem;
+}
+.wei .img p i{
+    color: #666;
+}
+.kid .text{
+    padding: 0.5rem;
+}
+.am-slider-c3 .am-slider-counter{
+    background: #bc9f64;
+}
+.huaxu{
+    background: #fff;
+}
+.huaxu .am-slider ul li .text{
+    padding: 0 0.5rem;
+}
+.liyou ul li{
+    padding: 0.5rem;
+}
+.liyou ul li h3{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.liyou ul li h3 i{
+    color: #bc9f64;
+    font-size: 20px;
+    padding-right: 0.5rem;
+}
+.contact {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #666;
+    background: #fff;
+    padding: 0.5rem;
+}
+.contact{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #666;
+}
+.contact ul li{
+    padding-left: 26px;
+    margin: 10px 0;
+}
+.mingzi{
+    background: url("../images/bg.png") no-repeat 0 -111px;
+}
+.didian{
+    background: url("../images/bg.png") no-repeat 0 -192px;
+}
+.dianhua{
+    background: url("../images/bg.png") no-repeat 0 -288px;
+}
+.tel{
+    background: url("../images/bg.png") no-repeat 0 -268px;
+}
+.qq{
+    background: url("../images/bg.png") no-repeat 0 -316px;
+}
+.e-mail{
+    background: url("../images/bg.png") no-repeat 0 -343px;
+}
+.weixin{
+    background: url("../images/bg.png") no-repeat 0 -171px;
+}
+
+
+.shenqing {
+    background: #fff;
+    padding-top: 0.5rem;
+}
+.shenqing ul li{
+    width: 98%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    font: 1.2rem/3rem "microsoft yahei";
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 86%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 86%;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+    float: left;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #bc9f64;
+}
+.shenqing ul li.res input{
+    border: none;
+    color: #666;
+    background: #e5e5e5;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.ronghe{
+    padding: 1rem;
+}
+.ronghe ul li{
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+}
+.ronghe ul li img{
+    max-width: 100%;
+}
+.ronghe ul li span{
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #333;
+}
+.media ul li.media_list_02 .text{
+    text-align: right;
+}
+.media ul li.media_list_02 img{
+    margin: 0 0 0 2%;
+}
+
+.news_list ul li{
+    padding: 0.5rem;
+    box-shadow: 0 2px 3px #eee;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+.news_list ul li h3{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.news_list ul li p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.news_list ul li span{
+    display: block;
+    color: #bc9f64;
+    text-align: right;
+    font: 1.2rem/1.6rem "droidsansfallback";
+}
+body.scoll{
+    overflow: hidden;
+}
+.container { position: absolute; left: 0; top: 0; }
+.container .page {
+    position: relative;
+    color:#fff;
+    padding: 1rem;
+}
+.container .page i{
+    font-size: 3rem;
+    color: #d6c9c2;
+    position: absolute;
+    bottom: 50px;
+    left: 48%;
+}
+.container .page0{
+    background: url(../images/liuyan_img1.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.container .page1{
+    background: url(../images/liuyan_img2.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.container .page2,.container .page3,.container .page4{
+    background: url(../images/liuyan_img3.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.container .page5{
+    background: url(../images/liuyan_img6.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.container .page6{
+    background: url(../images/liuyan_img7.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.page h1,.page h5{
+    font: 4rem/5rem "droidsansfallback";
+    color: #fff;
+    padding-top: 50%;
+}
+.page h2{
+    font: 3rem/4rem "droidsansfallback";
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.page0 h3{
+    font: 2rem/3rem "droidsansfallback";
+    color: #f09300;
+}
+.page h4{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #999;
+}
+.page p{
+    font: 2rem/3rem "droidsansfallback";
+    color: #fff;
+    text-align: center;
+}
+.page h5{
+    text-align: center;
+}
+.page img{
+    max-width: 60%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.wrl .page0{
+    background: url(../images/wangruolin_img1.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wrl .page1{
+    background: url(../images/wangruolin_img2.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wrl .page2{
+    background: url(../images/wangruolin_img3.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wrl .page3{
+    background: url(../images/wangruolin_img4.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wrl .page4{
+    background: url(../images/wangruolin_img5.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.page3 ul li{
+    float: left;
+    width: 31%;
+    margin-left: 1.5%;
+}
+.page3 ul li img{
+    max-width: 100%;
+}
+.page3 ul li span{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #999;
+}
+.page h4.zhuchi{
+    padding-top: 56%;
+}
+.wll .page0{
+    background: url(../images/wangyunyi_img1.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wll .page1{
+    background: url(../images/wangyunyi_img2.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wll .page2{
+    background: #191919;
+}
+.wll .page3{
+    background: url(../images/wangyunyi_img3.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wll .page3 h1{
+    color: #b69653;
+}
+.wll .page3 h3{
+    color: #333;
+}
+.wll .page4{
+    padding-top: 50%;
+    background: url(../images/wangyunyi_img4.jpg) no-repeat top center;
+    background-size: auto 100%;
+}
+.wll .page4 .text{
+    color: #fff;
+}

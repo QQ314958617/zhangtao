@@ -1,0 +1,229 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        团队展示
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="title tac">
+    <img src="images/team_img.jpg" alt="">
+    <span>团队展示</span><em></em>
+</div>
+<div class="img"><img src="images/team_art.jpg" alt=""/></div>
+<div class="wrap team_art">
+    <h1>郑涵文</h1>
+    <h1>Jacqueline</h1>
+    <h2>柏荟国际品牌联合创始人兼董事局主席</h2>
+    <div class="text">
+        她清丽脱俗，智慧高贵，她坚信女人不仅要有独立的自我，更要勇敢去实现自己的梦想，她倡导“私人美丽定制”和“灵性之美”的极致美丽哲学让每一个女人找到真正的自己。她是中国美业新时代女性成功的典范。
+    </div>
+    <h1>个人简介</h1>
+    <div class="text">
+        郑涵文，亚洲偶像级美学设计专家导师、“私人美丽定制”联合创始人、柏荟品牌联合创始人兼董事局主席，从事高端美学设计十余年，始终致力于女性权威高端美学教育项目推广，曾留学加拿大、新加坡，2010年开始将“私人美丽定制”概念从国外带到中国。
+    </div>
+    <h1>专业经历</h1>
+    <div class="text">
+        亚洲偶像级微整形设计专家导师 <br/>
+        国际资深美学设计专家，被业内誉为“面雕女神”<br/>
+        独创内外兼修之美及揉合东西方艺术的灵性美学<br/>
+        第18届环球夫人总决赛评委<br/>
+        第54届国际选美大赛（国际小姐）美学专家导师<br/>
+        中国美尚十大人物<br/>
+        美业最具影响力商业人物<br/>
+        中国品牌建设实践创新十大杰出巾帼<br/>
+        瑞士日内瓦湖区美丽大使<br/>
+        上海市慈善基金柏荟美丽天使基金会主席<br/>
+        印度合一大学穆克提灵性导师<br/>
+        《私人美丽定制》书作者
+    </div>
+    <h1>个人专长</h1>
+    <div class="text">
+        从事高端美容形象造型，微整形设计13年专业历程；1993年-2001年游历世界各地，始终致力于女性权威高端美学教育项目推广；多次在全球IMCAS的学术论坛上发表重要演讲。
+        2010年开始将国外“私人美丽定制”设计理念成功引入到中国，包含化妆、发型服装搭配、整体形象、脸庞美学、年轻体雕、私人美学、色彩搭配、时尚结合等。
+        成功帮助超过2000多位明星、名媛及高端女性实现私人定制独特美、个性美及明星美和灵性美。2011年联合创办中国首家“私人美丽定制”服务医学美容体系集团——柏荟国际。
+    </div>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">新闻动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">集团专利</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">团队展示</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

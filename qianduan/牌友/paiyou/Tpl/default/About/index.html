@@ -1,0 +1,109 @@
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+<!--内容-->
+<php>
+	$gsjsmap['cid']=16;
+	$gsList = GetList($gsjsmap);
+	$img = explode(",",$gsList[0]['titlepic']);
+</php>
+<div class="about-page">
+    <div class="wrap">
+        <div class="floor1 clearfix">
+            <div class="left fl">
+              <div class="title">
+                  <img src="__ROOT__{$img[0]}" alt=""/>
+              </div>
+                <div class="big-img">
+                    <img src="__ROOT__{$img[1]}" class="hvr-grow" alt=""/>
+                </div>
+            </div>
+            <div class="right fl">
+               <div class="same-img">
+                   <img src="__ROOT__{$img[2]}"  class="hvr-grow" alt=""/>
+               </div>
+                <div class="same-img">
+                    <img src="__ROOT__{$img[3]}" class="hvr-grow" alt=""/>
+                </div>
+                <div class="same-img">
+                    <img src="__ROOT__{$img[4]}"  class="hvr-grow" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="txt-content">
+           {$gsList[0]['content']}
+        </div>
+        <php>
+        	$whmap['cid']=17;
+        	$whList =GetList($whmap);
+        </php>
+        <div class="floor2 clearfix">
+            <img src="__ROOT__{$whList[0]['titlepic']}" alt=""/>
+
+        </div>
+        <div class="txt-content">
+            {$whList[0]['content']}
+        </div>
+        <div class="floor3">
+            <div class="same-title">
+                <div class="wrap">
+                    <div class="ch" style="font-weight: bold">
+                        发展历程
+                    </div>
+                </div>
+            </div>
+            <div class="licheng">
+               <div class="box1">
+                   1990年
+               </div>
+                <div class="box2">
+                    开始
+                </div>
+                <div class="box3">
+                    未来
+                </div>
+                <php>
+                	$lcmap['cid']=18;
+                	$lcList = GetList($lcmap);
+                </php>
+                <volist name="lcList" id="vo" k="i">
+                	<php>
+                		if($i%2==1){
+                	</php>
+                			<div class="same-box same-box{$i} clearfix">
+                    <div class="img fl">
+                        <img src="__ROOT__{$vo.titlepic}" alt=""/>
+                    </div>
+                    <div class="txt fl">
+                        {$vo.content}
+                    </div>
+                    <div class="year fl">
+                        {$vo.title}
+                    </div>
+                </div>
+                		<php>
+                		}else{
+                		</php>
+                			<div class="same-box same-box{$i} clearfix">
+                				 <div class="year fl">
+                        {$vo.title}
+                    </div>
+                    
+                    <div class="txt fl">
+                        {$vo.content}
+                    </div>
+                   <div class="img fl">
+                        <img src="__ROOT__{$vo.titlepic}" alt=""/>
+                    </div>
+                </div>
+                		<php>
+                		}
+                	</php>
+                
+                
+               </volist>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

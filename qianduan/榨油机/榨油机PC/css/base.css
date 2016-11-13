@@ -1,0 +1,407 @@
+/**留白****************************************************************************************/
+.Awrap800{ width: 800px; margin: 0 auto; position: relative;}
+.Awrap1000{ width: 1000px; margin: 0 auto; position: relative;}
+.Awrap1200{ width: 1200px; margin: 0 auto; position: relative;}
+/**字体****************************************************************************************/
+/*新细明体：PMingLiU 
+细明体：MingLiU 
+标楷体：DFKai-SB 
+黑体：SimHei 
+宋体：SimSun 
+新宋体：NSimSun 
+仿宋：FangSong 
+楷体：KaiTi 
+仿宋_GB2312：FangSong_GB2312 
+楷体_GB2312：KaiTi_GB2312 
+微软正黑体：Microsoft JhengHei 
+微软雅黑体：Microsoft YaHei 
+
+装Office会多出来的一些字体： 
+隶书：LiSu 
+幼圆：YouYuan 
+华文细黑：STXihei 
+华文楷体：STKaiti 
+华文宋体：STSong 
+华文中宋：STZhongsong 
+华文仿宋：STFangsong 
+方正舒体：FZShuTi 
+方正姚体：FZYaoti 
+华文彩云：STCaiyun 
+华文琥珀：STHupo 
+华文隶书：STLiti 
+华文行楷：STXingkai 
+华文新魏：STXinwei 
+**************以下字体没写***************
+苹果电脑中的字体： 
+华文细黑：STHeiti Light [STXihei] 
+华文黑体：STHeiti 
+华文楷体：STKaiti 
+华文宋体：STSong 
+华文仿宋：STFangsong 
+丽黑 Pro：LiHei Pro Medium 
+丽宋 Pro：LiSong Pro Light 
+标楷体：BiauKai 
+苹果丽中黑：Apple LiGothic Medium 
+苹果丽细宋：Apple LiSung Light */
+
+.Afont_PMingLiU{ font-family: "PMingLiU";}
+.Afont_MingLiU{ font-family: "MingLiU";}
+.Afont_DFKai-SB{ font-family: "DFKai-SB";}
+.Afont_SimHei{ font-family: "SimHei";}
+.Afontf_ss,.Afont_SimSun{ font-family: "SimSun";}
+.Afont_NSimSun{ font-family: "NSimSun";}
+.Afont_FangSong{ font-family: "FangSong";}
+.Afont_KaiTi{ font-family: "KaiTi";}
+.Afont_FangSong_GB2312{ font-family: "FangSong_GB2312";}
+.Afont_KaiTi_GB2312{ font-family: "KaiTi_GB2312";}
+.Afont_Microsoft_JhengHei{ font-family: "Microsoft JhengHei";}
+.Afontf_yh,.Afont_Microsoft_YaHei{ font-family: "Microsoft YaHei";}
+.Afont_LiSu{ font-family: "LiSu";}
+.Afont_YouYuan{ font-family: "YouYuan";}
+.Afont_STXihei{ font-family: "STXihei";}
+.Afont_STKaiti{ font-family: "STKaiti";}
+.Afont_STSong{ font-family: "STSong";}
+.Afont_STZhongsong{ font-family: "STZhongsong";}
+.Afont_STFangsong{ font-family: "STFangsong";}
+/*!有版权慎用*/
+.Afont_FZShuTi{ font-family: "FZShuTi";}
+/*!有版权慎用*/
+.Afont_FZYaoti{ font-family: "FZYaoti";}
+.Afont_STCaiyun{ font-family: "STCaiyun";}
+.Afont_STHupo{ font-family: "STHupo";}
+.Afont_STLiti{ font-family: "STLiti";}
+.Afont_STXingkai{ font-family: "STXingkai";}
+.Afont_STXinwei{ font-family: "STXinwei";}
+.Afont_FangSong{ font-family: "FangSong";}
+.Afont_KaiTi{ font-family: "KaiTi";}
+/*斜体*/
+.Astyle_i,.Afont_style_italic{ font-style: italic;}
+/*小型大写*/
+.Astyle_sc,.Afont_style_small-caps{ font-variant: small-caps;}
+
+.Afont_we1,.Afont_weight100{ font-weight: 100;}
+.Afont_we2,.Afont_weight200{ font-weight: 200;}
+.Afont_we3,.Afont_weight300{ font-weight: 300;}
+.Afont_we4,.Afont_weight400{ font-weight: 400;}
+.Afont_we5,.Afont_weight500{ font-weight: 500;}
+.Afont_we6,.Afont_weight600{ font-weight: 600;}
+.Afont_we7,.Afont_weight700{ font-weight: 700;}
+.Afont_we8,.Afont_weight800{ font-weight: 800;}
+.Afont_we9,.Afont_weight900{ font-weight: 900;}
+.Afont_we_bo,.Afont_weightbold{ font-weight: bold;}
+
+.Afont_s12,.Afont_size12{ font-size: 12px;}
+.Afont_s14,.Afont_size14{ font-size: 14px;}
+.Afont_s16,.Afont_size16{ font-size: 16px;}
+.Afont_s18,.Afont_size18{ font-size: 18px;}
+.Afont_s20,.Afont_size20{ font-size: 20px;}
+.Afont_s22,.Afont_size22{ font-size: 22px;}
+.Afont_s24,.Afont_size24{ font-size: 24px;}
+.Afont_s26,.Afont_size26{ font-size: 26px;}
+.Afont_s28,.Afont_size28{ font-size: 28px;}
+.Afont_s30,.Afont_size30{ font-size: 30px;}
+.Afont_s32,.Afont_size32{ font-size: 32px;}
+.Afont_sxxs,.Afont_size_xxs{ font-size: xx-small;}
+.Afont_sxs,.Afont_size_xs{ font-size: x-small;}
+.Afont_ss,.Afont_size_s{ font-size: small;}
+.Afont_ssr,.Afont_size_sr{ font-size: smaller;}
+.Afont_sm,.Afont_size_m{ font-size: medium;}
+.Afont_slr,.Afont_size_lr{ font-size: larger;}
+.Afont_sl,.Afont_size_l{ font-size: large;}
+.Afont_sxl,.Afont_size_xl{ font-size: x-large;}
+.Afont_sxxl,.Afont_size_xxl{ font-size: xx-large;}
+
+/**文本*****************************************************************************************/
+.Atxt_ac,.text_align_center{ text-align: center;}
+.Atxt_al,.text_align_left{ text-align: left;}
+.Atxt_ar,.text_align_right{ text-align: right;}
+.Atxt_aj,.text_align_justify{ text-align: justify;}
+
+.Atxtv_sub,.Avertucal_align_sub{ vertical-align: sub;}
+.Atxtv_sup,.Avertucal_align_super{ vertical-align: super;}
+.Atxtv_bo,.Avertucal_align_bottom{ vertical-align: bottom;}
+.Atxtv_to,.Avertucal_align_top{ vertical-align: top;}
+
+.Atxti2em,.text_indent_2em{ text-indent: 2em;}
+
+.wordsp2em,.Aword_spacing_2em{ word-spacing: 2em;}
+
+.lettsp05em,.letter_spacing05{letter-spacing: .5em;}
+.lettsp1em,.letter_spacing1{letter-spacing: 1em;}
+/*全大写*/
+.txttr_upp,.text_transform_uppercase{text-transform: uppercase;}
+/*全小写*/
+.txttr_low,.text_transform_lowercase{text-transform: lowercase;}
+/*首大写*/
+.txttr_cap,.text_transform_capitalize{text-transform: capitalize;}
+
+.txtd_none,.text_decoration_none{text-decoration: none;}
+.txtd_uline,.text_decoration_underline{text-decoration: underline;}
+.txtd_oline,.text_decoration_overline{text-decoration: overline;}
+.txtd_tline,.text_decoration_line_through{text-decoration: line-through;}
+.txtd_blink,.text_decoration_blink{text-decoration: blink;}
+
+/*保留空白和br换行*/
+.ws_nowrap,.white-space_nowrap{ white-space: nowrap;}
+/*保留空白不能自动换行*/
+.ws_pre,.white-space_pre{ white-space: pre;}
+/*保留空白格序列，源文本的换行符和生成的换行符*/
+.ws_prewrap,.white-space_pre_wrap{ white-space: pre-wrap;}
+/*合并空白格序列保留换行符*/
+.ws_preline,.white-space_preline{ white-space: pre-line;}
+
+/**颜色*****************************************************************************************/
+.Ablack{ color: #000;}
+.Adarkblue{ color: #00008b;}
+.Amediumblue{ color: #0000CD;}
+.Ablue{ color: #00f;}
+.Adarkgreen{ color: #006400;}
+.Agreen{ color: #008000;}
+.Adarkcyan{ color: #008b8b;}
+.Adeepskyblue{ color: #00bfff;}
+.Adarkturquoise{ color: #00ced1;}
+.Alime{ color: #0f0;}
+.Aspringgreen{ color: #00ff7f;}
+.Acyan{ color: #0ff;}
+.Amidnightblue{ color: #191970;}
+.Adodgerblue{ color: #1e90ff;}
+.Alightseagreen{ color: #22b2aa;}
+.Aforestgreen{ color: #228b22;}
+.Aseagreen{ color: #2e8b57;}
+.Adarkslategray{ color: #2f4f4f;}
+.Alimegreen{ color: #32cd32;}
+.Amediumseagreen{ color: #3cb371;}
+.Aturquoise{ color: #40e0d0;}
+.Aroyalblue{ color: #4169e1;}
+.Asteelblue{ color: #4682b4;}
+.Adarkslateblue{ color: #483d8b;}
+.Amediumturquoise{ color: #48d1cc;}
+.Aindigo{ color: #4b0082;}
+.Adarkolivegreen{ color: #556b2f;}
+.Acadetblue{ color: #5f9ea0;}
+.Acornflowerblue{ color: #6495ed;}
+.Amediumaquamarine{ color: #66cdaa;}
+.Adimgray{ color: #696969;}
+.Aolivedrab{ color: #6b8e23;}
+.Aslategray{ color: #708090;}
+.Alightslategray{ color: #789;}
+.Amediumslateblue{ color: #7b68ee;}
+.AlawnGreen{ color: #7cfc00;}
+.Aaquamarine{ color: #7fffd4;}
+.Amaroon{ color: #800000;}
+.Apurple{ color: #800080;}
+.Aolive{ color: #808000;}
+.Agray{ color: #808080;}
+.Askyblue{ color: #87ceeb;}
+.Adarkred{ color: #8b0000;}
+.Adarkmagenta{ color: #8b008b;}
+.Adarkseagreen{ color: #8fbc8f;}
+.Alightgreen{ color: #90ee90;}
+.Amediumpurple{ color: #9370db;}
+.Ayellowgreen{ color: #9acd32;}
+.Asienna{ color: #a0522d;}
+.Abrown{ color: #a52a2a;}
+.Adarkgray{ color: #a9a9a9;}
+.Alightblue{ color: #add8e6;}
+.Agreenyellow{ color: #adff2f;}
+.Alightsteelblue{ color: #b0c4de;}
+.Asilver{ color: #c0c0c0;}
+.AmediumvioletRed{ color: #ba55d3;}
+.Aperu{ color: #cd853f;}
+.Achocolate{ color: #d2691e;}
+.Atan{ color: #d2b48c;}
+.Alightgray{ color: #d3d3d3;}
+.Athistle{ color: #d8bfd8;}
+.Agoldenrod{ color: #daa520;}
+.ApalevioletRed{ color: #db7093;}
+.Acrimson{ color: #dc143c;}
+.Aplum{ color: #dda0dd;}
+.Aburlywood{ color: #deb887;}
+.Alightcyan{ color: #d2b48c;}
+.Alavender{ color: #d2b48c;}
+.Adarksalmon{ color: #d2b48c;}
+.Alightcoral{ color: #f08080;}
+.Akhaki{ color: #f0e68c;}
+.Ared{ color: #f00;}
+.Afuchsia{ color: #f0f;}
+.Adeeppink{ color: #ff1493;}
+.Aorangered{ color: #ff4500;}
+.Atomato{ color: #ff6347;}
+.Ahotpink{ color: #ff69b4;}
+.Adarkorange{ color: #ff8c00;}
+.Aorange{ color: #ffa500;}
+.Alightpink{ color: #ffb6c1;}
+.Apink{ color: #ffc0cb;}
+.Agold{ color: #ffd700;}
+.Ayellow{ color: #ff0;}
+.Agray333{ color: #333;}
+.Agray666{ color: #666;}
+.Agray999{ color: #999;}
+.Agrayaaa{ color: #aaa;}
+.Agrayccc{ color: #ccc;}
+.Agrayeee{ color: #eee;}
+/*****************************/
+.Abc_black{ background-color: #000;}
+.Abc_darkblue{ background-color: #00008b;}
+.Abc_mediumblue{ background-color: #0000CD;}
+.Abc_blue{ background-color: #00f;}
+.Abc_darkgreen{ background-color: #006400;}
+.Abc_green{ background-color: #008000;}
+.Abc_darkcyan{ background-color: #008b8b;}
+.Abc_deepskyblue{ background-color: #00bfff;}
+.Abc_darkturquoise{ background-color: #00ced1;}
+.Abc_lime{ background-color: #0f0;}
+.Abc_springgreen{ background-color: #00ff7f;}
+.Abc_cyan{ background-color: #0ff;}
+.Abc_midnightblue{ background-color: #191970;}
+.Abc_dodgerblue{ background-color: #1e90ff;}
+.Abc_lightseagreen{ background-color: #22b2aa;}
+.Abc_forestgreen{ background-color: #228b22;}
+.Abc_seagreen{ background-color: #2e8b57;}
+.Abc_darkslategray{ background-color: #2f4f4f;}
+.Abc_limegreen{ background-color: #32cd32;}
+.Abc_mediumseagreen{ background-color: #3cb371;}
+.Abc_turquoise{ background-color: #40e0d0;}
+.Abc_royalblue{ background-color: #4169e1;}
+.Abc_steelblue{ background-color: #4682b4;}
+.Abc_darkslateblue{ background-color: #483d8b;}
+.Abc_mediumturquoise{ background-color: #48d1cc;}
+.Abc_indigo{ background-color: #4b0082;}
+.Abc_darkolivegreen{ background-color: #556b2f;}
+.Abc_cadetblue{ background-color: #5f9ea0;}
+.Abc_cornflowerblue{ background-color: #6495ed;}
+.Abc_mediumaquamarine{ background-color: #66cdaa;}
+.Abc_dimgray{ background-color: #696969;}
+.Abc_olivedrab{ background-color: #6b8e23;}
+.Abc_slategray{ background-color: #708090;}
+.Abc_lightslategray{ background-color: #789;}
+.Abc_mediumslateblue{ background-color: #7b68ee;}
+.Abc_lawnGreen{ background-color: #7cfc00;}
+.Abc_aquamarine{ background-color: #7fffd4;}
+.Abc_maroon{ background-color: #800000;}
+.Abc_purple{ background-color: #800080;}
+.Abc_olive{ background-color: #808000;}
+.Abc_gray{ background-color: #808080;}
+.Abc_skyblue{ background-color: #87ceeb;}
+.Abc_darkred{ background-color: #8b0000;}
+.Abc_darkmagenta{ background-color: #8b008b;}
+.Abc_darkseagreen{ background-color: #8fbc8f;}
+.Abc_lightgreen{ background-color: #90ee90;}
+.Abc_mediumpurple{ background-color: #9370db;}
+.Abc_yellowgreen{ background-color: #9acd32;}
+.Abc_sienna{ background-color: #a0522d;}
+.Abc_brown{ background-color: #a52a2a;}
+.Abc_darkgray{ background-color: #a9a9a9;}
+.Abc_lightblue{ background-color: #add8e6;}
+.Abc_greenyellow{ background-color: #adff2f;}
+.Abc_lightsteelblue{ background-color: #b0c4de;}
+.Abc_silver{ background-color: #c0c0c0;}
+.Abc_mediumvioletRed{ background-color: #ba55d3;}
+.Abc_peru{ background-color: #cd853f;}
+.Abc_chocolate{ background-color: #d2691e;}
+.Abc_tan{ background-color: #d2b48c;}
+.Abc_lightgray{ background-color: #d3d3d3;}
+.Abc_thistle{ background-color: #d8bfd8;}
+.Abc_goldenrod{ background-color: #daa520;}
+.Abc_palevioletRed{ background-color: #db7093;}
+.Abc_crimson{ background-color: #dc143c;}
+.Abc_plum{ background-color: #dda0dd;}
+.Abc_burlywood{ background-color: #deb887;}
+.Abc_lightcyan{ background-color: #d2b48c;}
+.Abc_lavender{ background-color: #d2b48c;}
+.Abc_darksalmon{ background-color: #d2b48c;}
+.Abc_lightcoral{ background-color: #f08080;}
+.Abc_khaki{ background-color: #f0e68c;}
+.Abc_red{ background-color: #f00;}
+.Abc_fuchsia{ background-color: #f0f;}
+.Abc_deeppink{ background-color: #ff1493;}
+.Abc_orangered{ background-color: #ff4500;}
+.Abc_tomato{ background-color: #ff6347;}
+.Abc_hotpink{ background-color: #ff69b4;}
+.Abc_darkorange{ background-color: #ff8c00;}
+.Abc_orange{ background-color: #ffa500;}
+.Abc_lightpink{ background-color: #ffb6c1;}
+.Abc_pink{ background-color: #ffc0cb;}
+.Abc_gold{ background-color: #ffd700;}
+.Abc_yellow{ background-color: #ff0;}
+.Abc_gray333{ background-color: #333;}
+.Abc_gray666{ background-color: #666;}
+.Abc_gray999{ background-color: #999;}
+.Abc_grayaaa{ background-color: #aaa;}
+.Abc_grayccc{ background-color: #ccc;}
+.Abc_grayeee{ background-color: #eee;}
+
+/**浮动*****************************************************************************************/
+.Afl,.Afloatleft{float: left;}
+.Afr,.Afloatright{float: right;}
+/*浮动清除*/
+.Aclear{clear:both;}
+/*兼容IE6,7*/
+.Aclf:after,.Aclearfloat:after{content:"";display:block;height:0;line-height: 0;overflow: hidden;clear:both;visibility:hidden;}
+.Aclf,.clearfix{*+zoom:1;}
+/**定位*****************************************************************************************/
+.Apo_ab,.Aposition_absolute{ position: absolute;}
+.Apo_re,.Aposition_relative{ position: relative;}
+.Apo_fi,.Aposition_fixed{ position: fixed;}
+.Abkpo_center,.Abackgroundposition_center{ background-position: center; background-repeat: no-repeat; }
+/***********************************************************************************************/
+/************************CSS3*******************************************************************/
+/***********************************************************************************************/
+
+/**缓动*****************************************************************************************/
+.Atrt1s,.Atransition1s{transition: 1s; -moz-transition: 1s;
+-webkit-transition: 1s; -o-transition: 1s;}
+.Atrt2s,.Atransition2s{transition: 2s; -moz-transition: 2s;
+-webkit-transition: 2s; -o-transition: 2s;}
+.Atrt3s,.Atransition3s{transition: 3s; -moz-transition: 3s;
+-webkit-transition: 3s; -o-transition: 3s;}
+.Atrt4s,.Atransition4s{transition: 4s; -moz-transition: 4s;
+-webkit-transition: 4s; -o-transition: 4s;}
+.Atrt5s,.Atransition5s{transition: 5s; -moz-transition: 5s;
+-webkit-transition: 5s; -o-transition: 5s;}
+/**********************/
+.Atrt1s_w,.Atransition1s_width{transition: width 1s; -moz-transition: width 1s;
+-webkit-transition: width 1s; -o-transition: width 1s;}
+.Atrt2s_w,.Atransition2s_width{transition: width 2s; -moz-transition: width 2s;
+-webkit-transition: width 2s; -o-transition: width 2s;}
+.Atrt3s_w,.Atransition3s_width{transition: width 3s; -moz-transition: width 3s;
+-webkit-transition: width 3s; -o-transition: width 3s;}
+.Atrt4s_w,.Atransition4s_width{transition: width 4s; -moz-transition: width 4s;
+-webkit-transition: width 4s; -o-transition: width 4s;}
+.Atrt5s_w,.Atransition5s_width{transition: width 5s; -moz-transition: width 5s;
+-webkit-transition: width 5s; -o-transition: width 5s;}
+/**********************/
+.Atrt1s_h,.Atransition1s_height{transition: height 1s; -moz-transition: height 1s;
+-webkit-transition: height 1s; -o-transition : height 1s;}
+.Atrt2s_h,.Atransition2s_height{transition: height 2s; -moz-transition: height 2s;
+-webkit-transition: height 2s; -o-transition: height 2s;}
+.Atrt3s_h,.Atransition3s_height{transition: height 3s; -moz-transition: height 3s;
+-webkit-transition: height 3s; -o-transition: height 3s;}
+.Atrt4s_h,.Atransition4s_height{transition: height 4s; -moz-transition: height 4s;
+-webkit-transition: height 4s; -o-transition: height 4s;}
+.Atrt5s_h,.Atransition5s_height{transition: height 5s; -moz-transition: height 5s;
+-webkit-transition: height 5s; -o-transition: height 5s;}
+/**********************/
+.Atrt1s_c,.Atransition1s_color{transition: color 1s; -moz-transition: color 1s;
+-webkit-transition: color 1s; -o-transition : color 1s;}
+.Atrt2s_c,.Atransition2s_color{transition: color 2s; -moz-transition: color 2s;
+-webkit-transition: color 2s; -o-transition: color 2s;}
+.Atrt3s_c,.Atransition3s_color{transition: color 3s; -moz-transition: color 3s;
+-webkit-transition: color 3s; -o-transition: color 3s;}
+.Atrt4s_c,.Atransition4s_color{transition: color 4s; -moz-transition: color 4s;
+-webkit-transition: color 4s; -o-transition: color 4s;}
+.Atrt5s_c,.Atransition5s_color{transition: color 5s; -moz-transition: color 5s;
+-webkit-transition: color 5s; -o-transition: color 5s;}
+/**********************/
+.Atrt1s_bkc,.Atransition1s_background-color{transition: background-color 1s; -moz-transition: background-color 1s;
+-webkit-transition: background-color 1s; -o-transition : background-color 1s;}
+.Atrt2s_bkc,.Atransition2s_background-color{transition: background-color 2s; -moz-transition: background-color 2s;
+-webkit-transition: background-color 2s; -o-transition: background-color 2s;}
+.Atrt3s_bkc,.Atransition3s_background-color{transition: background-color 3s; -moz-transition: background-color 3s;
+-webkit-transition: background-color 3s; -o-transition: background-color 3s;}
+.Atrt4s_bkc,.Atransition4s_background-color{transition: background-color 4s; -moz-transition: background-color 4s;
+-webkit-transition: background-color 4s; -o-transition: background-color 4s;}
+.Atrt5s_bkc,.Atransition5s_background-color{transition: background-color 5s; -moz-transition: background-color 5s;
+-webkit-transition: background-color 5s; -o-transition: background-color 5s;}
+/**缩放*****************************************************************************************/
+.Atrt09,.Atransform09{ -webkit-transform: scale(.9);-ms-transform: scale(.9);-o-transform: scale(.9);transform: scale(.9);}

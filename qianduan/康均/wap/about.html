@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        集团介绍
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="title tac">
+    <img src="images/about_title.jpg" alt="">
+    <span>集团介绍</span><em></em>
+</div>
+<div class="wrap about">
+    <img src="images/about_img.jpg" alt=""/>
+    <h3>臻康大医疗健康联盟简介  </h3>
+    <div class="text">
+        臻康国际大医疗健康联盟于2015年在中国（上海）成立，是集医美医疗与生命健康于一体，是一家整合了多家医疗美容机构和健
+        康产业机构的医疗健康复合型企业，是拥有特色医疗项目与一体化生命全息健康管理的服务平台。企业多元化的服务流程和具备完整体系的医疗模式是专为尊贵人
+        群进行一对一私人订制健康美丽计划的大联盟。臻康国际大医疗健康联盟下设三大机构：康威（美胸）形体雕塑医疗集团、
+        上海寓医馆-御医健康管理中心，红枫•致臻医学整形医院等多家医疗机构。
+    </div>
+    <h3>臻康国际的服务宗旨  </h3>
+    <div class="text">
+        引领中国高端美丽定制、健康管理服务，打造民族品牌美丽事业，始终坚持“客户至上、团队精神、社会责任、个人价值”平衡发展的经营理念，致力于为广大爱美人士实现美丽蜕变、拥获健康的幸福美梦。
+    </div>
+    <h3>臻康国际的服务理念  </h3>
+    <div class="text">
+        始终坚持技术领先，诚信为本的服务理念，不断进行技术、服务优化升级。积极参与行业组织一起助力中国医美行业实现持续发展，塑造行业影响力，更能传递行业正能量！
+        让医美变成一种生活方式，告别亚健康，科学整形美容，享受生活，保持健康美丽。采用科学的管理方法和手段，完善的售
+    </div>
+</div>
+<div class="title tac">
+    <img src="images/contact_title.jpg" alt="">
+    <span>联系我们</span><em></em>
+</div>
+<div class="wrap contact_title tac">
+    <p>service:9:00-18:00</p>
+    <span>+(86)021-123488888</span>
+</div>
+<div class="wrap contact">
+    <h3>臻康大医疗健康联盟</h3>
+    <div class="text">
+        电话：123344455 <br/>
+        邮箱：127291239@qq.com<br/>
+        传真：021－122327837<br/>
+        邮编：201800<br/>
+        地址:上海市嘉定区嘉罗公路1661弄盛创企业家园
+    </div>
+    <h3>臻康大医疗健康联盟</h3>
+    <div class="text">
+        电话：123344455 <br/>
+        邮箱：127291239@qq.com<br/>
+        传真：021－122327837<br/>
+        邮编：201800<br/>
+        地址:上海市嘉定区嘉罗公路1661弄盛创企业家园
+    </div>
+    <h3>臻康大医疗健康联盟</h3>
+    <div class="text">
+        电话：123344455 <br/>
+        邮箱：127291239@qq.com<br/>
+        传真：021－122327837<br/>
+        邮编：201800<br/>
+        地址:上海市嘉定区嘉罗公路1661弄盛创企业家园
+    </div>
+</div>
+
+<div class="title tac">
+    <img src="images/career_title.jpg" alt="">
+    <span>工作机会</span><em></em>
+</div>
+<div class="career">
+    <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
+        <dl class="am-accordion-item am-active am-disabled">
+            <dt class="am-accordion-title">
+                脸部整形 &emsp;&emsp;&emsp;1名
+            </dt>
+            <dd class="am-accordion-bd am-collapse am-in">
+                <div class="am-accordion-content">
+                    <div class="text">
+                        <h3>岗位职责：</h3>
+                        1、为高端顾客提供专业的美容整形咨询； <br/>
+                        2、指导下级医生不断提高业务技术水平，进行下级医师带教计划；<br/>
+                        3、严格执行医疗规章制度，保证医疗安全，避免医疗纠纷和事故；<br/>
+                        4、负责为顾客实施各类整形美容手术。
+                        <h3>任职资格：</h3>
+                        1、本科以上学历，在整形美容、整形外科、临床医学等有5年以上工作经验； <br/>
+                        2、获得相关的行医资格、资质；<br/>
+                        3、具有良好的亲和力和个人职业形象气质、沟通表达能力，工作认真负责。
+                        <h2>发送简历至：hr@z-fashion.com</h2>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="am-accordion-item">
+            <dt class="am-accordion-title">
+                脸部整形 &emsp;&emsp;&emsp;1名
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+                <div class="am-accordion-content">
+                    <div class="text">
+                        <h3>岗位职责：</h3>
+                        1、为高端顾客提供专业的美容整形咨询； <br/>
+                        2、指导下级医生不断提高业务技术水平，进行下级医师带教计划；<br/>
+                        3、严格执行医疗规章制度，保证医疗安全，避免医疗纠纷和事故；<br/>
+                        4、负责为顾客实施各类整形美容手术。
+                        <h3>任职资格：</h3>
+                        1、本科以上学历，在整形美容、整形外科、临床医学等有5年以上工作经验； <br/>
+                        2、获得相关的行医资格、资质；<br/>
+                        3、具有良好的亲和力和个人职业形象气质、沟通表达能力，工作认真负责。
+                        <h2>发送简历至：hr@z-fashion.com</h2>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="am-accordion-item">
+            <dt class="am-accordion-title">
+                脸部整形 &emsp;&emsp;&emsp;1名
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+                <div class="am-accordion-content">
+                    <div class="text">
+                        <h3>岗位职责：</h3>
+                        1、为高端顾客提供专业的美容整形咨询； <br/>
+                        2、指导下级医生不断提高业务技术水平，进行下级医师带教计划；<br/>
+                        3、严格执行医疗规章制度，保证医疗安全，避免医疗纠纷和事故；<br/>
+                        4、负责为顾客实施各类整形美容手术。
+                        <h3>任职资格：</h3>
+                        1、本科以上学历，在整形美容、整形外科、临床医学等有5年以上工作经验； <br/>
+                        2、获得相关的行医资格、资质；<br/>
+                        3、具有良好的亲和力和个人职业形象气质、沟通表达能力，工作认真负责。
+                        <h2>发送简历至：hr@z-fashion.com</h2>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+    </section>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">新闻动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">集团专利</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">团队展示</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

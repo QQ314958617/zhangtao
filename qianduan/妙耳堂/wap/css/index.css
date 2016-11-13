@@ -1,0 +1,700 @@
+@charset "UTF-8";
+
+body{
+    background: #f7ecd8;
+}
+.am-header-default{
+    background: #dfd7c4;
+}
+.am-header-default .am-header-nav>a{
+    color: #fff;
+}
+.am-menu-offcanvas1 .am-menu-toggle i:before{
+    font-size: 22px;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #dfd7c4;
+}
+.am-menu-offcanvas1 .am-menu-toggle{
+    color: #333;
+    font-size: 20px;
+}
+.am-navbar .am-navbar-nav{
+    padding-top: 4px;
+}
+.am-navbar-nav a{
+   line-height: 26px;
+    color: #333;
+}
+.am-navbar-nav a i{
+    font-size: 22px;
+    color: #753c09;
+}
+
+
+.news .news01{width: 100%;margin: 1rem 0;border-bottom: 1px solid #c8c2b8;
+    padding-bottom: 0.5rem;}
+.news .news01 .left{width: 35%;display: block;}
+.news .news01 .left img{width: 100%;}
+.news .news01 .right{width: 62%;}
+.news .news01 .right h1{font-size: 1.4em;margin: 0;padding: 5px 0;}
+.news .news01 .right h1 a{color: #333;}
+.news .news01 .right p{font-size: 0.7em;margin: 0;padding: 0;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+.news .news01 .right p a{color: #666;}
+
+
+
+.news_pages h1{font-size: 1.4em;margin: 0;padding: 5px 0;color: #333;text-align: center;}
+.news_pages span{display: block;text-align: center;color: #999;padding-bottom: 10px;}
+.news_pages img{max-width: 100%;margin: 1rem auto;display: block;}
+.news_pages p{text-indent: 2em;color: #666;}
+.nextart{
+    padding: 2rem 0;
+    font: 1.2rem/1.8rem "microsoft yahei";
+    color: #666;
+}
+.nextart a{
+    color: #666;
+}
+.page{
+    text-align: center;
+    padding: 1em 0;
+}
+.page a{
+    border: 1px solid #e7e7e7;
+    padding: 0.2em 0.4em;
+}
+
+.join_banner{
+    width: 100%;
+}
+.join_banner img{
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+.title h3{
+    font: bold 2rem/2.2rem "microsoft yahei";
+    color: #4a0000;
+}
+.title h4{
+    font: 1.6rem/1.8rem "microsoft yahei";
+    color: #999;
+}
+.liyou .am-slider-b3{
+     -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
+     box-shadow: 0 0px 0px rgba(0,0,0,0);
+}
+.liyou .am-slider .am-slides img{
+   width: 60%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.liyou{
+    margin-bottom: 3rem;
+}
+.liyou ul li h3{
+    text-align: center;
+    font: 1.6rem/1.8rem "microsoft yahei";
+    color: #4a0000;
+    padding: 1rem 0;
+}
+.liyou ul li .text{
+    font: 1.4rem/1.6rem "microsoft yahei";
+    color: #999;
+}
+.tiaojian {
+    margin: 2rem auto;
+}
+.tiaojian ul {
+    margin-bottom: 2rem;
+}
+.tiaojian ul li{
+    width: 46%;
+    margin: 0 2% 1rem;
+    float: left;
+}
+.tiaojian ul li img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.tiaojian ul li span{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+}
+.yuancheng ul li{
+    width: 46%;
+    margin: 1rem 2%;
+    float: left;
+    text-align: center;
+}
+.yuancheng ul li:last-child{
+    margin: 1rem 27%;
+}
+.yuancheng ul li img{
+    display: block;
+    margin: 0 auto 1rem;
+}
+.yuancheng ul li h3{
+    font: 1.6rem/1.8rem "microsoft yahei";
+    color: #4a0000;
+    padding-bottom: 0.5rem;
+}
+.yuancheng ul li h4{
+    font: 1.2rem/1.4rem "microsoft yahei";
+    color: #999;
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    background: url("../images/remote_h4_bg.png") no-repeat bottom center;
+}
+.yuancheng ul li p{
+    font: 1.4rem/1.6rem "microsoft yahei";
+    color: #666;
+}
+.yunying{
+    padding: 2rem 0;
+}
+.yunying h3{
+    padding-bottom: 0.5rem;
+}
+.yunying h3 em{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    background: #666;
+    margin-right: 1rem;
+}
+.yunying h3 span{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #4a0000;
+    float: left;
+}
+.yunying h4{
+    font: 1.4rem/1.6rem "microsoft yahei";
+    padding-bottom: 1rem;
+}
+.liucheng{
+    margin: 2rem auto;
+}
+.liucheng_list ul li {
+    width: 46%;
+    margin: 1rem 2%;
+    float: left;
+    text-align: center;
+}
+.liucheng_list ul li p{
+    font: 1.6rem/2.5rem "microsoft yahei";
+    color: #999;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+   background: url("../images/yuan.jpg") no-repeat top center;
+}
+.liucheng_list ul li h3{
+    font: 1.8rem/2rem "microsoft yahei";
+    color: #020202;
+    padding-bottom: 0.8rem;
+}
+.liucheng_list ul li h4{
+    font: 1.4rem/1.6rem "microsoft yahei";
+    color: #999;
+}
+.liucheng .am-slider-a4,.jianzheng .am-slider-a4{
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+    box-shadow: 0 0px 0px rgba(0,0,0,.2);
+}
+.liucheng .am-slider-a4 .am-control-nav li a.am-active,.jianzheng  .am-slider-a4 .am-control-nav li a.am-active{
+    background-color:#4a0000 ;
+}
+.jianzheng{
+    padding: 2rem 0;
+}
+
+.jianzheng ul li{
+    margin-bottom: 2rem;
+}
+.jianzheng img{
+    max-width: 100%;
+    margin: 1rem auto;
+}
+.jianzheng h3{
+    font: 1.8rem/2.5rem "microsoft yahei";
+    color: #4a0000;
+}
+.jianzheng h4{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #666;
+}
+.jianzheng p{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #999;
+}
+.wenda {
+    padding: 1rem;
+}
+.wenda h3{
+    padding: 0.5rem 0 1rem 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #999;
+    background: url("../images/q_bg.png") no-repeat top left;
+    font: 1.6rem/1.8rem "microsoft yahei";
+    color: #4a0000;
+}
+.wenda h4{
+    background: url("../images/an_bg.png") no-repeat top left;
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+.shenqing ul li{
+    width: 95%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    font: 1.2rem/3rem "microsoft yahei";
+    float: left;
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 83%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+    background: none;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 83%;
+    border: none;
+    resize: none;
+    outline: 0;
+    background: none;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #6e5100;
+    border-radius: 25px;
+}
+.shenqing ul li.res input{
+    border: 1px solid #ccc;
+    color: #fff;
+    background: #6e5100;
+    border-radius: 25px;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: -34px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: -34px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.am-header-default a img{
+    height: 49px;
+}
+.banner .am-slider-a4 .am-control-nav{
+    display: none;
+}
+.img {
+    width: 100%;
+}
+.img img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.joinus ul {
+    padding:1rem 0;
+}
+.joinus ul li{
+    width: 46%;
+    margin: 0 2% 1rem;
+    float: left;
+}
+.joinus ul li img{
+    max-width: 100%;
+    height: 14rem;
+    display: block;
+    margin: 0 auto;
+}
+.title h3 a{
+    color: #999;
+    float: right;
+    font-weight: normal;
+}
+.news_list a{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+    display: block;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #999;
+}
+
+.news_list a span{
+    color: #999;
+    float: right;
+}
+
+.text{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.in_youshi h4{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #390303;
+    padding: 0.5rem 0;
+}
+.in_youshi .text{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+    padding-bottom: 1rem;
+}
+.news .news01 .right h4{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #390303;
+    padding: 1rem 0 0;
+}
+.news .news01 .right h4 a{
+    color: #390303;
+}
+.in_case ul li {
+    width: 100%;
+}
+.in_case ul li img{
+    max-width: 40%;
+    margin: 0 5%;
+    float: left;
+}
+.in_case .am-slider-a4 .am-control-nav li a.am-active{
+    background: #390303;
+}
+.img span{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+}
+.news_list p {
+    margin: 0.5rem 0;
+}
+.news_list p span{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+    float: left;
+}
+.news_list p a{
+    float: right;
+    margin: 0;
+}
+.join_qianjing h3{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #390303;
+    padding-bottom: 0.5rem;
+}
+.join_qianjing .text{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    padding-bottom: 0.5rem;
+}
+.join_about img{
+    max-width: 100%;
+    padding: 1rem 0;
+}
+.join_about .text{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    padding-bottom: 0.5rem;
+}
+.youshi_list{
+    margin-bottom: 1rem;
+}
+.youshi_list img{
+    max-width: 40%;
+    margin-right: 2%;
+    float: left;
+}
+.youshi_list .text{
+    width: 58%;
+}
+.youshi_list h3{
+    font: 2rem/2.4rem "microsoft yahei";
+    color: #390303;
+    padding: 0.5rem 0;
+}
+.youshi_list h4{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #390303;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: url("../images/h4_bg.jpg") no-repeat bottom left;
+}
+.youshi_list p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+}
+.join_renzheng ul{
+    margin-bottom: 1rem;
+}
+.join_renzheng ul li{
+    width: 48%;
+    margin: 1rem 1% 0;
+    float: left;
+}
+.join_renzheng ul li img{
+    max-width: 100%;
+    height: 217px;
+    display: block;
+    margin: 0 auto;
+}
+
+.team_title{
+    padding: 2rem 0;
+}
+.team_list{
+    width: 98%;
+}
+.team_list ul li{
+    float: left;
+    width: 48%;
+    margin: 0 1% 1rem;
+    text-align: center;
+}
+.team_list ul li img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 168px;
+}
+.team_list ul li span{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+}
+.shenqing h3{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #400400;
+}
+
+.jianzheng span{
+    width: 50%;
+    float: left;
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #400400;
+    margin-bottom: 1rem;
+}
+.jianzheng span i{
+    padding-right: 0.5rem;
+}
+.zhichi ul li{
+    width: 48%;
+    margin: 0 1% 1rem;
+    float: left;
+    text-align: center;
+}
+.zhichi ul li img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.zhichi ul li span{
+    display: block;
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #400400;
+}
+.zhichi ul li p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #400400;
+}
+
+.anli_list ul li{
+    padding: 0.5rem 0.2rem;
+    margin-bottom: 2rem;
+}
+.anli_list ul li a{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #e71f19;
+}
+.anli_list ul li p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #523925;
+}
+
+
+
+
+
+
+.index4_title{
+    width: 100%;
+    margin: 2rem auto 1rem;
+    background: url("../images/title_bg.png") no-repeat top center;
+    background-size: auto 100%;
+    font: 2rem/4rem "droidsansfallback";
+    color: #fff;
+}
+.index4_youshi_title{
+    background: url("../images/index4_title_bg.png") no-repeat top center;
+    background-size: auto 100%;
+    font: 2rem/4rem "droidsansfallback";
+    color: #fff;
+    margin: 1rem auto;
+}
+.index4_zc ul li {
+    margin: 1rem 1% 0;
+}
+.index4_zc ul li span{
+    font: 1.8rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.index4_about a{
+    color: #333;
+    float: right;
+}
+.index4_news_title{
+    background: url("../images/index4_title_bg2.png") no-repeat top center;
+    background-size: auto 100%;
+}
+.index4_news_first{
+    border-bottom: 1px solid #999999;
+    padding-bottom: 0.5rem;
+}
+.index4_news_first img{
+    max-width: 40%;
+    float: left;
+}
+.index4_news_first .text{
+    width: 55%;
+    margin-bottom: 0;
+}
+.index4_news_first .text h3{
+    font: 1.8rem/2.4rem "droidsansfallback";
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.5rem;
+}
+.index4_wenda ul li {
+    border-bottom: 1px solid #c8c2b8;
+    margin-bottom: 0.5rem;
+}
+.index4_wenda ul li a{
+    font:bold 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    display: block;
+    padding-left: 3rem;
+    background: url("../images/a_bg.jpg") no-repeat top left;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+.index4_wenda ul li .text{
+    background: url("../images/q_bg.jpg") no-repeat 0 0;
+    padding-left: 3rem;
+    margin-bottom: 0.5rem;
+}
+.index4_lc ul li{
+    padding-bottom: 3rem;
+    background:  url("../images/xia.png") no-repeat bottom center;
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+}
+.index4_lc ul li:last-child{
+    background: none;
+    padding-bottom: 1rem;
+}
+.index4_lc ul li>div{
+    background: #e5cba1;
+    padding: 0.5rem 0;
+}
+.index4_lc_detail ul li h3{
+    font: bold 1.6rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.index4_lc_detail ul li .text{
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.download{
+    margin: 2rem auto;
+    font: 1.6rem/2.6rem "droidsansfallback";
+    color: #333;
+}
+.index4_tc{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #523925;
+    padding-bottom: 2rem;
+}
+.index4_tc_detail ul li .text{
+    border-bottom: none;
+    color: #523925;
+}
+.index4_fuchi_detail p{
+    font: 1.6rem/2.4rem "droidsansfallback";
+    color: #333;
+    background: #eed287;
+    padding: 0 1rem;
+}
+.index4_fuchi_detail .text{
+    margin: 1rem 0;
+}
+.index4_fuchi_detail ul{
+    margin-bottom: 1rem;
+}
+.index4_fuchi_detail ul li{
+    float: left;
+    width: 50%;
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #333;
+}
+.index4_ej{
+    margin-bottom: 1rem;
+}
+.index4_ej h3{
+    font: bold 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.b_text{
+    font:bold 1.6rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.inde4_fw h1{
+    color: #c70000;
+}
+.index4_yq ul li a{
+    color: #523925;
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+                function() {
+                    var nowpage = 0;
+                    //给class为container的容器加上触滑监听事件
+                    $(".container").swipe(
+                            {
+                                swipe:function(event, direction, distance, duration, fingerCount) {
+                                    if(direction == "up")//当向上滑动手指时令当前页面记数器加1
+                                    {
+                                        nowpage = nowpage + 1;
+                                    }
+                                    else if(direction == "down")//当向下滑动手指时令当前页面记数器减1
+                                    {
+                                        nowpage = nowpage - 1;
+                                    }
+
+                                    if(nowpage > 6)//因本实例只有5张图片，所以当记数器大于4时令他返回4（从0开始记），避免溢出出错
+                                    {
+                                        nowpage =6;
+                                    }
+
+                                    if(nowpage < 0)//道理同上
+                                    {
+                                        nowpage = 0;
+                                    }
+                                    $(".container").animate({"top":nowpage * -100 + "%"},400);//根据当前记数器滚动到相应的高度
+                                }
+                            }
+                    );
+                }
+        );
+    </script>
+    <script>
+        $(function(){
+            var width=  $(window).width();
+            var height=  $(window).height();
+            $(".container,.page,body.scoll").css({"width":width,"height":height})
+        })
+    </script>
+</head>
+<body class="scoll">
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);" class="">
+            <i class="iconfont">&#xe605;</i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            柳岩
+        </a>
+    </h1>
+</header>
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+        <i class="am-header-icon am-icon-bars"></i>
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="container ">
+    <div class="page page0">
+        <h1>柳岩</h1>
+        <h2>ADA LIU</h2>
+        <h3>冲破别人 <br/>
+            对你的印象判断</h3>
+        <h4>“作为双鱼做的我，人格分裂的厉害。”
+            对柳岩而言或许正是分裂的人格让她充满了各种有
+            趣的反差  冲破了那些在她身上的印象和判断</h4>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page1">
+        <h1> 她是柳岩</h1>
+        <h4>柳岩性感，在演艺圈是一个青春励志的范本，生活中的她勤奋努力。柳岩演戏的时候艳光四射，被誉为“新四大美女”。柳岩被誉为性感女神。有内地“最性感女主播”之称。</h4>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page2">
+        <h5>她的电影作品</h5>
+        <img src="images/ly_dy_img1.jpg" alt=""/>
+        <p>《煎饼侠》&emsp;&emsp;饰演&emsp;&emsp;柳岩</p>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page3">
+        <h5>她的电影作品</h5>
+        <img src="images/ly_dy_img2.jpg" alt=""/>
+        <p>《煎饼侠》&emsp;&emsp;饰演&emsp;&emsp;柳岩</p>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page4">
+        <h5>她的电影作品</h5>
+        <img src="images/ly_dy_img3.jpg" alt=""/>
+        <p>《煎饼侠》&emsp;&emsp;饰演&emsp;&emsp;柳岩</p>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page5">
+        <h1>她的圈外生活</h1>
+        <h4>身材娇小的她其实是个运动达人，而且她新近爱上的或许不是大多人尤其是南方人会涉猎的一项运动——滑雪，而且是单板。看似较弱的外表似乎与单板滑雪这项潇洒而又危险系数很高的运动不太搭甚至让人感到一种强烈的反差。</h4>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page6">
+        <h1>与她的对话</h1>
+        <div class="text">
+            “如果当时我有学画画，我觉得我今天肯定又多会了一项技能会让自己画的更好” <br/>
+            中传国际：如果你现在有一个机会，可以重新去做你曾经放弃了的事情那这件事情是什么？你会抓住这个机会吗?
+            <br/>柳岩：我觉得我会去学画画。其实我人生中第一个被发现的天赋不是唱歌，而是美术。我从小就喜欢画画，而且小的时候性格比较内向，不太喜欢说话。记得我小时候特别会画高跟鞋水果，后来开始画葫芦娃，美少女战士尼罗河的女儿等等。
+        </div>
+    </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">新闻中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">明星列表</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

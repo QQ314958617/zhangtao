@@ -1,0 +1,99 @@
+  <!--内页banner开始 与首页banner不同-->
+
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+
+	<!--内页banner结束 与首页banner不同-->
+	
+	<!--内页开始-->
+	<php>
+		$navmap['id']=46;
+		$navmap['parent_id']=2;
+		$nav = getNav($navmap,1);
+	</php>
+<!--爆款推荐-->
+<div class="hot-zone">
+    <div class="wrap">
+        <div class="hot-title">
+            <div class="en">
+                Hot Zone
+            </div>
+            <div class="ch">
+                — 热销专区 —
+            </div>
+        </div>
+        <div class="hot-content">
+            <a href="">
+                <img src="__ROOT__{$nav['nav_pic']}" alt=""/>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--产品中心-->
+<div class="fenlei">
+    <div class="wrap">
+        <div class="same-fenlei clearfix">
+            <div class="name fl">
+                人群：
+            </div>
+            <div class="attr">
+                <a class="on" href="/product?type=">不限</a>
+                <volist name="type" id="vo">
+                	<php>
+                		if($vo['pid'] == 9){
+                	</php>
+                <a href="/product?type={$vo.name}">{$vo.name}</a>
+                <php>}</php>
+                </volist>
+            </div>
+        </div>
+        <div class="same-fenlei clearfix">
+            <div class="name fl">
+                种类：
+            </div>
+            <div class="attr">
+                <a class="on" href="/prodct?type=">不限</a>
+                <volist name="type" id="vo">
+                	<php>
+                		if($vo['pid'] == 10){
+                	</php>
+                <a href="/product?type={$vo.name}">{$vo.name}</a>
+                <php>}</php>
+                </volist>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$(function(){
+		$('.attr a').click(function(){
+			$(this).addClass('on').siblings().removeClass('on')
+		})
+	})
+</script>
+
+<div class="product-list wrap">
+    <ul class="clearfix">
+    	<volist name="plist" id="vo">
+    		<php>
+    			$img = explode(",",$vo['titlepic']);
+    		</php>
+        <li>
+            <div class="img-box">
+                <a href="{:U('Product/read',array('id'=>$vo['id']))}">
+                    <img src="__ROOT__{$img[0]}" class="hvr-grow" alt=""/>
+                </a>
+            </div>
+            <div class="info">
+                <a href="{:U('Product/read',array('id'=>$vo['id']))}">
+                    {$vo.color}{$vo.type}
+                </a>
+            </div>
+        </li>
+			</volist>
+    </ul>
+    <div class="page-cake">
+        {$page}
+    </div>
+</div>

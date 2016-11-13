@@ -1,0 +1,353 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        课程培训
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="peixun">
+    <div data-am-widget="tabs"  class="am-tabs am-tabs-default">
+        <ul class="am-tabs-nav am-cf">
+            <li class="am-active"><a href="[data-tab-panel-0]">足疗</a></li>
+            <li class=""><a href="[data-tab-panel-1]">经络</a></li>
+            <li class=""><a href="[data-tab-panel-2]">修脚</a></li>
+        </ul>
+        <div class="am-tabs-bd">
+            <div data-tab-panel-0 class="am-tab-panel am-active">
+                <div class="text">
+                    <img src="images/peixun_img.jpg" alt=""/>
+                    <h3>足疗课程介绍</h3>
+                    传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。陈鲲鹏老师发表重要讲话时，他讲到：“未来修脚业的发展一定是具有科学性、专业性、规范性、健康性的传统文化行业扣篮阿克拉刚回来的时候。
+                    <br/><br/>
+                    现代修脚术概念与传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。
+                </div>
+            </div>
+            <div data-tab-panel-1 class="am-tab-panel ">
+                <div class="text">
+                    <img src="images/peixun_img.jpg" alt=""/>
+                    <h3>足疗课程介绍</h3>
+                    传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。陈鲲鹏老师发表重要讲话时，他讲到：“未来修脚业的发展一定是具有科学性、专业性、规范性、健康性的传统文化行业扣篮阿克拉刚回来的时候。
+                    <br/><br/>
+                    现代修脚术概念与传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。
+                </div>
+            </div>
+            <div data-tab-panel-2 class="am-tab-panel ">
+                <div class="text">
+                    <img src="images/peixun_img.jpg" alt=""/>
+                    <h3>足疗课程介绍</h3>
+                    传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。陈鲲鹏老师发表重要讲话时，他讲到：“未来修脚业的发展一定是具有科学性、专业性、规范性、健康性的传统文化行业扣篮阿克拉刚回来的时候。
+                    <br/><br/>
+                    现代修脚术概念与传统修脚术概念已有很大的差别传统修脚术包含修趾甲、刮脚、捏脚、修脚茧、挖鸡眼、肉刺求提高修脚术的范围除了传统。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="img"><img src="images/jiaoshi.jpg" alt=""/></div>
+    <div class="jianzheng jiaoshi">
+        <ul>
+            <li class="clearfix">
+                <a href=""><img src="images/team_img1.jpg" alt=""></a>
+                <div class="text">
+                    <a href="">陈鲲鹏老师</a>
+                    <p>陈鲲鹏，1976年出生于四川中国著名修脚大师、川中国著名修脚大专家、国内著名培训讲师...</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href=""><img src="images/team_img2.jpg" alt=""></a>
+                <div class="text">
+                    <a href="">陈鲲鹏老师</a>
+                    <p>陈鲲鹏，1976年出生于四川中国著名修脚大师、专家、川中国著名修脚大国内著名培训讲师...</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href=""><img src="images/team_img3.jpg" alt=""></a>
+                <div class="text">
+                    <a href="">陈鲲鹏老师</a>
+                    <p>陈鲲鹏，1976年出生于四川中国著名修脚大师、专家、国川中国著名修脚大内著名培训讲师...</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/fengcai.jpg" alt=""/></div>
+    <div class="gongzuo">
+        <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+            <ul class="am-slides">
+                <li>
+                    <div class="gongzuo_list">
+                        <ul class="clearfix">
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="gongzuo_list">
+                        <ul class="clearfix">
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="gongzuo_list">
+                        <ul class="clearfix">
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="baoming">
+        <h3>快速报名通道</h3>
+        <div class="shenqing">
+            <form action="">
+                <ul class="clearfix">
+                    <li>
+                        <select name="" id="">
+                            <option value="" selected="selected">课程名称</option>
+                            <option value="">课程名称</option>
+                            <option value="">课程名称</option>
+                        </select>
+                    </li>
+                    <li>姓&emsp;&emsp;名<input id="xingming" type="text"/>
+                        <div class="dui pa"></div>
+                        <div class="cuo pa"></div>
+                    </li>
+                    <li>电&emsp;&emsp;话<input id="dianhua" maxlength="11" type="text"/>
+                        <div class="dui pa"></div>
+                        <div class="cuo pa"></div>
+                    </li>
+                    <li class="sub clearfix"><input class="but" type="submit"/></li>
+                    <li class="res"><input class="chongzhi" type="reset"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+
+    var xmv1 = $('#xingming');
+    var re1 = /[^\u0000-\u00FF]/;
+    var xmv2 =  $("#dianhua");
+    var re2 = /^1\d{10}$/;
+
+
+
+    function allyz (inputobject,methods){
+        if(inputobject.val() !="" || inputobject.val() != null)
+        {
+            if(methods.test(inputobject.val()))
+            {
+                inputobject.parent('li').find(".dui").show();
+                inputobject.parent('li').find(".cuo").hide();
+                return 1;
+            }else{
+                inputobject.parent('li').find(".cuo").show();
+                inputobject.parent('li').find(".dui").hide();
+                return 0;
+            }
+        }
+    }
+
+    $(function(){
+
+        $(".but").click(function(){
+
+            $(".chongzhi").click(function(){
+                $(".shenqing ul li .dui").hide();
+                $(".shenqing ul li .cuo").hide()
+            });
+
+            if(allyz(xmv1,re1) == 0){
+                xmv1.focus();return false;
+            }else if(allyz(xmv2,re2) == 0){
+                xmv2.focus();return false;
+            }
+        });
+    });
+</script>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">专业团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

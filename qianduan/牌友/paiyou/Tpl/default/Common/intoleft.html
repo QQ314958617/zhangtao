@@ -1,0 +1,19 @@
+<ul class="menu">
+    <php>
+        $cid=isset($_GET['cid'])?(int)$_GET['cid']:$dcid;
+        $fcate=getNav($map);
+        $mname=strtolower(MODULE_NAME);
+    </php>
+    <volist name="fcate" id="vo">
+    	<li <if condition="$cid eq $vo['id']"> class="on" </if>><a href="{:U('/'.$mname.'-'.$vo[id])}">{$vo.nav_name}</a></li>
+    </volist>
+</ul>
+<div class="contact_way">
+    <img src="__ROOT__/Home/Tpl/default/Public/images/news_03.png"/>
+    <div class="txt">
+        <p>全国统一热线：<b>{$site.SITE_INFO.tel}</b></p>
+        <p>手机：{$site.SITE_INFO.mobile}</p>
+        <p>传真：{$site.SITE_INFO.fax}</p>
+        <p>售后：{$site.SITE_INFO.htel}</p>
+    </div>
+</div>

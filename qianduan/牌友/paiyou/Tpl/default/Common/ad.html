@@ -1,0 +1,15 @@
+<!--<div class="subbanner">
+<ul>
+    <li style="height: 350px; background:url('__ROOT__/Uploads/pictures/{$ad_info.ad_img}') no-repeat center;"></li>
+</ul>
+</div>-->
+<div class="banner">
+    <div id="banner-slide" class="slideBox">
+        <div class="bd">
+            <ul>
+            	<volist name="ad_info" id="vo">
+                <li style="background: url('__ROOT__/Uploads/pictures/{$vo.ad_img}') no-repeat center top"></li></volist>
+            </ul>
+        </div>
+    </div>
+</div>

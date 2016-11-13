@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin form Examples</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<div class="b_car-select-nav">
+  <ul class="B_select-box">
+    <li class="B_select-box-item">
+      <span class="b_select-title">品牌：</span>
+      <ul class="b_select-list">
+        <li class="e_select-list-item"><a href="">风光</a></li>
+        <li class="e_select-list-item "><a href="">北汽</a></li>
+        <li class="e_select-list-item "><a href="">马自达</a></li>
+        <li class="e_select-list-item "><a href="">奥迪</a></li>
+        <li class="e_select-list-item "><a href="">jeep</a></li>
+        <li class="e_select-list-item"><a href="">风光</a></li>
+        <li class="e_select-list-item "><a href="">北汽</a></li>
+        <li class="e_select-list-item "><a href="">马自达</a></li>
+        <li class="e_select-list-item "><a href="">奥迪</a></li>
+        <li class="e_select-list-item "><a href="">jeep</a></li>
+        <li class="e_select-list-item"><a href="">风光</a></li>
+        <li class="e_select-list-item "><a href="">北汽</a></li>
+        <li class="e_select-list-item "><a href="">马自达</a></li>
+        <li class="e_select-list-item "><a href="">奥迪</a></li>
+        <li class="e_select-list-item "><a href="">jeep</a></li>
+      </ul>
+    </li>       
+    <li class="B_select-box-item">
+      <span class="b_select-title">车型：</span>
+      <ul class="b_select-list">
+        <li class="e_select-list-item "><a href="">风光370</a></li>
+        <li class="e_select-list-item "><a href="">风光370</a></li>
+      </ul>
+    </li>
+    <li class="B_select-box-item">
+      <span class="b_select-title">排量：</span>
+      <ul class="b_select-list">
+        <li class="e_select-list-item "><a href="">1.5T</a></li>
+        <li class="e_select-list-item "><a href="">1.2T</a></li>
+        <li class="e_select-list-item "><a href="">2.0T</a></li>
+      </ul>
+    </li>
+    <li class="B_select-box-item">
+      <span class="b_select-title">热门：</span>
+      <!--<a href="" class="e_more">更多</a>-->
+      <ul class="b_select-list">
+        <li class="e_select-list-item "><a href="">东风小康</a></li>
+        <li class="e_select-list-item "><a href="">东风欧康</a></li>
+        <li class="e_select-list-item "><a href="">东风风光</a></li>
+        <li class="e_select-list-item "><a href="">北汽马自达</a></li>
+        <li class="e_select-list-item "><a href="">马自达</a></li>
+        <li class="e_select-list-item "><a href="">奥迪A8</a></li>
+        <li class="e_select-list-item "><a href="">东风小康</a></li>
+        <li class="e_select-list-item "><a href="">东风欧康</a></li>
+        <li class="e_select-list-item "><a href="">东风风光</a></li>
+        <li class="e_select-list-item "><a href="">北汽马自达</a></li>
+        <li class="e_select-list-item "><a href="">马自达</a></li>
+        <li class="e_select-list-item "><a href="">奥迪A8</a></li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <script>
+    $(function() {
+      $(".e_select-list-item").each(function() {
+        var $this = $(this);
+        var pLeft = $(".B_select-box").position().left;
+        if( $this.offset().left < pLeft + 100 ) {
+          $this.css({"border-left":"none"});
+        }
+      })
+    })
+  </script>
+</div>
+
+<ul class="b_sub-car-show wrap">
+  <li class="b_sub-hotsale-item">
+    <a href="#" class="e_img-box">
+      <img src="images/carshow.png" alt="" class="e_img">
+    </a>
+    <div class="b_sub-right-info">
+      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+      <div class="b_hotsale-detal-box">
+        <ul class="b_info-box">
+          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+          <li class="e_info">排量: 1.5L&nbsp;&nbsp;&nbsp;&nbsp;血统: 中国</li>
+          <li class="e_info">油耗: 6.7L&nbsp;&nbsp;&nbsp;&nbsp;功率: 85W</li>
+          <li class="e_info">变速箱: 手动变速箱</li>
+        </ul>
+      </div>
+      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19</span><span class="e_price-dw">万</span></p>
+    </div>
+  </li>
+  <li class="b_sub-hotsale-item">
+    <a href="#" class="e_img-box">
+      <img src="images/carshow.png" alt="" class="e_img">
+    </a>
+    <div class="b_sub-right-info">
+      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+      
+      <div class="b_hotsale-detal-box">
+        <ul class="b_info-box">
+          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+          <li class="e_info">排量: 1.5L&nbsp;&nbsp;&nbsp;&nbsp;血统: 中国</li>
+          <li class="e_info">油耗: 6.7L&nbsp;&nbsp;&nbsp;&nbsp;功率: 85W</li>
+          <li class="e_info">变速箱: 手动变速箱</li>
+        </ul>
+      </div>
+      <div class="b_hotsale-button-box">
+        <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19</span><span class="e_price-dw">万</span></p>
+       
+      </div>
+    </div>
+  </li>
+  <li class="b_sub-hotsale-item">
+    <a href="#" class="e_img-box">
+      <img src="images/carshow.png" alt="" class="e_img">
+    </a>
+    <div class="b_sub-right-info">
+      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+      
+      <div class="b_hotsale-detal-box">
+        <ul class="b_info-box">
+          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+          <li class="e_info">排量: 1.5L&nbsp;&nbsp;&nbsp;&nbsp;血统: 中国</li>
+          <li class="e_info">油耗: 6.7L&nbsp;&nbsp;&nbsp;&nbsp;功率: 85W</li>
+          <li class="e_info">变速箱: 手动变速箱</li>
+        </ul>
+      </div>
+      <div class="b_hotsale-button-box">
+        <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19</span><span class="e_price-dw">万</span></p>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="pages">
+  <span class="on"><a href="#">1</a></span>
+  <span><a href="#">2</a></span>
+  <span><a href="#">3</a></span>
+  <span><a href="#">4</a></span>
+  <span><a href="#">5</a></span>
+</div>
+<div style="margin-top:1rem;height:0px"></div>
+</body>
+</html>

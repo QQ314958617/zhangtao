@@ -1,0 +1,757 @@
+@charset "UTF-8";
+
+
+.body_top{
+    width: 100%;
+    height: 95px;
+}
+.body_top .logo{
+    width: 200px;
+    height: 95px;
+}
+.body_top .logo img{
+    height: 95px;
+}
+.body_top .nav{
+    width: 805px;
+    height: 95px;
+}
+.body_top .nav ul li{
+    width: 115px;
+    background: url("../images/nav_bg.jpg") no-repeat center right;
+    float: left;
+    text-align: center;
+}
+.body_top .nav a{
+    font: 14px/95px "microsoft yahei";
+    color: #333;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.body_top .nav a:hover,.body_top .nav ul li.on a{
+    color: #006ead;
+    text-decoration: underline;
+}
+
+/*头部*/
+.banner .bd ul li{
+    width: 100%;
+    height: 500px;
+}
+/*banner*/
+.index_content{
+    top: -70px;
+    z-index: 99;
+    overflow: hidden;
+}
+.about{
+    height: 192px;
+    background: #f7f7f7;
+    margin-bottom: 90px;
+}
+.about .about_left{
+    margin: 15px 40px 20px 20px;
+    width: 700px;
+}
+.about_title{
+    background: url("../images/line.jpg") no-repeat 210px 17px;
+}
+.about_title .about_title_left i{
+    font:bold 25px/32px "arial";
+    color: #1a96d5;
+    display: inline-block;
+    float: left;
+    letter-spacing: -2px;
+}
+.about_title .about_title_left span{
+    font:bold 18px/32px "microsoft yahei";
+    color: #333;
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+}
+.about_title .about_title_a{
+    width: 60px;
+    height: 24px;
+    margin-top: 4px;
+}
+.about_title .about_title_a a{
+    display: block;
+    font: 12px/24px "宋体";
+    background: #1a96d5;
+    color: #fff;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+    text-align: center;
+}
+.about .about_left .about_title_a a:hover{
+    background: #f7f7f7;
+    color: #1a96d5;
+}
+.about .about_left .text{
+    font: 12px/24px "宋体";
+    color: #828282;
+    padding-top: 20px;
+}
+.about .about_left .text p{
+    text-indent: 2em;
+}
+.about .about_right{
+    width: 339px;
+    height: 192px;
+}
+/*关于我们*/
+.fuwu {
+    margin-bottom: 100px;
+}
+.fuwu .about_title{
+    background: none;
+}
+.fuwu_list {
+    margin-top: 15px;
+}
+.fuwu_list ul li{
+    width: 266px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.fuwu_list ul li img{
+    width: 266px;
+    height: 300px;
+}
+.fuwu_list ul li p{
+    font: 18px/44px "microsoft yahei";
+    color: #888;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url("../images/bd.png");
+}
+.fuwu_list ul li p i{
+    color: #fff;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.fuwu_list ul li .text{
+    font: 12px/18px "宋体";
+    color: #fff;
+    width: 92%;
+    padding: 5px 4%;
+    position: absolute;
+    bottom: -46px;
+    left: 0;
+    background: url("../images/bd.png");
+}
+.fuwu_list_center{
+    margin: 0 150px;
+}
+/*服务项目*/
+.news {
+    width: 422px;
+}
+.news .news_title{
+    width: 422px;
+    height: 105px;
+    background: url("../images/news_title.jpg") no-repeat top center;
+}
+.news .news_title a{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    display: block;
+    font: 12px/24px "宋体";
+    background: #f7f7f7;
+    color: #1a96d5;
+    text-align: center;
+    width: 60px;
+    height: 24px;
+}
+.news .news_title a:hover{
+    background: #1a96d5;
+    color: #fff;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.news ul li{
+    background: url("../images/jiao.jpg") no-repeat left center;
+    padding-left: 20px;
+    border-bottom: 1px dotted #e1e1e1;
+    font: 12px/30px "宋体";
+}
+.news ul li a{
+    color: #828282;
+}
+.news ul li a:hover{
+    color: #1a96d5;
+}
+.news ul li span{
+    color: #bdbdbd;
+    float: right;
+}
+.zs{
+    width: 640px;
+}
+.zs .about_title{
+    background-position: 360px 17px;
+}
+.zs_list {
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.zs_list .bd ul li{
+    width: 169px;
+    float: left;
+    margin: 0 18px;
+    padding: 3px;
+    border: 1px solid #eee;
+}
+.zs_list .bd ul li img{
+    width: 169px;
+    height: 229px;
+}
+.zs_list .hd {
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+.zs_list .hd ul li{
+    width: 12px;
+    height: 12px;
+    float: left;
+    cursor: pointer;
+    margin: 0 5px;
+    background: url("../images/zs_bg.jpg") no-repeat center;
+}
+.zs_list .hd ul li.on{
+    background:  url("../images/zs_on_bg.jpg") no-repeat center;
+}
+/*新闻和荣誉*/
+.footer{
+    width: 100%;
+    height: 173px;
+    padding-top: 15px;
+    background: url("../images/footer_bg.jpg") repeat-x center;
+}
+.footer_nav ul li {
+    width: 81px;
+    float: left;
+    margin: 0 40px;
+}
+.footer_nav ul li a{
+    display: block;
+    font: 14px/30px "microsoft yahei";
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+    color: #333;
+    margin-bottom: 10px;
+    background: url("../images/line2.jpg") no-repeat bottom center;
+}
+.footer_nav ul li ul li {
+    margin: 0;
+}
+.footer_nav ul li ul li a{
+    background: none;
+    font: 12px/24px "宋体";
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+    color: #999;
+    margin-bottom: 0;
+}
+.footer_nav ul li a:hover{
+    color: #1a96d5;
+}
+.sys{
+    width: 134px;
+}
+.sys i{
+    font-size: 30px;
+    display: block;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+.sys p{
+    font: 14px/20px "宋体";
+    color: #3d3d3d;
+}
+.sys img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: none;
+    bottom: 65px;
+    left: 20px;
+}
+.sys:hover img{
+    display: block;
+}
+.copy{
+    padding-top: 30px;
+    overflow: hidden;
+}
+.copy{
+    font: 12px/24px "宋体";
+    color: #fff;
+}
+.copy .links {
+    width: 730px;
+}
+.copy a{
+    color: #fff;
+    padding: 0 5px;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.copy a:hover{
+    text-decoration: underline;
+}
+.copy .copy_text{
+    width: 370px;
+}
+/*首页end*/
+.body_top .menu{
+    width: 805px;
+    height: 95px;
+}
+.body_top .menu ul li{
+    width: 115px;
+    background: url("../images/nav_bg.jpg") no-repeat center right;
+    float: left;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    margin-top: 35px;
+}
+.body_top .menu ul li a{
+    overflow: hidden;
+    font: 14px/24px "microsoft yahei";
+    color: #333;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.body_top .menu a:hover{
+    color: #006ead;
+    text-decoration: underline;
+}
+.menu ul li span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.menu ul li span::before{
+    position: absolute;
+    top: 101%;
+    content: attr(data-hover);
+    font-weight: 500;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    width: 100%;
+    left: 0;
+    height: 20px;
+    color: #006ead;
+    text-decoration: underline;
+}
+.menu ul li.on span, .menu ul li:hover span, .menu ul li:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+/*内页导航*/
+.page_banner{
+    width: 100%;
+    height: 300px;
+}
+.content{
+    position: relative;
+    top: -70px;
+    z-index: 99;
+}
+.content .wrap{
+    padding-top: 25px;
+    background: url("../images/menu_bg.png") no-repeat 0 0;
+}
+.content_left{
+    width: 227px;
+}
+.content_left h1{
+    font: bold 40px/50px "microsoft yahei";
+    color: #fff;
+    padding: 35px 0 35px 50px;
+}
+.content_left ul{
+    border-left: 8px solid #e8e8e8;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+.content_left ul li{
+    font: 12px/32px "microsoft yahei";
+    color: #333;
+    border-bottom: 1px solid #e8e8e8;
+    margin-left: 25px;
+    padding: 20px 0;
+    position: relative;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.content_left ul li b{
+    display: none;
+    width: 8px;
+    height: 32px;
+    position: absolute;
+    left: -33px;
+    top: 20px;
+    background: #006ead;
+}
+.content_left ul li a{
+    display: block;
+    padding-left: 30px;
+}
+.content_left ul li:hover b,.content_left ul li.on b{
+    display: block;
+}
+.content_left ul li:hover a,.content_left ul li.on a{
+    color: #006ead;
+}
+.content_left .text {
+    padding-left: 52px;
+}
+.content_left .text h3{
+    font: 12px/24px "microsoft yahei";
+    color: #333;
+    padding-left: 15px;
+}
+.content_left .text p{
+    font: 12px/24px "microsoft yahei";
+    color: #006ead;
+}
+.content_left .text img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+/*内页左边*/
+.content_right{
+    width: 833px;
+    background: #f7f7f7;
+    padding: 14px 20px 0 20px;
+}
+.content_right .pos{
+    text-align: right;
+    font: 12px/24px "宋体";
+    color: #828282;
+}
+.content_right .pos a{
+    padding: 0 5px;
+    font: 12px/24px "microsoft yahei";
+    color: #828282;
+    -webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;
+}
+.content_right .pos span{
+    font: 12px/24px "microsoft yahei";
+    color: #006ead;
+    padding: 0 5px;
+}
+.content_right .pos a:hover{
+    color: #006ead;
+}
+.content_right h2{
+    font: bold 24px/34px "microsoft yahei";
+    color: #006ead;
+    margin-bottom: 55px;
+}
+.content_right h2 span{
+    font: 20px/34px "arial";
+    color: #006ead;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.product_tab_hd{
+    width: 830px;
+    border: 1px solid #006ead;
+    height: 38px;
+    border-right: none;
+}
+.product_tab_hd ul li{
+    float: left;
+    width: 165px;
+    border-right: 1px solid #006ead;
+}
+.product_tab_hd ul li a{
+    display: block;
+    font: 14px/38px "microsoft yahei";
+    color: #006ead;
+    text-align: center;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.product_tab_hd ul li:hover a,.product_tab_hd ul li.on a{
+    background: #006ead;
+    color: #fff;
+}
+.product_tab_bd ul li{
+    float: left;
+    width: 197px;
+    margin:30px 5px 0;
+}
+.product_tab_bd ul li img{
+    width: 197px;
+    height: 222px;
+}
+.product_tab_bd ul li a{
+    font: 14px/24px "microsoft yahei";
+    color: #666;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.product_tab_bd ul li a:hover{
+    color: #006ead;
+    padding-left: 5px;
+}
+.page {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.page a ,.page span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    margin-right: 6px;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.page a:hover,.page span{
+    color: #fff;
+    background: #006ead;
+    border: 1px solid #006ead;
+}
+/*餐饮*/
+.canyin_art img{
+    float: left;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+}
+.canyin_art .text{
+    width: 604px;
+}
+.canyin_art .txt{
+    font: 12px/24px "宋体";
+    color: #808080;
+}
+.canyin_art .text h3{
+    font: 14px/24px "microsoft yahei";
+    color: #4c4c4c;
+}
+.canyin_art .text h4{
+    font: 12px/24px "宋体";
+    color: #006ead;
+}
+.nextpage {
+    padding: 30px 0;
+}
+.nextpage p{
+    font: 12px/24px "宋体";
+    color: #006ead;
+}
+.nextpage p a{
+    color: #006ead;
+}
+.nextpage p a:hover{
+    text-decoration: underline;
+}
+.canyin_art_title {
+    margin-bottom: 15px;
+}
+.canyin_art_title h3{
+    display: inline-block;
+    float: left;
+    font: 14px/18px "microsoft yahei";
+    color: #006ead;
+}
+.shared{
+    width: 225px;
+}
+ .shared em{
+    float: left;
+    margin-right: 10px;
+}
+/*餐饮详情页*/
+.dujia_art h4{
+    font: 14px/24px "microsoft yahei";
+    color: #333;
+}
+.dujia_art .text{
+    font: 12px/24px "宋体";
+    color: #808080;
+}
+.dujia_art .text img{
+    display: block;
+    margin: 0 auto;
+}
+/*度假和酒店的详情页*/
+.about_text{
+    font: 12px/22px "microsoft yahei";
+    color: #828282;
+    padding-bottom: 30px;
+}
+.map{
+    width: 833px;
+    height: 350px;
+}
+.about_message{
+    width: 458px;
+}
+.about_message_left{
+    width: 110px;
+    font:18px/30px "microsoft yahei";
+    color: #006ead;
+}
+.about_message_right{width: 315px;padding-bottom: 30px;}
+.about_message_right form ul li{margin-bottom: 5px;text-align: center;float: left;position: relative;}
+.about_message_right form input{border:none;width: 315px;height: 29px;padding-left: 10px;font-family: "microsoft yahei";font-size: 14px;background: #ededed;}
+.about_message_right form textarea{border: none;width: 315px;height: 170px;padding-left: 10px;font-family: "microsoft yahei";font-size: 14px;padding-top: 10px;resize: none;background: #ededed;}
+.about_message_right form input[type="submit"],.about_message_right form input[type="reset"]{border: none;width: 98px;height: 32px;margin: 0 29px;display: inline-block;background: #828282;color: #fff;padding: 0;font-size: 16px;cursor: pointer;}
+.about_message_right form input[type="submit"]{background: #0080ca;}
+.about_message_right form ul li .bt{background: #f18b8c;
+    height: 26px;border: 1px solid #eb4f38;z-index: 9999;
+    position: absolute;
+    top: -18px;
+    right: 0;
+    line-height: 26px;padding:0 30px;
+    color: red;
+    display: none;
+}
+.contact_text{
+    width: 260px;
+    font: 12px/40px "microsoft yahei";
+    color: #666;
+}
+.contact_text h3{
+    font: 18px/34px "microsoft yahei";
+    color: #006ead;
+    margin-bottom: 15px;
+}
+/*联系我们*/
+.sitemap,.sitemap_li{
+    width: 833px;
+}
+.sitemap_li{
+    margin-bottom: 30px;
+}
+.sitemap_li h1{
+    font: bold 14px/24px "microsoft yahei";
+    color: #333;
+    float: left;
+    width: 73px;
+}
+.sitemap_li h3 {
+    float: left;
+    width: 760px;
+    font: 14px/24px "microsoft yahei";
+    color: #828282;
+}
+.sitemap_li h3 a{
+    color: #828282;
+    padding: 0 15px;
+}
+/*网站地图*/
+.honor .example-image-link{
+    width: 169px;
+    height: 229px;
+    float: left;
+    margin: 0 17px 25px;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0px 0px 3px 3px #d6d5d5;
+    box-shadow:0px 0px 3px 3px #d6d5d5;
+}
+.news_list{
+    width: 645px;
+}
+.news_list ul li {
+    margin-bottom: 30px;
+}
+.news_list ul li img{
+    width: 236px;
+    height: 138px;
+    float: left;
+    margin-right: 19px;
+}
+.news_list ul li .text{
+    width: 390px;
+    float: left;
+    font: 12px/24px "宋体";
+    color: #828282;
+}
+.news_list ul li .text a{
+    display: block;
+    font: 14px/28px "microsoft yahei";
+    color: #333;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.news_list ul li .text a:hover{
+    color: #006ead;
+}
+.news_list ul li h5{
+    text-align: right;
+    font: 12px/24px "arial";
+    color: #bdbdbd;
+}
+.tj{
+    width: 170px;
+}
+.tj h4{
+    font: 12px/20px "microsoft yahei";
+    color: #006ead;
+    text-align: center;
+}
+.tj ul li {
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+}
+.tj ul li img{
+    width: 170px;
+    height: 100px;
+}
+.tj ul li a{
+    font: 14px/20px "microsoft yahei";
+    color: #333;
+    -webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;
+}
+.tj ul li a:hover{
+    color: #006ead;
+}
+/*新闻中心*/
+.news_art h3{
+    font: 14px/24px "microsoft yahei";
+    color: #006ead;
+    text-align: center;
+}
+.news_art h4{
+    font: 12px/20px "microsoft yahei";
+    color: #a5a5a5;
+    text-align: center;
+    padding: 5px 0 10px;
+    border-bottom: 1px dotted #e1e1e1;
+}
+.news_art .text{
+    padding-top: 30px;
+    font: 12px/24px "宋体";
+    color: #828282;
+}
+.news_art img{
+    display: block;
+    margin: 0 auto;
+}
+.nextpage .shared{
+    bottom: 30px;
+    right: 20px;
+}
+
+
+
+
+
+

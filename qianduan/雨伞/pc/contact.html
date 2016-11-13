@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>雨伞</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="content1 pr">
+    <div class="home pf">
+        <img class="open" src="images/home.png" alt=""/>
+        <img class="close" src="images/close.png" alt=""/>
+    </div>
+    <div class="menu pf">
+        <ul class="clearfix">
+            <li class="on"><a href=""><span data-hover="首页">HOME</span></a></li>
+            <li><a href=""><span  data-hover="关于我们">ABOUT US</span></a></li>
+            <li><a href=""><span  data-hover="产品设计">PRODUCT DESIGN</span></a></li>
+            <li><a href=""><span  data-hover="新闻中心">NEWS CENTER</span></a></li>
+            <li><a href=""><span  data-hover="真伪查询">AUTHENTICITY  QUERY</span></a></li>
+            <li><a href=""><span  data-hover="联系我们">CONTACT US</span></a></li>
+            <li><a href=""><span  data-hover="法律声明">LEGAL STATEMENT</span></a></li>
+        </ul>
+        <div class="menu_logo"><img src="images/logo.png" alt=""/></div>
+    </div>
+    <div class="page_product pr clearfix">
+       <div class="page_contact">
+           <div class="contact-dt clearfix">
+               <div class="contact-l">
+                   <div class="contact-info">
+                       <h2>联系我们</h2>
+                       <p>地址：上海嘉定区环城路2222号（嘉乐园大厦11楼）</p>
+                       <p>电话：400-888-8888</p>
+                       <p>邮箱：1062028020@qq.com</p>
+                       <p>传真：438467478</p>
+                   </div>
+                   <div style="width:310px;height:50px;font:400 14px/50px 'microsoft yahei';text-align:center;">此处用于展示结果面板</div>
+                   <div id="panelWrap" style="width:310px;height:350px;overflow:auto;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;">
+                       <div id="panel" style="width:100%;height:100%;"></div>
+                   </div>
+               </div>
+               <div class="contact-map">
+
+
+                   <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+                   <div id="allmap" style="overflow:hidden;zoom:1;position:relative;height:100%;">
+                       <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+                   </div>
+                   <script type="text/javascript">
+
+                       // 百度地图API功能
+                       var map = new BMap.Map('map');
+                       var poi = new BMap.Point(121.246536,31.391988);
+                       map.centerAndZoom(poi, 18);
+                       map.disableScrollWheelZoom();
+
+                       var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                               '地址：上海市嘉定区环城路2222号嘉乐园大厦11楼<br/>电话：400-099-2629<br/>' +
+                               '</div>';
+
+                       //创建检索信息窗口对象
+                       var searchInfoWindow = null;
+                       searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+                           title  : "上海九口袋实业有限公司",      //标题
+                           width  : 290,             //宽度
+                           height : 105,              //高度
+                           panel  : "panel",         //检索结果面板
+                           enableAutoPan : true,     //自动平移
+                           searchTypes   :[
+                               BMAPLIB_TAB_TO_HERE,   //到这里去
+                               BMAPLIB_TAB_FROM_HERE, //从这里出发
+                               BMAPLIB_TAB_SEARCH     //周边检索
+                           ],
+                           enableSendToPhone: false //是否启用发送到手机
+                       });
+                       var marker = new BMap.Marker(poi); //创建marker对象
+                       marker.enableDragging(); //marker可拖拽
+                       marker.addEventListener("click", function(e){
+                           searchInfoWindow.open(marker);
+                       })
+                       map.addOverlay(marker); //在地图中添加marker
+                       searchInfoWindow.open(marker); //在marker上打开检索信息串口
+                       function $$(id){
+                           return document.getElementById(id);
+                       }
+
+
+                       var isPanelShow = false;
+                       //显示结果面板动作
+                       $$("showPanelBtn").onclick = function(){
+                           if (isPanelShow == false) {
+                               isPanelShow = true;
+                               $$("panelWrap").style.height = "310px";
+                               $$("showPanelBtn").innerHTML = "隐藏检索结果面板<br/>>";
+                           } else {
+                               isPanelShow = false;
+                               $$("panelWrap").style.width = "310px";
+                               $$("showPanelBtn").innerHTML = "显示检索结果面板<br/><";
+                           }
+                       }
+                   </script>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>

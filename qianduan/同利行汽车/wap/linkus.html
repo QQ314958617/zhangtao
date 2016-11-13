@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin form Examples</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+<div class="page_nav wrap">
+  <ul class="page_nav-list">
+    <li class="page_nav-item"><a href="#" class="e_linkbox">关于我们</a></li>
+    <li class="page_nav-item on"><a href="#" class="e_linkbox">联系我们</a></li>
+  </ul>
+  <script>
+  $(function() {
+    $(".page_nav-item:eq(0)").css({"margin-left":0});
+  })
+  </script>
+</div>
+
+
+<div class="contain wrap">
+    <div class="map_block">
+        <div id="map">
+    </div>
+    <p class="info_t">临汾市同利行汽车销售服务有限公司</p>
+    <p class="info_d">联&nbsp;系&nbsp;人：&nbsp;&nbsp;&nbsp;王先生</p>
+    <p class="info_d">联系方式：&nbsp;&nbsp;&nbsp;021-25521565 25481125</p>
+    <p class="info_d">地&nbsp;&nbsp;&nbsp;&nbsp;址：&nbsp;&nbsp;&nbsp;临汾市尧都区屯里镇贾村108国道路北</p>
+</div>
+
+
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp">
+</script>
+<script>
+var init = function() {
+    var center = new qq.maps.LatLng(36.128191,111.548867);
+    var map = new qq.maps.Map(document.getElementById('map'),{
+        center: center,
+        zoom: 18
+    });
+    var infoWin = new qq.maps.InfoWindow({
+        map: map
+    });
+    infoWin.open();
+    //tips  自定义内容
+    infoWin.setContent('<p>临汾市同利行汽车销售服务有限公司</p>'+'<p>联 系 人：   王先生</p>'+'<p>联系方式：   021-25521565 25481125</p>'+'<p>地址：临汾市尧都区屯里镇贾村108国道路北</p>');
+    infoWin.setPosition(center);
+}
+$(function() {
+  init();
+})
+</script>
+
+
+</body>
+</html>

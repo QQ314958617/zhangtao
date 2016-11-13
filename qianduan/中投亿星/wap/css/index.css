@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i,.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header .am-header-title{
+    margin:0 12% 0 22%;
+}
+.am-header-default .am-header-nav>a>i, .am-header .am-header-title i, .am-menu-dropdown1 .am-menu-toggle i{
+    color: #0061e4;
+}
+.am-header-default{
+    background: #fff;
+    border-bottom: 3px solid #0061e4;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #0061e4;
+}
+.am-navbar-default a i{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #ff9900;
+    border-bottom-color: #faad39;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #ff9900;
+}
+.am-slider-default .am-control-nav{
+    display: none;
+}
+.am-header-default .am-header-title{
+    color: #0061e4;
+}
+.am-slider-default{
+    margin: 0;
+}
+/**/
+.nav_title {
+    margin-bottom: 1rem;
+}
+.nav_title a{
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 1.6rem/2.4rem "microsoft yahei";
+    color: #333;
+    text-align: center;
+    margin: 1rem auto 0;
+}
+.nav_title a.on{
+    background: #0061e4;
+    color: #fff;
+}
+.title{
+   margin: 1rem auto 2rem;
+}
+.title h3{
+    display: inline-block;
+    font:bold 1.6rem/2.2rem "microsoft yahei";
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+.title h3 span{
+    color: #e20705;
+}
+.title p{
+  font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bb {
+    width: 100%;
+    height: 0.1rem;
+    border-bottom: 1rem solid #f5f5f5;
+}
+.pinpai ul li{
+    width: 48.5%;
+    margin-left: 1%;
+    margin-bottom: 1rem;
+    float: left;
+    border-bottom: 1px dashed #cccccc;
+}
+.pinpai ul li img,.product ul li img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.pinpai ul li span,.product ul li span{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #e20705;
+    display: block;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.pinpai ul li p,.product ul li p{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+    overflow : hidden;
+    height: 4rem;
+}
+.product ul li span{
+    color: #333;
+}
+.three_list ul li{
+    width: 32%;
+    margin-left: 1%;
+    float: left;
+    margin-bottom: 1rem;
+}
+.three_list ul li img{
+    max-width: 100%;
+}
+.am-slider-a4 .am-control-nav li a.am-active{
+    background: #333;
+}
+.news_list{
+    background: #ebebeb;
+}
+.news{
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 2px #e1e1e1;
+}
+.news h1{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #333;
+}
+.news h1 a{
+    color: #0061e4;
+}
+.news span{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #999;
+}
+.news img{
+    width: 100%;
+    margin: 0.5rem auto;
+}
+.news p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.news h4{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #333;
+}
+.news h4 a{
+    color: #333;
+}
+.news h4 a i{
+    float: right;
+}
+.news_text h3{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #0061e4;
+    text-align: center;
+}
+.news_text h4{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.news_detail .text img{
+    display: block;
+    margin: 0.5rem auto;
+    width: 100%;
+}
+.nextpage{
+    margin-top: 1rem;
+}
+.nextpage p{
+    font: 1.4rem/2.2rem "microsoft yahei";
+    color: #0061e4;
+}
+.nextpage p a{
+    color: #0061e4;
+}
+.text{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #333;
+}
+.page {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.page a ,.page span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    margin-right: 6px;
+}
+.page a:hover,.page span{
+    color: #fff;
+    background: #000000;
+    border: 1px solid #000;
+}
+
+.case ul li span{
+    color: #333;
+}
+.title {
+    padding: 0.5rem 0;
+}
+.fazhan ul li {
+    margin-bottom: 1rem;
+}
+.fazhan ul li h3{
+    font: 1.6rem/2.8rem "microsoft yahei";
+    color: #fff;
+    padding: 0.8rem 0 0.8rem 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/fazhan_bg.jpg") no-repeat 0 0;
+    background-size: auto 100%;
+    width: 20%;
+}
+.fazhan ul li .text{
+    width: 78%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5rem;
+    background: #eee;
+}
+.title_red h3{
+    color: #e00003;
+}
+.title_red p{
+    text-transform: uppercase;
+}
+.wenhua ul li{
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem;
+}
+.wenhua ul li h3{
+    font: 1.8rem/2.2rem "microsoft yahei";
+    color: #333;
+}
+.wenhua ul li p{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+}
+.contact_text {
+    margin: 1rem 0;
+}
+.contact_text p{
+    font: 1.4rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.contact_text p i{
+    font-size: 1.6rem;
+    color: #666;
+    padding-right: 0.5rem;
+}
+.shenqing {
+    background: #fff;
+    padding-top: 0.5rem;
+}
+.shenqing ul li{
+    width: 98%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    font: 1.2rem/3rem "microsoft yahei";
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 86%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 86%;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+    float: left;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #2d90d9;
+}
+.shenqing ul li.res input{
+    border: none;
+    color: #666;
+    background: #e5e5e5;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.zici{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.zici img{
+    width: 100%;
+}
+.zici p{
+    width: 100%;
+    font: 1.2rem/2.4rem "microsoft yahei";
+    color: #fff;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.team_article {
+    padding-top: 1rem;
+}
+.team_article img{
+    width: 100%;
+}
+.team_article .text h3{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #333;
+    background: #e6f1fa;
+    margin: 0.5rem 0;
+}
+.qixia {
+    margin-top: 1rem;
+}
+.qixia ul li{
+    margin-bottom: 1rem;
+}
+.qixia ul li img{
+    width: 100%;
+}
+.qixia ul li a{
+    font:bold 1.6rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.qixia ul li p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+}
+.qixia ul li p a{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #0061e4;
+}
+.career .am-accordion-default .am-active .am-accordion-title{
+    color: #0061e4;
+}
+.career .am-accordion-default{
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0);
+}
+.product{
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+}
+.product .am-selected-btn{
+    width: 150px;
+}
+.product .select {
+   width: 40%;
+    height: 3rem;
+    font: 1.4rem/3rem "microsoft yahei";
+    color: #333;
+   float: left;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+.product .text{
+    width: 60%;
+    float: right;
+    font: 1.4rem/2.8rem "microsoft yahei";
+    color: #333;
+    padding: 0 0.5rem;
+}
+.text img{
+    max-width: 100%;
+}
+.title a{
+    font: 1.2rem/2.4rem "microsoft yahei";
+    color: #666;
+    margin-right: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+    text-transform: uppercase;
+}
+.index_about {
+    margin-bottom: 1rem;
+}
+.index_about .text a{
+    color: #0061e4;
+}
+.youshi{
+    margin-bottom: 2rem;
+}
+.youshi ul li{
+    padding-bottom: 0.5rem;
+}
+.youshi .text h3{
+    font: 1.6rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.youshi .am-slider-default .am-control-nav{
+    display: block;
+}
+.index_news {
+    padding-top: 1rem;
+}
+.index_news ul li {
+    margin-bottom: 1rem;
+}
+.index_news ul li .txt{
+    width: 25%;
+    font: 1.2rem/2rem "microsoft yahei";
+    color: #333;
+    background: #f6f4f5;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5rem 0;
+}
+.index_news ul li .txt em{
+    font: 1.2rem/2rem "microsoft yahei";
+    color: #666;
+    display: block;
+}
+.index_news ul li .text{
+    width: 73%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+}
+.index_news ul li .text h3{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font: 1.4rem/2.4rem "microsoft yahei";
+    color: #333;
+}

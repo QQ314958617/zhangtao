@@ -1,0 +1,89 @@
+
+#backlinks{
+	float:right;
+	padding:0 20px;
+	line-height:22px;
+	font-weight:bold;
+	font-size:13px;
+}
+#backlinks a{
+	text-align:right;
+	display:block;
+}
+
+/* clearfix */
+.clearfix {
+	clear:both;
+}
+
+/* wrapper css */
+#wrapper{
+	width:100%;
+}
+
+#container{
+	position:relative;
+	width:1200px;
+	margin:0 auto;
+}
+.grid{
+	display: block;
+	width:250px;
+	padding: 15px;
+	background:#fff;
+	margin:0 10px;
+}
+.grid:hover{box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);}
+.grid strong {
+	margin-top: 30px;
+	display: block;
+	font-size: 18px;
+	color: #333;
+}
+.grid:hover strong{color: #e00003}
+.grid p{
+	color: #666;
+	line-height: 18px;
+	height: 36px;
+	overflow: hidden;
+	padding-top: 10px;}
+.grid .meta{
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	display: block;
+	padding-left: 12px;
+	font-size: 12px;
+	background: url("../images/other/circle_gray.png") no-repeat no-repeat 0 50%;
+	color: #999;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.grid .imgholder img{
+	width:100%;
+	display:block;
+}
+.grid:hover .meta{
+	color: #e00003;
+	background: url("../images/other/circle_red.png") no-repeat 0 50%;}
+@media screen and (max-width : 1240px) {
+	body{
+		overflow:auto;
+	}
+}
+@media screen and (max-width : 900px) {
+	#backlinks{
+		float:none;
+		clear:both;
+	}
+	#backlinks a{
+		display:inline-block;
+		padding-right:20px;
+	}
+}
+.grid:hover {
+	text-decoration: none;
+}
+

@@ -1,0 +1,233 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        关于我们
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="wrap news_text">
+    <h3>莉鹏陆脚有限责任公司</h3>
+    <div class="news_detail">
+        <div class="text">
+            当我们怀着恋恋不舍的心情，告别旧岁的最后一缕阳光，新年的钟声承载着历史的使命，带着憧憬、怀揣梦想，伴随着欢歌笑语如期而至气象里全国400家门店喜庆不断纷纷中山站。
+            <img src="images/about_img.jpg" alt=""/>
+            闺蜜是生活中的一个重要角色，相互分享私密事，无话不谈“倾听、理解、陪伴”蓝丝带赋予了闺蜜这个词更深的意义，只要偕同闺蜜一同进店，便可直接与总部人员面对面的砍价，优惠重重，直接击破底价！活动现场人声鼎沸，秒杀、砸金蛋等优惠活动让顾客大呼过瘾。闺蜜节是大力度的粉丝回馈活动。
+            <br/><br/>
+            没有大雪纷飞，只有四季如春。伴随着元旦的欢乐气氛，蓝丝带产后恢复中心中山店盛大开业。无数热情市民齐聚开业现场，场面火爆。喜从天降欢乐派对让人激动不已，新年大红包。
+        </div>
+
+    </div>
+    <div class="img"><img src="images/fazhan_title.jpg" alt=""/></div>
+    <div class="fazhan">
+        <ul>
+            <li class="clearfix">
+                <img src="images/licheng.jpg" alt=""/>
+                <div class="text fr">
+                    <h4>2013年莉鹏陆脚成立</h4>
+                    虽然韩国国防部对外表示部署萨德将尽可能不影响当地的安全和环境，但在可能部署萨德的地区反对声浪正持续扩散
+                </div>
+            </li>
+            <li class="clearfix">
+                <img src="images/licheng.jpg" alt=""/>
+                <div class="text fr">
+                    <h4>2013年莉鹏陆脚成立</h4>
+                    虽然韩国国防部对外表示部署萨德将尽可能不影响当地的安全和环境，但在可能部署萨德的地区反对声浪正持续扩散
+                </div>
+            </li>
+            <li class="clearfix">
+                <img src="images/licheng.jpg" alt=""/>
+                <div class="text fr">
+                    <h4>2013年莉鹏陆脚成立</h4>
+                    虽然韩国国防部对外表示部署萨德将尽可能不影响当地的安全和环境，但在可能部署萨德的地区反对声浪正持续扩散
+                </div>
+            </li>
+            <li class="clearfix">
+                <img src="images/licheng.jpg" alt=""/>
+                <div class="text fr">
+                    <h4>2013年莉鹏陆脚成立</h4>
+                    虽然韩国国防部对外表示部署萨德将尽可能不影响当地的安全和环境，但在可能部署萨德的地区反对声浪正持续扩散
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">专业团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

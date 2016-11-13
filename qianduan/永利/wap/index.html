@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header class="clearfix">
+    <i class="iconfont">&#xe600;</i>
+    <h1>logo</h1>
+    <img src="images/menu.png" alt=""/>
+</header>
+<div class="nav">
+    <ul>
+        <li class="nav_li">
+            <a class="par" href="">首页</a>
+            <div class="menu_li">
+            </div>
+        </li>
+        <li class="nav_li">
+            <a class="par up" href="">品牌介绍</a>
+            <div class="menu_li">
+                <a href="">品牌故事</a>
+                <a href="">品牌故事</a>
+            </div>
+        </li>
+        <li class="nav_li">
+            <a class="par up" href="">品牌介绍</a>
+            <div class="menu_li">
+                <a href="">品牌故事</a>
+                <a href="">品牌故事</a>
+            </div>
+        </li>
+        <li class="nav_li">
+            <a class="par up" href="">品牌介绍</a>
+            <div class="menu_li">
+                <a href="">品牌故事</a>
+                <a href="">品牌故事</a>
+            </div>
+        </li>
+        <li class="nav_li">
+            <a class="par up" href="">品牌介绍</a>
+            <div class="menu_li">
+                <a href="">品牌故事</a>
+                <a href="">品牌故事</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<section>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/banner.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/banner.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/banner.jpg" alt=""/></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.banner .swiper-container', {
+            pagination: '.banner .swiper-pagination',
+            loop:true,
+            grabCursor: true,
+            paginationClickable: true
+        });
+    </script>
+    <div class="wrap about">
+        <div class="title">关于我们</div>
+        <img src="images/about.jpg" alt=""/>
+        <div class="text">
+            上海永利国际旅行社有限公司是经上海市旅游局批准，上海市工商局注册登记并足额交纳旅游服务质量保证金 、具有独立法人资格的国际旅行社...
+            <a href="">查看更多</a>
+        </div>
+    </div>
+    <div class="xiangmu">
+        <div class="title">服务项目</div>
+        <ul>
+            <li><a href=""><img src="images/ly.jpg" alt=""/><p><i class="iconfont">&#xe608;</i>度   假</p></a></li>
+            <li><a href=""><img src="images/jd.jpg" alt=""/><p><i class="iconfont">&#xe607;</i>酒   店</p></a></li>
+            <li><a href=""><img src="images/cy.jpg" alt=""/><p><i class="iconfont">&#xe609;</i>餐   饮</p></a></li>
+        </ul>
+    </div>
+    <div class="zhengshu">
+        <div class="title">荣誉证书</div>
+        <div class="zs pr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="images/zs.jpg" alt=""/></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.zs', {
+            pagination: '.zs .swiper-pagination',
+            nextButton: '.zs .swiper-button-next',
+            prevButton: '.zs .swiper-button-prev',
+            slidesPerView: 3,
+            slidesPerColumn: 1,
+            paginationClickable: true,
+            spaceBetween: 10
+        });
+    </script>
+    <div class="wrap news">
+        <div class="title">新闻中心</div>
+        <ul>
+            <li class="clearfix"><a href="">电影《霍比特人》首映，首都惠灵......</a><span>2012-10-20</span></li>
+            <li class="clearfix"><a href="">2012年度优秀导游评选结果......</a><span>2012-10-20</span></li>
+            <li class="clearfix"><a href="">喜讯：我社与xx航空公司签订战略合作</a><span>2012-10-20</span></li>
+            <li class="clearfix"><a href="">通知：我社停止组织赴日旅游</a><span>2012-10-20</span></li>
+            <li class="clearfix"><a href="">明星财大气粗 把家安在豪华酒店(图)</a><span>2012-10-20</span></li>
+            <li class="clearfix"><a href="">在凯恩斯的五件必做之事......</a><span>2012-10-20</span></li>
+        </ul>
+    </div>
+</section>
+<footer >
+    <ul class="">
+        <li><a href=""><i class="iconfont">&#xe600;</i>首 页</a></li>
+        <li><a href=""><i class="iconfont">&#xe602;</i>品牌介绍</a></li>
+        <li><a href=""><i class="iconfont">&#xe604;</i>新闻中心</a></li>
+        <li><a href=""><i class="iconfont">&#xe603;</i>关于我们</a></li>
+    </ul>
+</footer>
+</body>
+</html>

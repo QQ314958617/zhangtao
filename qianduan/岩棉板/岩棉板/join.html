@@ -1,0 +1,473 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        招商加盟
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="wrap">
+   <div class="img"><img src="images/join_img1.jpg" alt=""/></div>
+    <div class="join_question">
+        <ul>
+            <li>
+                <em>1</em>
+                <div class="text">
+                    您如何才能迅速选到高质量、让您放心的产品呢？
+                </div>
+            </li>
+            <li>
+                <em>2</em>
+                <div class="text">
+                    您选购的产品的防水性、防火性是否让您放心？
+                </div>
+            </li>
+            <li>
+                <em>3</em>
+                <div class="text">
+                    您想找一家能长期合作、信用度高的品牌产品供应商么？
+                </div>
+            </li>
+            <li>
+                <em>4</em>
+                <div class="text">
+                    您的产品生产供应商售后服务是否有保障？
+                </div>
+            </li>
+            <li>
+                <em>5</em>
+                <div class="text">
+                    您的产品生产供应商价格是否过高？产品没有竞争力？
+                    能赚取利润吗？
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/join_img2.jpg" alt=""/></div>
+    <div class="tell">立即获取解决方案： <span>400-866-8888</span></div>
+    <div class="img"><img src="images/join_img3.jpg" alt=""/></div>
+    <div class="product">
+        <ul class="clearfix">
+            <li>
+                <a href="">
+                    <img src="images/join_img4.jpg" alt="" >
+                    <span>产品市场优势</span>
+                    <p class="text">
+                        首创建筑节能领域急需的产品：
+                        A级高强度防水竖丝岩棉板、高
+                        耐候喷涂纤维、无机增强纤维
+                        等，具有极高的产品性价比。
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/join_img5.jpg" alt="" >
+                    <span>产品市场优势</span>
+                    <p class="text">
+                        首创建筑节能领域急需的产品：
+                        A级高强度防水竖丝岩棉板、高
+                        耐候喷涂纤维、无机增强纤维
+                        等，具有极高的产品性价比。
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/join_img6.jpg" alt="" >
+                    <span>产品市场优势</span>
+                    <p class="text">
+                        首创建筑节能领域急需的产品：
+                        A级高强度防水竖丝岩棉板、高
+                        耐候喷涂纤维、无机增强纤维
+                        等，具有极高的产品性价比。
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/join_img7.jpg" alt="" >
+                    <span>产品市场优势</span>
+                    <p class="text">
+                        首创建筑节能领域急需的产品：
+                        A级高强度防水竖丝岩棉板、高
+                        耐候喷涂纤维、无机增强纤维
+                        等，具有极高的产品性价比。
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/join_img8.jpg" alt=""/></div>
+    <div class="jianzheng">
+        <ul>
+            <li>
+                <em>1</em>
+                <div class="text">
+                    <h3>中国领先的岩棉板供应商</h3>
+                    包沃特做了5年的岩棉板的
+                    老品牌,是中国十大品牌之
+                    一，您觉得您代理了这么
+                    好的产品，能做不下去？
+                </div>
+            </li>
+            <li>
+                <em>2</em>
+                <div class="text">
+                    <h3>专业的生产车间</h3>
+                    1500m2  研发场所 <br/>
+                    2个基础实验室，4个应用实验室 <br/>
+                    12个研发人员，拥有博士生导师，博士后等专
+
+                </div>
+            </li>
+            <li>
+                <em>3</em>
+                <div class="text">
+                    <h3>专业的生产车间</h3>
+                    世界一流的的设备 <br/>
+                    自动化的生产线<br/>
+                    标准化的管理<br/>
+                    整洁有序的生产环境
+                </div>
+            </li>
+            <li>
+                <em>4</em>
+                <div class="text">
+                    <h3>专业的生产车间</h3>
+                    世界一流的的设备 <br/>
+                    自动化的生产线<br/>
+                    标准化的管理<br/>
+                    整洁有序的生产环境
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/join_img10.jpg" alt=""/></div>
+    <div class="yaoqiu">
+        <ul>
+            <li>
+                <em>1</em>
+                <div class="text">
+                    <h3>要具有企业法人资格的公司</h3>
+                    传统企业自设采购部门，采购部门日常开销,采购人员的工资
+                    物资的库存...开销大成本高,传统企业自设采购部门，采购部
+                    门日常开销,采购人员的工资物资的库存...
+                </div>
+            </li>
+            <li>
+                <em>2</em>
+                <div class="text">
+                    <h3>要具有企业法人资格的公司</h3>
+                    传统企业自设采购部门，采购部门日常开销,采购人员的工资
+                    物资的库存...开销大成本高,传统企业自设采购部门，采购部
+                    门日常开销,采购人员的工资物资的库存...
+                </div>
+            </li>
+            <li>
+                <em>3</em>
+                <div class="text">
+                    <h3>要具有企业法人资格的公司</h3>
+                    传统企业自设采购部门，采购部门日常开销,采购人员的工资
+                    物资的库存...开销大成本高,传统企业自设采购部门，采购部
+                    门日常开销,采购人员的工资物资的库存...
+                </div>
+            </li>
+            <li>
+                <em>4</em>
+                <div class="text">
+                    <h3>要具有企业法人资格的公司</h3>
+                    传统企业自设采购部门，采购部门日常开销,采购人员的工资
+                    物资的库存...开销大成本高,传统企业自设采购部门，采购部
+                    门日常开销,采购人员的工资物资的库存...
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/join_img12.jpg" alt=""/></div>
+    <div class="liucheng">
+        <ul class="clearfix">
+            <li>
+                <img src="images/join_img13.jpg" alt=""/>
+                <p>加盟咨询，初步意向沟通</p>
+            </li>
+            <li>
+                <img src="images/join_img14.jpg" alt=""/>
+                <p>加盟咨询，初步意向沟通</p>
+            </li>
+            <li>
+                <img src="images/join_img15.jpg" alt=""/>
+                <p>加盟咨询，初步意向沟通</p>
+            </li>
+            <li>
+                <img src="images/join_img16.jpg" alt=""/>
+                <p>加盟咨询，初步意向沟通</p>
+            </li>
+            <li>
+                <img src="images/join_img17.jpg" alt=""/>
+                <p>加盟咨询，初步意向沟通</p>
+            </li>
+        </ul>
+    </div>
+    <div class="img"><img src="images/join_img18.jpg" alt=""/></div>
+   <div class="shenqing">
+       <form action="">
+           <ul class="clearfix">
+               <li>姓名： <input id="xingming" type="text"/>
+                   <div class="dui pa"></div>
+                   <div class="cuo pa"></div>
+               </li>
+               <li>电话： <input id="dianhua" maxlength="11" type="text"/>
+                   <div class="dui pa"></div>
+                   <div class="cuo pa"></div>
+               </li>
+               <li>QQ： <input id="qq" type="text"/>
+                   <div class="dui pa"></div>
+                   <div class="cuo pa"></div>
+               </li>
+               <li>邮箱： <input id="email" type="text"/>
+                   <div class="dui pa"></div>
+                   <div class="cuo pa"></div>
+               </li>
+               <li class="liuyan">留言： <textarea id="message" name=""></textarea>
+                   <div class="dui pa"></div>
+                   <div class="cuo pa"></div>
+               </li>
+               <li class="sub clearfix"><input class="but" type="submit"/></li>
+               <li class="res"><input class="chongzhi" type="reset"/></li>
+           </ul>
+       </form>
+   </div>
+   <script>
+
+       var xmv1 = $('#xingming');
+       var re1 = /[^\u0000-\u00FF]/;
+       var xmv2 =  $("#dianhua");
+       var re2 = /^1\d{10}$/;
+       var xmv3 =  $("#qq");
+       var re3 = /^\d{5,10}$/;
+       var xmv4 =  $("#email");
+       var re4 =  /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;
+
+
+
+       function allyz (inputobject,methods){
+           if(inputobject.val() !="" || inputobject.val() != null)
+           {
+               if(methods.test(inputobject.val()))
+               {
+                   inputobject.parent('li').find(".dui").show();
+                   inputobject.parent('li').find(".cuo").hide();
+                   return 1;
+               }else{
+                   inputobject.parent('li').find(".cuo").show();
+                   inputobject.parent('li').find(".dui").hide();
+                   return 0;
+               }
+           }
+       }
+
+       $(function(){
+
+           $(".but").click(function(){
+
+               $(".chongzhi").click(function(){
+                   $(".shenqing ul li .dui").hide();
+                   $(".shenqing ul li .cuo").hide()
+               });
+
+               if(allyz(xmv1,re1) == 0){
+                   xmv1.focus();return false;
+               }else if(allyz(xmv2,re2) == 0){
+                   xmv2.focus();return false;
+               }else  if(allyz(xmv3,re3) == 0){
+                   xmv3.focus();return false;
+               }else  if(allyz(xmv4,re4) == 0){
+                   xmv4.focus();return false;
+               }else if($("#message").val() == ''){
+                   $("#message").focus();return false;
+               }
+           });
+       });
+   </script>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

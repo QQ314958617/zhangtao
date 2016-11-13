@@ -1,0 +1,1488 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin form Examples</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/app.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!-- header -->
+  <header data-am-widget="header"
+          class="am-header am-header-default">
+      <h1 class="am-header-title">
+          同利行临汾汽车销售4S店
+      </h1>
+  </header>
+
+  <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas> 
+     <a href="javascript: void(0)" class="am-menu-toggle">
+      <i class="am-header-icon am-icon-bars"></i>
+          
+     </a>
+
+     <div class="am-offcanvas" >
+       <div class="am-offcanvas-bar">
+
+       <ul class="am-menu-nav am-avg-sm-1">
+          <li class="">
+            <a href="##" class="" >车型展示</a>
+          </li>
+           <li class="">
+             <a href="##" class="" >汽车用品</a>
+           </li>
+           <li class="am-parent">
+             <a href="##" class="" >新闻中心</a>
+               <ul class="am-menu-sub am-collapse am-avg-sm-2 ">
+                   <li class="">
+                     <a href="##" class="" >新闻资讯</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >促销活动</a>
+                   </li>
+                    <li class="">
+                     <a href="##" class="" >汽车理赔</a>
+                   </li>
+                    <li class="">
+                     <a href="##" class="" >汽车保养</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >购车指南</a>
+                   </li>
+               </ul>
+           </li>
+           <li class="">
+             <a href="##" class="" >试驾预约</a>
+           </li>
+           <li class="">
+             <a href="#c3" class="" >售后预约</a>
+           </li>
+           <li class="am-parent">
+             <a href="##" class="" >服务中心</a>
+               <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                   <li class="">
+                     <a href="##" class="" >服务流程</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >服务站查询</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >在线咨询</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >车主手册</a>
+                   </li>
+               </ul>
+           </li>
+           <li class="am-parent">
+             <a href="##" class="" >关于我们</a>
+               <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                   <li class="">
+                     <a href="##" class="" >关于我们</a>
+                   </li>
+                   <li class="">
+                     <a href="##" class="" >联系我们</a>
+                   </li>
+               </ul>
+           </li>
+         </ul>
+
+       </div>
+     </div>
+   </nav>
+
+  <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+     <ul class="am-slides">
+         <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+         </li>
+         <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+            
+         </li>
+         <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+            
+         </li>
+         <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+         </li>
+     </ul>
+   </div>
+  
+<!-- 热卖 -->
+  <div class="index_carlist" id="cartype">
+    <ul class="tragger-btn-box">
+      <li class="tragger-btn on">热卖车型</li>
+      <li class="tragger-btn">促销活动</li>
+    </ul>
+    <div class="car_list-scroll-container">
+      <div class="car_list-scroll-box">
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script>
+      $(function() {
+        $("#cartype").find(".tragger-btn").on("tap",function(){
+          var $this = $(this);
+          $("#cartype").find(".tragger-btn").eq($this.index()).addClass("on").siblings().removeClass("on");
+          $("#cartype").find(".car_list-scroll").hide().eq($this.index()).show();
+        });
+      })
+      </script>
+  </div>
+
+<!-- 简介 -->
+  <div class="index_brief">
+    <a href="" class="e_img-box">
+      <img src="images/news_list.jpg" alt="" class="e_img">
+    </a>
+    <div class="b_info-box">
+      <p class="e_title">公司简介</p>
+      <p class="e_line"></p>
+      <p class="e_detail"> 临汾市同利行汽车销a售服务有限公司创立于2013年，多年以来，我们公司始终坚持“观念创新、销售创新、管理创新、机制创新”的方针，在各级领导和社会...{详情}</p>
+    </div>
+  </div>
+
+<!-- 表单 -->
+  <div class="index_form">
+    <form action="">
+      <div class="left">
+        <p class="e_title">预约试驾</p>
+        <a class="e_img-box" onclick="change(0,'品牌1')">
+          <img src="images/car-type1.jpg" alt="" class="e_img">
+        </a>
+        <div class="e_line"></div>
+        <a class="e_img-box" onclick="change(1,'品牌2')">
+          <img src="images/car-type2.jpg" alt="" class="e_img">
+        </a>
+        
+      </div>
+      <div class="right">
+        <select class="e_text-select e_form-item" id="car_type">
+              <option value="">选择品牌</option>
+              <option data-type="品牌1" value="">品牌1</option>
+              <option data-type="品牌2" value="">品牌2</option>
+              <option data-type="品牌3" value="">品牌3</option>
+              <option data-type="品牌4" value="">品牌4</option>
+              <option value="">品牌5</option>
+            </select>
+        <select name="" id="" class="e_form-item">
+          <option value="">选择车系</option>
+        </select>
+        <select name="" id="" class="e_form-item">
+          <option value="">选择型号</option>
+        </select>
+        <input type="text" value="" placeholder="您的姓名" class="e_form-item" id="username">
+        <input type="text"  value="" placeholder="您的电话" class="e_form-item" id="userphone">
+        <textarea name="" id="" cols="30" rows="10" placeholder="您咨询的问题" class="e_form-text"></textarea>
+        <button class="e_sub" type="submit" id="list_index">提交预约</button>
+      </div>
+    </form>
+  </div>
+
+
+<!-- 车型选择 -->
+  <div class="index_carlist" id="carstyle">
+    <ul class="tragger-btn-box">
+      <li class="tragger-btn on">东风系列</li>
+      <li class="tragger-btn">北汽系列</li>
+      <li class="tragger-btn">一汽系列</li>
+      <li class="tragger-btn">北汽系列</li>
+    </ul>
+    <div class="car_list-scroll-container">
+      <div class="car_list-scroll-box">
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+        <div class="car_list-scroll">     
+          <div class="am-slider-box">
+            <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+             <ul class="am-slides">
+                 <li>
+                  <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                  </div>
+                  <div class="b_sub-hotsale-item">
+                   <a href="#" class="e_img-box">
+                     <img src="images/carshow.png" alt="" class="e_img">
+                   </a>
+                   <div class="b_sub-right-info">
+                     <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                     <div class="b_hotsale-detal-box">
+                       <ul class="b_info-box">
+                         <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                         <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                         <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                         <li class="e_info">变速箱: 手动变速箱</li>
+                       </ul>
+                     </div>
+                     <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                     </span><span class="e_price-dw">万</span></p>
+                   </div>
+                  </div>
+                 </li>
+                 <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="b_sub-hotsale-item">
+                     <a href="#" class="e_img-box">
+                       <img src="images/carshow.png" alt="" class="e_img">
+                     </a>
+                     <div class="b_sub-right-info">
+                       <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                       <div class="b_hotsale-detal-box">
+                         <ul class="b_info-box">
+                           <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                           <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                           <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                           <li class="e_info">变速箱: 手动变速箱</li>
+                         </ul>
+                       </div>
+                       <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                       </span><span class="e_price-dw">万</span></p>
+                     </div>
+                   </div>
+                   <div class="b_sub-hotsale-item">
+                    <a href="#" class="e_img-box">
+                      <img src="images/carshow.png" alt="" class="e_img">
+                    </a>
+                    <div class="b_sub-right-info">
+                      <h1 class="e_title"><a href="">2015年东风风光370款</a></h1>
+                      <div class="b_hotsale-detal-box">
+                        <ul class="b_info-box">
+                          <li class="e_star">汽车之家:<span class="starbox" num="4.8"></span></li>
+                          <li class="e_info">排量: 1.5L&nbsp;血统: 中国</li>
+                          <li class="e_info">油耗: 6.7L&nbsp;功率: 85W</li>
+                          <li class="e_info">变速箱: 手动变速箱</li>
+                        </ul>
+                      </div>
+                      <p class="e_info-big"><span class="e_text">大促价: </span><span class="e_price">6.19
+                      </span><span class="e_price-dw">万</span></p>
+                    </div>
+                   </div>
+                  </li>
+             </ul>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script>
+       $(function() {
+        $("#carstyle").find(".tragger-btn").on("tap",function(){
+          var $this = $(this);
+          $("#carstyle").find(".tragger-btn").eq($this.index()).addClass("on").siblings().removeClass("on");
+          $("#carstyle").find(".car_list-scroll").hide().eq($this.index()).show();
+        });
+      })
+      </script>
+  </div>
+
+<!-- 服务中心   -->
+<div class="index_service">
+  <div class="phone-box">
+    <a href="">
+      
+      <p class="phone_title">汽车服务</p>
+      <p class="phone_en">car services</p>
+      <p class="phone_num">400-857-2576</p>
+    </a>
+  </div>
+  <ul  class="b_main-box-left-bottom">
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-qianyue"></i>
+        <p class="e_title">售后服务</p>
+      </a>
+    </li>
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-zulinhetongbaobiao"></i>
+        <p class="e_title">三包服务</p>
+      </a>
+    </li>
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-msnui-protect"></i>
+        <p class="e_title">道路救援</p>
+      </a>
+    </li>
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-weizhi"></i>
+        <p class="e_title">维修查询</p>
+      </a>
+    </li>
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-suo"></i>
+        <p class="e_title">保险查询</p>
+      </a>
+    </li>
+    <li class="b_link-block">
+      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1771793852&amp;site=qq&amp;menu=yes">
+        <i class="e_icon iconfont icon-682tianjiakehu"></i>
+        <p class="e_title">客户关怀</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<!-- 展示 -->
+<div data-am-widget="slider" class="index_show am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}' >
+  <ul class="am-slides">
+      <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+          <div class="am-slider-desc">这是标题标题标题标题标题标题标题0</div>
+         
+      </li>
+      <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+          <div class="am-slider-desc">这是标题标题标题标题标题标题标题1</div>
+         
+      </li>
+      <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+          <div class="am-slider-desc">这是标题标题标题标题标题标题标题2</div>
+         
+      </li>
+      <li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+          <div class="am-slider-desc">这是标题标题标题标题标题标题标题3</div>
+         
+      </li>
+  </ul>
+</div>
+
+<!-- 物品选择 -->
+  <div class="index_itemlist">
+    <ul class="tragger-btn-box">
+      <li class="tragger-btn">汽车用品</li>
+    </ul>
+    <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{&quot;directionNav&quot;:false}' >
+     <ul class="am-slides">
+       <li>
+        <div class="item-item">
+          <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+          <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+        </div>
+        <div class="item-item">
+          <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+          <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+        </div>
+        <div class="item-item">
+          <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+          <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+        </div>
+        <div class="item-item">
+          <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+          <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+        </div>
+       </li>
+       <li>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+        </li>
+        <li>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+        </li>
+        <li>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+         <div class="item-item">
+           <a href="" class="e_img-box"><img src="images/item_show.jpg" alt="" class="e_img"></a>
+           <p class="e_title">汽车坐垫，柔软舒适价格便宜</p>
+         </div>
+        </li>
+     </ul>
+   </div>
+  </div>
+
+
+<!-- 新闻 -->
+<div class="b_left-news-block" id="news">
+  <ul class="tragger-btn-box">
+    <li class="tragger-btn on">汽车理赔</li>
+    <li class="tragger-btn">汽车保养</li>
+  </ul>
+  <div class="change-box">
+    <div class="change-item">
+      <div class="clearfix">
+        <a href="" class="e_img-box"><img src="images/news_show.jpg" alt="" class="e_img"></a>
+        <div class="b_detail-box">
+          <a href=" " class="e_title">新车主汽车养护八项常识</a>
+          <p class="b_infobox">2016-4-22  10:55</p>
+          <p class="e_detail">汽车在一些路面起伏较大的道路上行驶时，由于道路起伏的高低差超过了发动机
+          油底壳的最小离地间隙，可能会对发动机油底壳造成伤害，进而损坏发动机，而从材
+          质上分为四类，钢质、强化树脂、硬塑料...<a href="#" class="e_link">{详情}</a></p>
+          </div>
+      </div>
+      <ul class="b_news2-list">
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+      </ul>
+    </div>
+    <div class="change-item">
+      <div class="clearfix">
+        <a href="" class="e_img-box"><img src="images/news_show.jpg" alt="" class="e_img"></a>
+        <div class="b_detail-box">
+          <a href=" " class="e_title">新车主汽车养护八项常识</a>
+          <p class="b_infobox">2016-4-22  10:55</p>
+          <p class="e_detail">汽车在一些路面起伏较大的道路上行驶时，由于道路起伏的高低差超过了发动机
+          油底壳的最小离地间隙，可能会对发动机油底壳造成伤害，进而损坏发动机，而从材
+          质上分为四类，钢质、强化树脂、硬塑料...<a href="#" class="e_link">{详情}</a></p>
+          </div>
+      </div>
+      <ul class="b_news2-list">
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+        <li class="b_news2-list-item"><a href="" class="e_title">新车主汽车养护八项常识新车主汽车养护八项常识<a href="" class="e_link">2016-4-18</a></a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<script>
+ $(function() {
+  $("#news").find(".change-item").hide().eq(1).show();
+  $("#news").find(".tragger-btn").on("tap",function(){
+    var $this = $(this);
+    $("#news").find(".tragger-btn").eq($this.index()).addClass("on").siblings().removeClass("on");
+    $("#news").find(".change-item").hide().eq($this.index()).show();
+  });
+})
+</script>
+
+<script>
+
+function change(index, s_type){
+    
+    var select_type = s_type;
+    var $select_list = $(".e_text-select");
+
+    $select_list.find("option").each(function() {
+        var $this = $(this);
+        if($this.attr("data-type") == select_type) {
+            $this.attr("selected",true);
+            $this.siblings().attr("selected",false);
+        }
+    })
+}
+
+      $('#list_index').click(function(){
+        var nam = $("#username");
+        var pho = $("#userphone");
+        
+        if(nam.val() == ''){
+            alert("姓名不能为空！")
+            nam.focus();
+            return false;
+        }else{
+            var re = /[^\u0000-\u00FF]/;
+            if(!re.test(nam.val())){
+                alert("姓名不能为空！")
+                nam.focus();
+                return false;
+            }else{
+            }
+        }
+
+        if(pho.val()=='')
+        {
+            alert("联系方式不能为空！")
+            pho.focus();
+            return false;
+        }else{
+            var re = /^1\d{10}$/;
+            if(!re.test(pho.val())){
+                alert("联系方式格式不正确！")
+                pho.focus();
+                return false;
+            }else{
+            }
+        }
+    });
+</script>
+<!-- footer -->
+<ul class="footer">
+  <li>
+    <a class="footer_link">
+      <i class="iconfont icon-shouye"></i>
+      <p>首  页</p>
+    </a>
+  </li>
+  <li>
+    <a class="footer_link">
+      <i class="iconfont icon-chanpinfenlei"></i>
+      <p>车型选购</p>
+    </a>
+  </li>
+  <li>
+    <a class="footer_link">
+      <i class="iconfont icon-qunzu"></i>
+      <p>在线预约</p>
+    </a>
+  </li>
+  <li>
+    <a class="footer_link">
+      <i class="iconfont icon-dianhua"></i>
+      <p>联系我们</p>
+    </a>
+  </li>
+</ul>
+
+</body>
+</html>

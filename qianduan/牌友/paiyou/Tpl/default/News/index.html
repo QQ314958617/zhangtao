@@ -1,0 +1,94 @@
+<!--内页banner开始 与首页banner不同-->
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+	<!--内页banner结束 与首页banner不同-->
+	
+	<!--内页开始-->
+	<div class="sub-content">
+<div class="position">
+    <div class="wrap">
+        当前位置： <a href="/">首页 </a> / <span>{$nav['nav_name']}</span>
+    </div>
+</div>
+<div class="slideTxtBox4">
+<div class="hd">
+<php>
+	$nmap['parent_id']=5;
+	$nlist = getNav($nmap,0);
+</php>
+    <div class="title-ul">
+        <ul class="clearfix wrap">
+        	<volist name="nlist" id="vo" k="i">
+            <li class="" id="{$vo.nav_name}"><a href="/news?type={$vo.nav_name}">{$vo.nav_name}</a></li>
+            <php>
+            	$name[$i] = $vo['nav_name'];
+            	$nav = implode(",",$name);
+            </php>
+          </volist>
+		
+        </ul>
+       
+    </div>
+    <php>
+    $type= $_GET['type'];
+    </php>
+<script>
+	$(function(){
+		var type = '{$type}';
+		var nav = '{$nav}';
+	    var arr = nav.split(",");
+		for(var i=0;i<arr.length;i++){
+			if(type.match(arr[i])){$('#arr[i]').addClass('on')}
+		}
+		
+	})
+</script>
+</div>
+<div class="bd">
+<div class="same-box clearfix">
+    <ul class="news-list-page wrap">
+    	<volist name="info" id="vo">
+        <li class="clearfix">
+            <div class="news-img fl pr">
+                <a href=""><img src="__ROOT__{$vo.titlepic}" alt=""/></a>
+
+                <div class="pa time">
+                    <div class="day">
+                        {:date('d',$vo['published'])}
+                    </div>
+                    <div class="month">
+                        {:date('Y-m',$vo['published'])}
+                    </div>
+                </div>
+            </div>
+            <div class="news-txt fl">
+                <h5>
+                    <a href="{:U('News/read',array('id'=>$vo['id']))}">{$vo.title}</a>
+                </h5>
+
+                <p>
+                    <a href="">
+                        {$vo.content}
+                    </a>
+                </p>
+                <a href="{:U('News/read',array('id'=>$vo['id']))}" class="view-detail">了解更多
+                </a>
+            </div>
+        </li>
+        </volist>
+        
+        
+    </ul>
+    <div class="page-cake">
+        {$page}
+    </div>
+</div>
+
+
+
+</div>
+</div>
+<script>
+    jQuery(".slideTxtBox4").slide({});
+</script>
+</div>

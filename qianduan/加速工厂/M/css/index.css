@@ -1,0 +1,129 @@
+
+/* CSS Document */
+html,body,div,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,strong,span,b,i,input,button,textarea,select,option,img,a,table,tr,td,th{padding:0;margin:0;box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;font-weight:400;font-style: normal;}
+ul,li,ol{list-style: none;}
+input,button,textarea{outline: none;border:none;background:none;}
+input[type="button"],input[type="submit"]{cursor:pointer;}
+a,img{border:none;}
+img{vertical-align: middle;}
+a{color:#6c6c6c;text-decoration: none;cursor:pointer;transition-duration:0.3s;}
+a:hover{color:#ff9d00;}
+address,cite,dfn,em,var{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+a img{border:0;}
+del{text-decoration:line-through;}
+em{font-style:normal;}
+
+body{font:normal 12px/160% 'microsoft yahei','\u5B8B\u4F53',sans-serif;background:#f6f6f6;}
+.wrap{width:1200px;margin:0 auto;}
+.fl{ float:left; display:inline;}
+.fr{ float:right;display:inline;}
+.clr,.clear{display: block;overflow:hidden;clear: both;height: 0;line-height: 0;font-size: 0;}
+.clearfix:after{content:"";display:block;height:0;line-height: 0;overflow: hidden;clear:both;visibility:hidden;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.nb{border:none;}
+
+.hide{display:none;}
+
+.fn14,.fs14{font-size: 14px;}
+.fs18{font-size: 18px;}
+.bold{font-weight: bold;}
+
+.bgw{background:#fff;}
+.cyellow{color:#e48c00;}
+.cwhite{color:#fff;}
+.cblack{color:#333;}
+.cgray{color:#666;}
+.cred{color:#b70000;}
+
+.center{text-align: center}
+.right{text-align: right;}
+.left{text-align: left;}
+
+.indent{text-indent: -9999px;overflow: hidden;}
+.noindent{text-indent: 0;}
+.indent2em{text-indent: 2em;}
+.icon{display:inline-block;float:left;}
+.lh200{line-height:200%;}
+.lh250{line-height:250%;}
+.hear_top{
+    background: #FFFFFF;
+}
+.am-header .am-header-title img {
+    height: 33px;
+}
+.am-header .am-header-nav img{height: 33px;}
+
+.am-navbar-default .am-navbar-nav{
+    background: #333;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{background:#333;border-bottom:1px solid #111;}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{background:#333;}
+.am-header-default .am-header-title{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.am-header-default .am-header-nav>a{
+    color:#fff ;font-size: 25px;
+}
+.am-header-default{
+    background: #333;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+.am-slider-a1 .am-control-nav li a.am-active{background-color:#fff;}
+.am-slider-a1 .am-control-nav li a{width: 30px;height: 5px;background:#333;border-radius:2px;}
+.am-tabs{}
+.am-tabs-nav{}
+.am-tabs-nav li{width: 49.5%;float: left;margin-right: 1%;border:1px solid #eee;color:#219bff;font:400 1.4rem/2rem 'microsoft yahei';}
+.am-tabs-nav li a{border:none !important;color:#312f2d !important;padding-right: 0;margin-right: 0;}
+.am-tabs-nav li a:hover,.am-tabs-nav li.am-active a{color:#fff !important;background:#f39801 !important;}
+.m-item{background:#fff;margin-bottom: 1rem;padding: 1rem 0;}
+.m-t{text-align: center;}
+.m-t .cn{font:400 2rem/1.4 'microsoft yahei';color:#1c1c1c;}
+.m-t .en{font:400 1.4rem/1.4 'microsoft yahei';color:#999;text-transform: uppercase;}
+.m-c{margin-top: .5rem;}
+.m-so-c .am-slider .am-slides>li{}
+.m-so-item,.m-salon-item{width: 45%;float: left;margin: 2.5%;text-align: center;}
+.m-so-item i{font-size:3rem;color:#bbb;}
+.m-so-item .tit,.m-salon-item .tit{color:#ff9900;font-size: 1.8rem;}
+.m-so-item .desc,.m-salon-item .desc{color:#606060;font-size: 1.4rem;margin: 1rem;}
+.m-so-item .btn{width: 50%;display: block;margin:0 auto;background:#ff9900;color:#fff;border-radius:5px;padding:1rem 0;text-align: center;font-size:1.4rem;}
+.am-slider-default{box-shadow: none;-webkit-box-shadow: none;}
+.am-slider-default .am-control-nav li a.am-active{background-color:#f90;}
+.am-slider-default .am-control-nav li a{width: 30px;height: 5px;background:#a7a7a7;}
+.m-team-list .am-u-sm-4{border:1px solid #efefef;width: 31%;padding-right: 0;margin-right: 2.333333%;}
+.m-team-list .am-list .am-list-item-hd{white-space: nowrap;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;}
+.m-team-list .am-list .am-list-item-text{-webkit-line-clamp: 3;max-height: 3.9em;}
+.m-more{display: block;text-align: center;font:400 1.4rem/2 'microsoft yahei';color:#8d8d8d;background:#f6f6f6;border-radius:3px;}
+.case-info{position: absolute;left: 0;top: 0;width: 100%;height: 100%;padding: 1rem;background:rgba(0,0,0,.5);color:#fff;text-align: center;overflow: hidden;}
+.case-info .tit{font-size: 2rem;}
+.case-info .ftit{font-size: 1.4rem;}
+.case-info .desc{margin-top: 1rem;}
+.m-salon-item .tit{margin-top: 1rem;}
+.m-salon-item .desc{text-align: left;-webkit-line-clamp: 3;-ms-text-overflow: ellipsis;text-overflow: ellipsis;max-height:3.9em;overflow: hidden;}
+.course-apply{position: absolute;display: block;width:40%;right: 1rem;bottom: 1rem;background:#f39801;color:#fff;font:400 1.4rem/2 'microsoft yahei';text-align: center;border-radius: 2px;}
+.course-apply:hover{color:#fff;}
+.m-course-c{font-size: 1.2rem;}
+.m-course-c .time{color:#fd0000;}
+.m-share-list{}
+.m-share-list .am-u-sm-4{width: 31%;padding-right: 0;margin-right: 2.333333%;height: 60px;background:#eee;padding:10px 0;text-align: center;}
+.m-share-list .am-u-sm-4 .span{display: block;color:#b2b2b2;font:400 16px/20px 'microsoft yahei';}
+.m-share-list .am-u-sm-4 .month{display: block;color:#151515;}
+.m-share-list .am-list .am-list-item-hd{white-space: nowrap;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;}
+.news-list .am-list .am-list-item-desced{padding:1rem;}
+.news-list .am-list .am-list-item-desced:nth-child(2n){background:#f6f6f6;}
+.detail h1{font:400 2rem/1.4 'microsoft yahei';text-align: center;padding: 1rem;}
+.cultrue{}
+.cultrue h3{font:400 2rem/2 'microsoft yahei';color:#ff9900;}
+.cultrue ul{margin-bottom: 1rem;}
+.cultrue ul li{list-style: square;list-style-position: inside;}
+.load{font:400 1.6rem/1.4 'microsoft yahei';color:#333;background:#ddd;display: block;margin-top: 2rem;text-align: center;padding:1rem 0;border-radius: 3px;}
+.team-dt{}
+.team-dt h1{padding: 1rem;text-align: center;}
+.team-dt .info{padding:0 1rem 1rem;color:#666;text-align: center;border-bottom: 1px solid #eee;}
+.team-c{margin-top: 1rem;}
+.add-info{font:400 1.4rem/2 'microsoft yahei';color:#666;padding:1rem;}
+.salon-list{}
+.salon-list .am-u-sm-12 img{width: 100%;}

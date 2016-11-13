@@ -1,0 +1,248 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+                function() {
+                    var nowpage = 0;
+                    //给class为container的容器加上触滑监听事件
+                    $(".container").swipe(
+                            {
+                                swipe:function(event, direction, distance, duration, fingerCount) {
+                                    if(direction == "up")//当向上滑动手指时令当前页面记数器加1
+                                    {
+                                        nowpage = nowpage + 1;
+                                    }
+                                    else if(direction == "down")//当向下滑动手指时令当前页面记数器减1
+                                    {
+                                        nowpage = nowpage - 1;
+                                    }
+
+                                    if(nowpage > 4)//因本实例只有5张图片，所以当记数器大于4时令他返回4（从0开始记），避免溢出出错
+                                    {
+                                        nowpage =4;
+                                    }
+
+                                    if(nowpage < 0)//道理同上
+                                    {
+                                        nowpage = 0;
+                                    }
+                                    $(".container").animate({"top":nowpage * -100 + "%"},400);//根据当前记数器滚动到相应的高度
+                                }
+                            }
+                    );
+                }
+        );
+    </script>
+    <script>
+        $(function(){
+            var width=  $(window).width();
+            var height=  $(window).height();
+            $(".container,.page,body.scoll").css({"width":width,"height":height})
+        })
+    </script>
+</head>
+<body class="scoll">
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);" class="">
+            <i class="iconfont">&#xe605;</i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            柳岩
+        </a>
+    </h1>
+</header>
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+        <i class="am-header-icon am-icon-bars"></i>
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="container wll">
+    <div class="page page0">
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page1">
+        <h1>王韵壹</h1>
+        <h4>中国知名爵士歌手
+            出生于山西省太原市
+            6岁时学习钢琴，10岁改学吉他。后考入当地音乐学校学习作曲。15岁时开始尝</h4>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page2">
+        <h4>王韵壹</h4>
+       <div class="text">
+           中国知名爵士歌手
+           出生于山西省太原市
+           6岁时学习钢琴，10岁改学吉他。后考入当地音乐学校学习作曲。15岁时开始尝试爵士风格，登台演唱，并为电视节目录制主题曲。毕业后独自南下，与多支乐队在深圳、成都等。《how long has this been going on》（09年的乐队同名专辑Frank Segen，重新改版发行）。嗓音酽厚而不失温润，对多种风格的演绎均有独到之处。参加浙江卫视《中国好声音第一季》的比赛，获得哈林组亚军、魅力的光芒奖 。2013年，出演人首部电影《大片》;同年，推出个人单曲《人生若只如初见》，并作为微电影《特别助理》的主题曲。
+       </div>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page3">
+        <h1>光头精灵</h1>
+        <h3>每个人都有每个人的故事,她们在舞台上展现的是一面,生活中也许她们还有不一样的另一面,只要歌声能给大家带来快乐歌手不管光头或长发,对我们都是无所谓的,不是吗?</h3>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page4">
+        <div class="text">
+            每个人都有每个人的故事,她们在舞台上展现的是一面,生活中也许她们还有不一样的另一面,只要歌声能给大家带来快乐歌手不管光头或长发,对我们都是无所谓的,不是吗?
+        </div>
+    </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">新闻中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">明星列表</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

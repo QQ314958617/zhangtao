@@ -1,0 +1,84 @@
+  <!--内页banner开始 与首页banner不同-->
+<include file="Common:ad" />
+	<!--内页banner结束 与首页banner不同-->
+    <!--内页开始-->
+	<div class="subpage wrap clearfix">
+			<div class="current_position">
+				您的当前位置 <a href="{$site.SITE_INFO.url}">首页 </a> / <a href="">{$info.title}</a>
+				<hr />
+			</div>
+			
+			<!--新闻中心详情页开始-->
+			
+			<div class="newsDetail clearfix">
+				<div>
+					<h2>{$info.title}</h2>
+					<time>时间：{:date('Y-m-d',$info[published])}　浏览<span>{$info.click}</span>次</time>
+					<div class="sharp">
+						分享到：
+						<!--百度分享开始-->
+							<div class="bdsharebuttonbox">
+								<a href="#" class="bds_qzone" data-cmd="qzone"></a>
+								<a href="#" class="bds_tsina" data-cmd="tsina"></a>
+								<a href="#" class="bds_tqq" data-cmd="tqq"></a>
+								<a href="#" class="bds_renren" data-cmd="renren"></a>
+								<a href="#" class="bds_weixin" data-cmd="weixin"></a>
+								<a href="#" class="bds_more" data-cmd="more"></a>
+							</div>
+							<script>
+							window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};
+							with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script'))
+							.src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+							</script>
+						
+						<!--百度分享结束-->
+						<!--百度搜藏开始-->
+					</div>
+					<div class="newsDcon">{$info.content}</div>
+					
+					<div class="page clearfix" style="margin-top:20px;">
+						<div class="prev">
+							{$prev}
+						</div>
+						<div class="next">
+							{$next}
+						</div>
+						<div class="back">
+							<a href="{:U('News/index')}">返回新闻列表</a>
+						</div>
+						<br class="clear">
+					</div>
+					
+				</div>
+				<div style="margin-top:50px;border-top:1px solid #ddd;padding-top:30px;">
+					<h4>精华推荐</h4>
+					<ul class="recommend tolist">
+                       <php>
+                            $nmap['cid']= array('in','18,19');;
+                            $nmap['is_recommend']=1;
+                            $nlist=GetList($nmap,4);
+                        </php>
+                         <volist name="nlist" id="vo">
+						<li>
+							<a href="{:U('News/read',array('id'=>$vo['id']))}">
+								<img src="__ROOT__{$vo.titlepic}"/>
+								<p>{$vo.title|msubstr=0,20,'utf-8',false}</p>
+							</a>
+						</li>
+                        </volist>
+					</ul>
+					<h4>热点新闻</h4>
+					<ul class="hotnews clearfix">
+                    <volist name="hlist" id="vo">
+						<li>
+							<a href="{:U('News/read',array('id'=>$vo['id']))}" title="{$vo.title}">{$vo.title|msubstr=0,20,'utf-8',false}...</a>
+						</li>
+                    </volist>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<!--新闻中心详情页结束-->
+		</div>
+	<!--内页结束-->

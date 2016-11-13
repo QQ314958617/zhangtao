@@ -1,0 +1,432 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            <img src="images/logo.jpg" alt=""/>
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<nav data-am-widget="menu" class="am-menu  am-menu-dropdown1" data-am-menu-collapse>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+    <ul class="am-menu-nav am-avg-sm-1 am-collapse">
+        <li class="am-parent">
+            <a href="##" class="">公司</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">人物</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="#c3" class="">趋势</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+                <li class="am-menu-nav-channel">
+                    <a href="#c3" class="" title="趋势">泥煤 &raquo;</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">投融资</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="##" class="">创业公司</a>
+        </li>
+        <li class="">
+            <a href="##" class="">创业人物</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div data-am-widget="slider" class="am-slider am-slider-default">
+    <ul class="am-slides">
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+    </ul>
+</div>
+<div class="img">
+    <img src="images/index_img1.jpg" alt=""/>
+    <img src="images/index_img2.jpg" alt=""/>
+    <img src="images/index_img3.jpg" alt=""/>
+    <img src="images/index_img4.jpg" alt=""/>
+</div>
+<div class="wrap">
+    <div class="bijiao">
+        <ul>
+            <li>
+                <em>纯正色清</em><span>电机</span><em>纯正色清</em>
+            </li>
+            <li>
+                <em>纯正色清</em><span>加热方式</span><em>纯正色清</em>
+            </li>
+            <li>
+                <em>纯正色清</em><span>油品质</span><em>纯正色清</em>
+            </li>
+            <li>
+                <em>纯正色清</em><span>出油率</span><em>纯正色清</em>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="img">
+    <img src="images/index_img5.jpg" alt=""/>
+    <img src="images/index_img6.jpg" alt=""/>
+</div>
+<div class="wrap product_text">
+    <ul>
+        <li>
+            <i class="iconfont">&#xe607;</i>
+            <div class="text">
+                <h3>智能恒温，锁住营养</h3>
+                全智能电脑微芯片，精准控制马达与压榨部件合理工作，自由选择原料所需温度控制；
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe606;</i>
+            <div class="text">
+                <h3>电子加热，独家专利</h3>
+                采用全方位立体加热装置，确保原料在压榨过程中能够均匀恒温受热，从而确保原料的温度一致，不会出现烤
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe61a;</i>
+            <div class="text">
+                <h3>连续压榨，工作持久</h3>
+                方便拆卸、清洗、安装，所有动作只需一个拔除或是插上固定插销的动作即可；
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe61b;</i>
+            <div class="text">
+                <h3>开机即榨，快速高效</h3>
+                采用全方位立体加热装置，确保原料在压榨过程中能够均匀恒温受热，从而确保原料的温度一致，不会出现烤
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="tell"><a href="mqqwpa://im/chat?chat_type=wpa&uin=664227125&version=1&src_type=web&web_src=b.qq.com">立即咨询</a></div>
+<div class="img"><img src="images/index_img7.jpg" alt=""/></div>
+<div class="product_list">
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+                <img src="images/index_img8.jpg">
+                <div class="am-slider-desc">大红色</div>
+            </li>
+            <li>
+                <img src="images/index_img8.jpg">
+                <div class="am-slider-desc">大红色</div>
+            </li>
+            <li>
+                <img src="images/index_img8.jpg">
+                <div class="am-slider-desc">大红色</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="img"><img src="images/index_img9.jpg" alt=""/><img src="images/index_img10.jpg" alt=""/></div>
+<div class="qianjing">
+    <div data-am-widget="slider" class="am-slider am-slider-a5" data-am-slider='{&quot;directionNav&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+               <div class="qianjing_list">
+                   <ul class="clearfix">
+                       <li><img src="images/index_img11.jpg" alt=""/><span>01</span><p>加热方式和温度，决定油品品质</p></li>
+                       <li><img src="images/index_img12.jpg" alt=""/><span>02</span><p>加热方式和温度，决定油品品质</p></li>
+                   </ul>
+               </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="img"><img src="images/index_img13.jpg" alt=""/></div>
+<div class="fuchi">
+    <ul>
+        <li><i class="iconfont">&#xe611;</i>产品支持</li>
+        <li><i class="iconfont">&#xe619;</i>策略支持</li>
+        <li><i class="iconfont">&#xe615;</i>区域保护</li>
+        <li><i class="iconfont">&#xe614;</i>广告支持</li>
+        <li><i class="iconfont">&#xe614;</i>宣传支持</li>
+    </ul>
+</div>
+<div class="img"><img src="images/index_img15.jpg" alt=""/></div>
+<div class="product_list">
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+                <img src="images/index_img16.jpg">
+                <div class="am-slider-desc">河南郑州实体店</div>
+            </li>
+            <li>
+                <img src="images/index_img16.jpg">
+                <div class="am-slider-desc">河南郑州实体店</div>
+            </li>
+            <li>
+                <img src="images/index_img16.jpg">
+                <div class="am-slider-desc">河南郑州实体店</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="img"><img src="images/index_img17.jpg" alt=""/><img src="images/index_img18.jpg" alt=""/></div>
+<div class="product_list">
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+                <img src="images/index_img19.jpg">
+                <div class="am-slider-desc">深证至爱的科技发展有限公司</div>
+            </li>
+            <li>
+                <img src="images/index_img19.jpg">
+                <div class="am-slider-desc">深证至爱的科技发展有限公司</div>
+            </li>
+            <li>
+                <img src="images/index_img19.jpg">
+                <div class="am-slider-desc">深证至爱的科技发展有限公司</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="fenlei">
+    <ul class="clearfix">
+        <li><i class="iconfont">&#xe608;</i><p>爱帮荣誉资质</p></li>
+        <li><i class="iconfont">&#xe610;</i><p>爱帮视屏</p></li>
+        <li><i class="iconfont">&#xe617;</i><p>健康理油</p></li>
+        <li><i class="iconfont">&#xe600;</i><p>焦聚媒体</p></li>
+        <li><i class="iconfont">&#xe605;</i><p>新闻资讯</p></li>
+        <li><i class="iconfont">&#xe613;</i><p>常见问答</p></li>
+    </ul>
+</div>
+<div class="wrap liuyan">
+    <h3>在线留言</h3>
+    <div class="text">
+        如果您对该项目感兴趣，请立即留言或拨打 <br/>
+        <span>全国服务热线：400-788-8466</span>我们会在第一时间与您取得联系，并提供更详细的资料
+    </div>
+    <div class="shenqing">
+        <form action="">
+            <ul class="clearfix">
+                <li>姓名： <input id="xingming" type="text"/>
+                    <div class="dui pa"></div>
+                    <div class="cuo pa"></div>
+                </li>
+                <li>电话： <input id="dianhua" maxlength="11" type="text"/>
+                    <div class="dui pa"></div>
+                    <div class="cuo pa"></div>
+                </li>
+                <li>QQ： <input id="qq" type="text"/>
+                    <div class="dui pa"></div>
+                    <div class="cuo pa"></div>
+                </li>
+                <li>邮箱： <input id="email" type="text"/>
+                    <div class="dui pa"></div>
+                    <div class="cuo pa"></div>
+                </li>
+                <li class="liuyan">留言： <textarea id="message" name=""></textarea>
+                    <div class="dui pa"></div>
+                    <div class="cuo pa"></div>
+                </li>
+                <li class="sub clearfix"><input class="but" type="submit"/></li>
+                <li class="res"><input class="chongzhi" type="reset"/></li>
+            </ul>
+        </form>
+    </div>
+    <script>
+
+        var xmv1 = $('#xingming');
+        var re1 = /[^\u0000-\u00FF]/;
+        var xmv2 =  $("#dianhua");
+        var re2 = /^1\d{10}$/;
+        var xmv3 =  $("#qq");
+        var re3 = /^\d{5,10}$/;
+        var xmv4 =  $("#email");
+        var re4 =  /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;
+
+
+
+        function allyz (inputobject,methods){
+            if(inputobject.val() !="" || inputobject.val() != null)
+            {
+                if(methods.test(inputobject.val()))
+                {
+                    inputobject.parent('li').find(".dui").show();
+                    inputobject.parent('li').find(".cuo").hide();
+                    return 1;
+                }else{
+                    inputobject.parent('li').find(".cuo").show();
+                    inputobject.parent('li').find(".dui").hide();
+                    return 0;
+                }
+            }
+        }
+
+        $(function(){
+
+            $(".but").click(function(){
+
+                $(".chongzhi").click(function(){
+                    $(".shenqing ul li .dui").hide();
+                    $(".shenqing ul li .cuo").hide()
+                });
+
+                if(allyz(xmv1,re1) == 0){
+                    xmv1.focus();return false;
+                }else if(allyz(xmv2,re2) == 0){
+                    xmv2.focus();return false;
+                }else  if(allyz(xmv3,re3) == 0){
+                    xmv3.focus();return false;
+                }else  if(allyz(xmv4,re4) == 0){
+                    xmv4.focus();return false;
+                }else if($("#message").val() == ''){
+                    $("#message").focus();return false;
+                }
+            });
+        });
+    </script>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe60c;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe620;</i>
+                <span class="am-navbar-label">新闻中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe61d;</i>
+                <span class="am-navbar-label">主页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe621;</i>
+                <span class="am-navbar-label">招商加盟</span></a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe61e;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

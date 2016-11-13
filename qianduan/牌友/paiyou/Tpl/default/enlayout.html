@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>{$MainNav.web_title}</title>
+   <meta name="keywords" content="{$MainNav.keywords}">
+    <meta name="description" content="{$MainNav.description}">
+    <script src="__PUBLIC__/Home/js/jquery-1.7.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.mousewheel.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.easing.1.3.js"></script>
+    <script src="__PUBLIC__/Home/js/raphael-min.js"></script>
+    <script src="__PUBLIC__/Home/js/icarousel.js"></script>
+    <script src="__PUBLIC__/Home/js/move.js"></script>
+    <script src="__PUBLIC__/Home/js/index.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/public.css"/>
+    <script src="__PUBLIC__/Home/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+    <!---------------------------------top------------------------------------->
+                                  <!--head-->
+    <div class="bigframe clearfix">
+        <div class="clearfix heard">
+                <div class="clearfix w1000">
+                    <div class="heardleft">
+                        <a >
+                            <img src="__PUBLIC__/Home/images/images_02.jpg" alt=""/>
+                            <span>Welcome tuofeng skydiving website！</span>
+                        </a>
+                    </div>
+                    <div class="heardright">
+                        <ul>
+                            <li><a href="">login</a></li>
+                            <li><a href="">register</a></li>
+                            <li><a href="http://weibo.com/u/3840564746/home?wvr=5" target="_blank">microblog</a></li>
+                            <li class="weila"><a href="">WeChat</a>
+                                <div class="img">
+                                    <img src="__PUBLIC__/Home/images/erweima_28.jpg" alt=""/>
+                                </div>
+                            </li>
+                            <li><a href="__ROOT__">中文</a></li>
+                            <li><a href="__ROOT__/en">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                <!--导航-->
+        <div class="w1400 clearfix">
+            <div class="navigation w1000 clearfix">
+            <style>
+                .side-pannel {
+                    position: fixed;
+                    left: 57%;
+                    margin-left: 496px;
+                    z-index: 99
+                }
+                .side-bar {
+                    border: 1px solid #E7E7E7;
+                    border-bottom: none;
+                    bottom: 100px;
+                    background: #fff
+                }
+                .side-bar a {
+                    display: block;
+                    cursor: pointer;
+                    width: 70px;
+                    height: 60px;
+                    border-bottom: 1px solid #E7E7E7;
+                    position: relative;
+                    color: #676767;
+                    text-align: center
+                }
+                .side-bar a s {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto
+                }
+                .side-bar a span {
+                    line-height: 20px
+                }
+
+                .side-bar a.gotop s {
+                    position: absolute;
+                    top: 50%;
+                    left: 17px
+                }
+                .side-bar a.text {
+                    padding-top: 25px
+                }
+                .side-bar a.qr s {
+                    position: absolute;
+                    top: 50%;
+                    left: 18px
+                }
+                .side-bar a.qr i {
+                    width: 277px;
+                    height: 259px;
+                    position: absolute;
+                    left: -277px;
+                    top: 50%;
+                    margin-top: -120px;
+                    display: none;
+                    background-position: 0 0
+                }
+                .side-bar a.qr:hover i {
+                    display: block
+                }
+                .side-bar a.qr i {
+                    background-image: url(__PUBLIC__/Home/images/weixin.png)
+                }
+
+                .g-icon-top {
+                    height: 20px;
+                    width: 35px;
+                    margin-top: -10px;
+                    background-position: 0 -33px
+                }
+                .g-icon-survey1 {
+                    height: 23px;
+                    width: 26px;
+                    margin-top: -11px;
+                    background-position: 0 -53px
+                }
+                .side-bar a.survey:hover s {
+                    height: 23px;
+                    width: 26px;
+                    margin-top: -11px;
+                    background-position: -26px -53px
+                }
+                .g-icon-qq1 {
+                    height: 20px;
+                    width: 22px;
+                    margin-top: -10px;
+                    background-position: -106px 0px;
+                }
+                .text:hover .g-icon-qq1{
+                    background-position: -35px -33px
+                }
+                .g-icon-weibo1 {
+                    height: 25px;
+                    width: 26px;
+                    margin-top: -12px;
+                    background-position: -72px 0
+                }
+                .img_move{
+                    height: 25px;
+                    width: 26px;
+                    background-position: -103px -47px;
+                }
+
+                .g-icon-weibo2, .side-bar a.weibo:hover s {
+                    height: 25px;
+                    width: 27px;
+                    margin-top: -12px;
+                    background-position: -72px -25px
+                }
+                .g-icon-qr1 {
+                    height: 33px;
+                    width: 36px;
+                    margin-top: -16px;
+                    background-position: -36px 0
+                }
+                .g-icon-qr2, .side-bar a.qr:hover s {
+                    height: 33px;
+                    width: 36px;
+                    margin-top: -16px;
+                    background-position: 0 0
+                }
+                .img1 {
+                    padding-top: 10px;
+                }
+                .img1:hover s{
+                    background-position:  -103px -70px;
+                }
+                .g-icon-qq1, .g-icon-qr1, .g-icon-qr2, .g-icon-survey1, .g-icon-survey2, .g-icon-top, .g-icon-weibo1,.img_move, .g-icon-weibo2,.side-bar a.qr:hover s, .side-bar a.survey:hover s, .side-bar a.weibo:hover s{background-image: url(__PUBLIC__/Home/images/sprite.png)}
+                .img1 .phone{
+                    padding:10px 20px;
+                    border:1px solid #E7E7E7; ;
+                    top: 0;
+                    left: -140px;
+                    display: none;
+                    background: #fff;
+                }
+                .img1:hover .phone{
+                    display: block;
+                }
+                .img1 .phone p{
+                    font: 14px/24px "microsoft yahei";
+                    color: #666;
+                }
+                .pr{
+                    position: relative;
+                }
+                .pa{
+                    position: absolute;
+                }
+            </style>
+            <div class="fenxiangg">
+                <ul id="side-bar" class="side-pannel side-bar">
+                    <a href="javascript:;" class="gotop" style="display:none;"><s class="g-icon-top"></s></a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php $C=C('SITE_INFO'); echo $C['qq1'];?>&site=qq&menu=yes" target="_blank" class="text"><s class="g-icon-qq1"></s><span>客服1</span></a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $C['qq2'];?>&site=qq&menu=yes" target="_blank" class="text"><s class="g-icon-qq1"></s><span>客服2</span></a>
+                    <a href="http://weibo.com/u/3840564746/home?wvr=5" target="_blank" class="text weibo"><s class="g-icon-weibo1"></s><span>微博</span></a>
+                    <a href="javascript:;" class="img1 pr">
+                        <s class="img_move"></s>
+                        <i>电话</i>
+                        <div class="phone pa">
+                            <p>驼峰联系电话：</p>
+                            <p><?php $C=C('SITE_INFO'); echo $C['tel'];?></p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="qr"><s class="g-icon-qr1"></s><i>关注我们</i></a>
+                </ul>
+            </div>
+            <script>
+                $(function(){
+                    $(window).scroll(function(){
+                        if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+                            $("#side-bar .gotop").fadeIn();
+                        }
+                        else{
+                            $("#side-bar .gotop").hide();
+                        }
+                    });
+                    $("#side-bar .gotop").click(function(){
+                        $('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+                    });
+                });
+
+            </script>
+                <div class="loge">
+                    <a href="{:U('/en')}">
+                        <img src="__PUBLIC__/Home/images/logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="navigation1 clearfix">
+                    <ul>
+                        
+                        <li><a href="{:U('/en')}">
+                            <h5>Home</h5>
+                            <span>Home</span>
+                           
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/double')}">
+                            <h5>Tandem Skydive</h5>
+                            <span>Skydive</span>
+                            <div class="xiala">
+                                <p><a href="{:U('en/double')}">About Tandem Skydive</a></p>
+                                <p><a href="{:U('en/jiage')}">Skydive Price</a></p>
+                                <p><a href="{:U('en/question')}">FAQ</a></p>
+                                <p><a href="{:U('en/yuding')}">Book Now</a></p>
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/matrix')}">
+                            <h5> Drop Zone </h5>
+                            <span>Drop Zone</span>
+                            <div class="xiala">
+                                <p><a href="{:U('en/matrix')}?id=13">Yunnan Pu Er</a></p>
+                                <p><a href="{:U('en/matrix')}?id=14">Hebei Shijiazhuang</a></p>
+                                <p><a href="{:U('en/matrix')}?id=15">Guangdong Yangjiang</a></p>
+                                <p><a href="{:U('en/matrix')}?id=36">Other Zone</a></p>
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/team')}">
+                            <h5>Coach</h5>
+                            <span>Coach</span>
+                            <div class="xiala">
+                            <volist name="teamsNav" id="vo">
+                                <p><a href="{:U('en/team')}?id={$vo.id}">{$vo.nav_fname}</a></p>
+                            </volist>    
+                                
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/share')}">
+                            <h5>Share</h5>
+                            <span>Share</span>
+                           <div class="xiala">
+                                <p><a href="{:U('en/share')}">Sky dive video</a></p>
+                                <p><a href="{:U('en/tupian')}">Sky dive photo</a></p>
+                                <p><a href="{:U('en/gushi')}">Sky dive story</a></p>
+                                
+                            </div> 
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/shop')}">
+                            <h5>Shop</h5>
+                            <span>Shop</span>
+                            <div class="xiala">
+                            <volist name="shopsNav" id="vo">
+                                <p><a href="{:U('en/shop')}?id={$vo.id}">{$vo.nav_fname}</a></p>
+                            </volist> 
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/study')}">
+                            <h5>Learn to Skydive</h5>
+                            <span>Learn to Skydive</span>
+                           <div class="xiala">
+                                <p><a href="{:U('en/study')}">Introduce License</a></p>
+                                <p><a href="{:U('en/danren')}">single jump training</a></p>
+                                <p><a href="{:U('en/shuangren')}">Tandem jump training</a></p>
+                                <p><a href="{:U('en/zhizhao')}">Wingsuit Flying</a></p>
+                            </div>  
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/about')}">
+                            <h5>About Us</h5>
+                            <span>About Us</span>
+                            <div class="xiala">
+                                
+                                <p><a href="{:U('en/about')}">company introduction</a></p>
+                                <p><a href="{:U('en/news')}">news center</a></p>
+                                <p><a href="{:U('en/join')}">join us</a></p>
+                                <p><a href="{:U('en/contact')}">contact us</a></p>
+                            </div> 
+                        </a>
+                        </li>
+                        
+
+                    </ul>
+                    <span class="telnet">
+                        <img src="__PUBLIC__/Home/images/tubiao.jpg" alt=""/>
+                        <a>The national hotline :</a>
+                        <span><?php $C=C('SITE_INFO'); echo $C['tel'];?></span>
+                    </span>
+                    <script>
+                       $(function(){
+                        $(".navigation1 ul li").hover(function(){
+                            $(this).find('.xiala').slideDown(500);
+                        },function(){
+                            $(this).find('.xiala').slideUp(500);
+                        })
+                       })
+                    </script>
+                </div>
+                <!-- <div class="ewm">
+                    <img src="__PUBLIC__/Home/images/images_06.jpg" alt=""/>
+                </div> -->
+            </div>
+        </div>
+        <div class="banner clearfix" style="background: url(__ROOT__{$Mainbanner.ad_img}) no-repeat center;"><!--banner-->
+    </div>
+{__CONTENT__}
+
+<div class="button clearfix">
+        <div class="w1000 button_center">
+            <div class="button_left clearfix">
+                <ul>
+                <volist name="navs" id="vo">
+                    <li>
+                        <img src="__PUBLIC__/Home/images/biaodian_21.jpg" alt=""/>
+                        <a href="<?php echo U($vo['link'])?>">{$vo.nav_fname}</a>
+                    </li>
+                </volist>
+
+                </ul>
+            </div>
+            <div class="button_right">
+                <div class="button_right_top">
+                    <h5>LINK</h5>
+                    <ul class="clearfix">
+                    <volist name="linkList" id="vo">
+                        <li>
+                        <php>
+                            if($i!=1){
+                        </php>
+                            <img src="__PUBLIC__/Home/images/biaodian_25.jpg" alt=""/>
+                        <php>
+                        }
+                        </php>
+                            <a href="{$vo.link}" target="_blank">{$vo.title}</a>
+                        </li>
+
+                    </volist>
+
+                    </ul>
+                </div>
+                <div class="button_right_center clearfix">
+                    <img src="__PUBLIC__/Home/images/loge_25.jpg" alt=""/>
+                    <img src="__PUBLIC__/Home/images/erweima_28.jpg" alt=""/>
+                    <div class="button_right_center_text">
+                        <p><?php echo $C['name'];?></p>
+                        <p><?php echo $C['icp'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technical Support：<a href="http://www.9koudai.cn" target="_blank">9koudai Website</a></p>
+                        <p>Address : <?php echo $C['address'];?></p>
+                        <p>TEL：<?php echo $C['tel'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax：<?php echo $C['fax'];?></p>
+                        <p>Email: <?php echo $C['service'];?></p>
+                        <p><script>
+                        var _hmt = _hmt || [];
+                        (function() {
+                          var hm = document.createElement("script");
+                          hm.src = "//hm.baidu.com/hm.js?ba4d2c8380a792192fac726654f08b7a";
+                          var s = document.getElementsByTagName("script")[0]; 
+                          s.parentNode.insertBefore(hm, s);
+                        })();
+                        </script></p>
+                        <p><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255514504'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255514504' type='text/javascript'%3E%3C/script%3E"));</script>
+                        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?90b476f95ee8f06b04c3a25e50ce7576";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="make">
+           <img src="__PUBLIC__/Home/images/yue.png" alt=""/>
+    </div>
+        <div id="make1">
+            <div id="make2">
+                <img class="umb" src="__PUBLIC__/Home/images/ren.png" alt=""/>
+                <!--验证-->
+                <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.validator.js"></script>
+                <script type="text/javascript" src="__PUBLIC__/Home/js/zh_CN.js"></script>
+                <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/jquery.validator.css">
+               <!--<form action="{:U('index/signUp')}" method="post" id="level-message" autocomplete="off" data-validator-option="{theme:'simple_bottom',stopOnError:true}">-->
+                   <!--<ul>-->
+                       <!--<li style="position: relative;"><input type="text" data-rule="姓名:required;ID_name" name="name" class="username" placeholder="请输入姓名"/></li>-->
+                       <!--<li style="position: relative;"><input class="tel" data-rule="电话:required;mobile" name="phone" type="text" placeholder="请输入电话号码"/></li>-->
+                       <!--<li style="position: relative;"><input class="ibtn" type="submit" id="idx_sub1" value="预定"/></li>-->
+                       <!--<li style="position: relative;"><input class="Wdate riqi" data-rule="日期:required;date" name="riqi" type="text" onClick="WdatePicker()" placeholder="请输入预订日期"></li>-->
+                   <!--</ul>-->
+                <!--</form>-->
+
+                <!--<input type="text"class="riqi" placeholder="请输入预订日期"/>-->
+                <!--<p>-->
+                    <!--<img src="__PUBLIC__/Home/images/lianxiwomen.png" alt=""/>-->
+                    <!--<span>咨询热线：</span>-->
+                    <!--<a><?php $C=C('SITE_INFO'); echo $C['tel'];?></a>-->
+                <!--</p>-->
+                <i class="make3" id="make4" >×</i>
+                <div class="body_right_center_img_right">
+                    <div class="shoping">
+                        <div class="clearfix price">
+                            <h5>产品价格：</h5>
+                            <span class="select"  data-price="1000">预定金1000元</span>
+                            <span  data-price="5680">3000米跳伞</span>
+                            <span data-price="6980">4000米跳伞</span>
+                        </div>
+                        <div class="clearfix  price1">
+                            <h5>摄像机:</h5>
+                            <span class="select" data-price="0">不限</span>
+                            <span  data-price="800">手持摄像</span>
+                            <span data-price="1600">第三方摄像</span>
+                            <span data-price="2400">手持摄像+第三方摄像</span>
+                        </div>
+                        <div class="clearfix  money">
+                            <h5>总金额：</h5>
+                            <b class="money1"></b>
+                        </div>
+                        <!--微信支付的二维码-->
+                        <div class="hide-box money-img1">
+
+                            <img src="__PUBLIC__/Home/images/1000.png"  data-money="1000" alt="1000"/>
+                            <img src="__PUBLIC__/Home/images/1800.png"   data-money="1800" alt="1800"/>
+                            <img src="__PUBLIC__/Home/images/2600.png"   data-money="2600" alt="2600"/>
+                            <img src="__PUBLIC__/Home/images/3400.png"   data-money="3400" alt="3400"/>
+                            <img src="__PUBLIC__/Home/images/5680.png"   data-money="5680" alt="5680"/>
+                            <img src="__PUBLIC__/Home/images/6480.png"   data-money="6480" alt="6480"/>
+                            <img src="__PUBLIC__/Home/images/7280.png"   data-money="7280" alt="7280"/>
+                            <img src="__PUBLIC__/Home/images/8080.png"   data-money="8080" alt="8080"/>
+                            <img src="__PUBLIC__/Home/images/6980.png"   data-money="6980" alt="6980"/>
+                            <img src="__PUBLIC__/Home/images/7780.png"   data-money="7780" alt="7780"/>
+                            <img src="__PUBLIC__/Home/images/8580.png"   data-money="8580" alt="8580"/>
+                            <img src="__PUBLIC__/Home/images/9380.png"   data-money="9380" alt="9380"/>
+                        </div>
+                        <!--支付宝支付的二维码-->
+                        <div class="hide-box money-img2">
+
+
+                            <img src="__PUBLIC__/Home/images/1000.png"  data-money="1000" alt="1000"/>
+                            <img src="__PUBLIC__/Home/images/1800.png"   data-money="1800" alt="1800"/>
+                            <img src="__PUBLIC__/Home/images/2600.png"   data-money="2600" alt="2600"/>
+                            <img src="__PUBLIC__/Home/images/3400.png"   data-money="3400" alt="3400"/>
+                            <img src="__PUBLIC__/Home/images/5680.png"   data-money="5680" alt="5680"/>
+                            <img src="__PUBLIC__/Home/images/6480.png"   data-money="6480" alt="6480"/>
+                            <img src="__PUBLIC__/Home/images/7280.png"   data-money="7280" alt="7280"/>
+                            <img src="__PUBLIC__/Home/images/8080.png"   data-money="8080" alt="8080"/>
+                            <img src="__PUBLIC__/Home/images/6980.png"   data-money="6980" alt="6980"/>
+                            <img src="__PUBLIC__/Home/images/7780.png"   data-money="7780" alt="7780"/>
+                            <img src="__PUBLIC__/Home/images/8580.png"   data-money="8580" alt="8580"/>
+                            <img src="__PUBLIC__/Home/images/9380.png"   data-money="9380" alt="9380"/>
+                        </div>
+                    </div>
+
+                    <div class="fukuan">
+                        <input type="button" class="pay-button1" data-toggle="modal" data-target="#myModal" value="微信支付"/>
+                        <input type="button" data-url="{:U('Pay/dopay')}" class="pay-button2" value="支付宝支付"/>
+                        <!-- <a href="{:U('Pay/dopay')}">支付宝支付</a> -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        <a data-dismiss="modal" class="close-btn">×</a>
+                                        <div class="jiage-box clearfix">
+                                            <div class="left-img fl">
+                                                <img src="" alt=""/>
+                                            </div>
+                                            <div class="right-txt fl">
+                                                请使用 <span class="type">微信</span>扫描支付！ <br/>
+                                                当前金额为： <span class="money-num">￥1000.00</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <form action="{:U('Pay/dopay')}" method="post" id="opForm">
+                    <input id="price" type="hidden" name="price" />
+                    <input id="info" type="hidden" name="info" />
+                </form>
+            </div>
+        </div>
+<script>
+        $(function(){
+            function Price(){
+                var $price1=$('.price .select').data('price');
+                var $price2=$('.price1 .select').data('price');
+                $('.money1').text($price1+$price2+"元");
+            }
+            Price();
+            $('.shoping').find('span').bind('click',function(){
+                $(this).siblings().removeClass('select');
+                $(this).addClass('select');
+                Price();
+            });
+            //微信支付
+            $(".pay-button1").click(function(){
+                var $price1=$('.price .select').data('price');
+                var $price2=$('.price1 .select').data('price');
+                var $money=$price1+$price2;
+                $('.money-img1').find('img').each(function(){
+                    var priceNow=$(this).data('money');
+                    var $src=$(this).attr('src');
+                    var $alt=$(this).attr('alt');
+                    if(priceNow==$money){
+
+                        $('.jiage-box .left-img').find('img').attr({
+                            'src':$src,
+                            'alt':$alt
+                        });
+                        $('.jiage-box .type').text('微信');
+                        $('.jiage-box .money-num').text('￥'+priceNow+".00")
+                    }
+                })
+            })
+            //支付宝支付
+            $(".pay-button2").click(function(){
+                var $price1=$('.price .select').data('price');
+                var $price2=$('.price1 .select').data('price');
+                var $info1=$('.price .select').text();
+                var $info2=$('.price1 .select').text();
+                var $money=$price1+$price2;   //总价格
+                $("#price").val($money);
+                $("#info").val($info1+"+"+$info2);
+                $("#opForm").submit();
+            })
+        })
+    </script>
+
+<script>
+            var oMake = document.getElementById('make');
+            var oMke1 = document.getElementById('make1');
+            var oMke4 = document.getElementById('make4');
+            oMake.onclick = function(){
+                startMove(oMke1,{left:0})
+            };
+            oMke4.onclick =function(){
+
+                startMove(oMke1,{left:-oMke1.offsetWidth})
+            }
+</script>
+
+<script>
+$(function(){
+
+    $('#level-message').on('valid.form', function(){
+    $.ajax({
+        url: $(this).attr('action'),
+        type: 'POST',
+        data: $(this).serialize(),
+        success: function(result){
+            alert(result);
+        }
+    });
+});
+})
+</script>
+           
+</body>
+</html>

@@ -1,0 +1,169 @@
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+<!--内页开始-->
+
+<div class="sub-content">
+    <div class="contact-us">
+        <div class="huanyingyu">
+            <div class="info">
+                诚邀您对我们提出的意见与投诉，我们会非常重视您的反馈，并积极完善我们的服务
+            </div>
+            <div class="info">
+                非常感谢您的支持！您也可以拨打我们的客户热线： <span>{$site.SITE_INFO.tel} </span>
+            </div>
+        </div>
+        <div class="lianxi clearfix">
+            <div class="wrap clearfix">
+                <div class="left fl">
+                    <h1>{$site.SITE_INFO.tel} </h1>
+                    <div class="line1">
+
+                    </div>
+                    <div class="line2">
+
+                    </div>
+
+                    <h5>
+                        公司名称
+                    </h5>
+                    <p>
+                        {$site.SITE_INFO.name} 
+                    </p>
+                    <h5>
+                        联系地址
+                    </h5>
+                    <p>
+                        {$site.SITE_INFO.address} 
+                    </p>
+                    <h5>
+                        QQ
+                    </h5>
+                    <p>
+                        {$site.SITE_INFO.qq} 
+                    </p>
+                    <h5>邮箱地址</h5>
+                    <p>
+                        {$site.SITE_INFO.service} 
+                    </p>
+                </div>
+                <div class="right fl">
+                    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DwlIE1FDyDkIBm1bZuhLK90F"></script>
+                    <div class="map" id="map">
+                        <script type="text/javascript">
+                            //创建和初始化地图函数：
+                            function initMap(){
+                                createMap();//创建地图
+                                setMapEvent();//设置地图事件
+                                addMapControl();//向地图添加控件
+                                addMapOverlay();//向地图添加覆盖物
+                            }
+                            function createMap(){
+                                map = new BMap.Map("map");
+                                map.centerAndZoom(new BMap.Point(120.474747,36.103881),17);
+                            }
+                            function setMapEvent(){
+                                map.disableScrollWheelZoom();
+                                map.enableKeyboard();
+                                map.enableDragging();
+                                map.enableDoubleClickZoom()
+                            }
+                            function addClickHandler(target,window){
+                                target.addEventListener("click",function(){
+                                    target.openInfoWindow(window);
+                                });
+                            }
+                            function addMapOverlay(){
+                                var markers = [
+                                    {content:"地址:  深圳路230号1号楼1704室；电话:  18266722227",title:"山东佑之鞋业股份有限公司",imageOffset: {width:-46,height:-21},position:{lat:36.104362,lng:120.474764}}
+                                ];
+                                for(var index = 0; index < markers.length; index++ ){
+                                    var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                                    var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                                        imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                                    })});
+                                    var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                                    var opts = {
+                                        width: 200,
+                                        title: markers[index].title,
+                                        enableMessage: false
+                                    };
+                                    var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                                    marker.setLabel(label);
+                                    addClickHandler(marker,infoWindow);
+                                    map.addOverlay(marker);
+                                };
+                            }
+                            //向地图添加控件
+                            function addMapControl(){
+                                var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                                map.addControl(scaleControl);
+                                var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                map.addControl(navControl);
+                                var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                                map.addControl(overviewControl);
+                            }
+                            var map;
+                            initMap();
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-box clearfix wrap" id="liuyan">
+
+            <form class="clearfix" id="form">
+                <div class="form-control clearfix">
+                    <label for="name">
+                        <img src="__ROOT__/Home/Tpl/default/Public/images/person1.png" alt=""/>
+                    </label>
+                    <input type="text" id="name" placeholder="请输入您的姓名" name="name"/>
+
+                    <div class="fl little-box">
+
+                    </div>
+                </div>
+                <div class="form-control clearfix">
+                    <label for="phone">
+                        <img src="__ROOT__/Home/Tpl/default/Public/images/phone.png" alt=""/>
+                    </label>
+                    <input type="text" id="phone" placeholder="请输入您的手机号" name="phone"/>
+
+                    <div class="fl little-box">
+
+                    </div>
+                </div>
+                <div class="form-control clearfix">
+                    <label for="mail">
+                        <img src="__ROOT__/Home/Tpl/default/Public/images/youjian.png" style="margin-top: 15px" alt=""/>
+                    </label>
+                    <input type="text" id="mail" placeholder="请输入邮箱" name="email"/>
+
+                    <div class="fl little-box">
+
+                    </div>
+                </div>
+                <div class="text-control clearfix">
+                    <textarea id="message" placeholder="你想说点什么呢？" name="content"></textarea>
+                </div>
+                <div class="button-control clearfix">
+
+                    <button class="submit" type="button" >留言</button>
+                    <button class="reset" type="reset">重置</button>
+                </div>
+            </form>
+<script type="text/javascript">
+	$('.submit').click(function(){
+		var data = $('#form').serialize();
+	$.post('Contract/sign',data,function(status){
+		alert(status);
+	})
+	})
+</script>
+        </div>
+    </div>
+
+</div>
+<!--内容结束-->

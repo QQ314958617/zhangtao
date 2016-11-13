@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+                function() {
+                    var nowpage = 0;
+                    //给class为container的容器加上触滑监听事件
+                    $(".container").swipe(
+                            {
+                                swipe:function(event, direction, distance, duration, fingerCount) {
+                                    if(direction == "up")//当向上滑动手指时令当前页面记数器加1
+                                    {
+                                        nowpage = nowpage + 1;
+                                    }
+                                    else if(direction == "down")//当向下滑动手指时令当前页面记数器减1
+                                    {
+                                        nowpage = nowpage - 1;
+                                    }
+
+                                    if(nowpage > 5)//因本实例只有5张图片，所以当记数器大于4时令他返回4（从0开始记），避免溢出出错
+                                    {
+                                        nowpage =5;
+                                    }
+
+                                    if(nowpage < 0)//道理同上
+                                    {
+                                        nowpage = 0;
+                                    }
+                                    $(".container").animate({"top":nowpage * -100 + "%"},400);//根据当前记数器滚动到相应的高度
+                                }
+                            }
+                    );
+                }
+        );
+    </script>
+    <script>
+        $(function(){
+            var width=  $(window).width();
+            var height=  $(window).height();
+            $(".container,.page,body.scoll").css({"width":width,"height":height})
+        })
+    </script>
+</head>
+<body class="scoll">
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);" class="">
+            <i class="iconfont">&#xe605;</i>
+        </a>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            柳岩
+        </a>
+    </h1>
+</header>
+<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+        <i class="am-header-icon am-icon-bars"></i>
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="container wrl">
+    <div class="page page0">
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page1">
+        <h4 class="zhuchi">
+            教育电视台&emsp;&emsp;《青春嘉年华》 <br/>
+            青海卫视&emsp;&emsp;&emsp;《大众娱乐在线》<br/>
+            光线传媒&emsp;&emsp;&emsp;《时尚风云榜》<br/>
+            凤凰卫视&emsp;&emsp;&emsp;《娱乐新闻报道》《凤凰午间特快》<br/>
+            浙江卫视&emsp;&emsp;&emsp;《娱乐财富》<br/>
+            深圳卫视&emsp;&emsp;&emsp;《辣妈学院》
+
+        </h4>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page2">
+       <h2>他的转型</h2>
+        <div class="text">
+            在娱乐圈里
+            一个新人累积资本最好的方法就参加各种选秀活动，不重复参加同一种“秀”王若的麟原则，他清楚自己想要什么“当主持人这个工作做好了，我想我会去尝试做演员，演员也做好了，我想我可能会去经商，我还想周游世界、从政……我觉得你体验越多你生命价值提升越高”，他参加过挑战主持人八次守擂成功，仅次于尉迟琳嘉九次，现教育3主持青春类节目。
+        </div>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page3">
+        <h5>她的电影作品</h5>
+        <ul class="clearfix">
+            <li><img src="images/actor_list_img1.jpg" alt=""/><span>《我姥爷的故事》 饰演：孙卫昆</span></li>
+            <li><img src="images/actor_list_img2.jpg" alt=""/><span>《毛泽东》饰演：叶剑 </span></li>
+            <li><img src="images/actor_list_img3.jpg" alt=""/><span>《姥爷的抗战》饰演：黎厂长	</span></li>
+        </ul>
+        <i class="am-icon-angle-double-up pa"></i>
+    </div>
+    <div class="page page4">
+        <h2>演艺经历</h2>
+        <div class="text">
+            2013年<br/>
+            与王学圻、蒋勤勤、张梓烈、李子雄合作主演谍战剧《姥爷的抗战》在剧中饰演黎厂长，这是他的首部电视剧作品 ;同年，出演高希希执导的历史剧《毛泽东》，在剧中饰演叶剑英。
+            <br/><br/>
+            2014年<br/>
+            客串李承炫、张蓝心、刘桦主演的爱情喜剧电影《黄金福将》陈紫函温兆伦主演的谍战剧《我姥爷的故事》，在剧中饰演孙昆卫;同年。与李湘搭档主持深圳卫视《辣妈学院》 。
+            <br/><br/>
+            2015年<br/>
+            担任湖南卫视《我是歌手》第三季歌手李佳薇的经纪人 ;同年，与马睿、王乔、孙璞搭档组成"芒果主持F4"组合，共同主持湖南卫视发现美好社会道德实验节目《噗通噗通的良心》
+        </div>
+    </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">新闻中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">明星列表</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

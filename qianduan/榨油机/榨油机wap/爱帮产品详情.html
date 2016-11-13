@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        爱帮产品详情
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-dropdown1" data-am-menu-collapse>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+    <ul class="am-menu-nav am-avg-sm-1 am-collapse">
+        <li class="am-parent">
+            <a href="##" class="">公司</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">人物</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="#c3" class="">趋势</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+                <li class="am-menu-nav-channel">
+                    <a href="#c3" class="" title="趋势">泥煤 &raquo;</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">投融资</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="##" class="">创业公司</a>
+        </li>
+        <li class="">
+            <a href="##" class="">创业人物</a>
+        </li>
+    </ul>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="product_art">
+    <div data-am-widget="slider" class="am-slider am-slider-d3" data-am-slider='{&quot;controlNav&quot;:&quot;thumbnails&quot;,&quot;directionNav&quot;:false}' >
+        <ul class="am-slides">
+            <li data-thumb="images/index_img8.jpg">
+                <img src="images/index_img8.jpg">
+            </li>
+            <li data-thumb="images/index_img6.jpg">
+                <img src="images/index_img6.jpg">
+            </li>
+            <li data-thumb="images/index_img8.jpg">
+                <img src="images/index_img8.jpg">
+            </li>
+            <li data-thumb="images/index_img6.jpg">
+                <img src="images/index_img6.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrap roduct_art_text">
+    <h3>榨油机家用家庭榨油机不绣钢螺旋榨油机 家用全自动小型炸油机</h3>
+    <p>价格： <span>1980.00</span></p>
+    <p>颜色： <em></em><em></em><em></em><em></em></p>
+    <p>产品规格：390*180*210mm</p>
+    <a href="">立即购买</a>
+    <div class="img"><img src="images/detail_img1.jpg" alt=""/></div>
+    <p>型      号：YD-CD-0101</p>
+    <p>类      型：家用榨油机</p>
+    <p>品      牌：爱帮</p>
+    <p>尺      寸：390*180*230 (mm)</p>
+    <p>工作电压：220～50HZ</p>
+    <p>配用动力：550W(MAX)</p>
+    <p>整机净重：7.5KG</p>
+    <h3>产品介绍</h3>
+    <div class="text">
+        随着国民经济的发展，人们的生活水平逐步提高，在满足了基本需求之后，人们开始日益关注自身的健康，而饮食作为和人体健康联系最紧密的因素，成为人们关注的重中之重！
+        <br/><br/>
+        然而，在经济大发展的同时，社会上接二连三地出现毒大米，毒奶粉，瘦肉精，地沟油、化学油、勾兑油、毒油等层出不穷的食品危机，全民基本食用健康告急！
+        <br/><br/>
+        在这个短期内无法调和的矛盾之下，家用榨油机应运而生：健康油，自己榨！自己的健康自己做主。彻底解决食用油安全问题，还能提供多种营养的养身食用油！
+    </div>
+   <div class="img"><img src="images/detail_img2.jpg" alt=""/></div>
+    <h3>细节展示</h3>
+    <div class="news_detail">
+        <div class="text">
+            <div class="caipu">
+                <ul>
+                    <li>
+                        <img src="images/index_img8.jpg" alt="">
+                        <div class="text">
+                            独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/index_img8.jpg" alt="">
+                        <div class="text">
+                            独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/index_img8.jpg" alt="">
+                        <div class="text">
+                            独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观独特时尚的外观
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

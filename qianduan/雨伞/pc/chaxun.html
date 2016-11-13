@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>雨伞</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="content1 pr">
+    <div class="home pf">
+        <img class="open" src="images/home.png" alt=""/>
+        <img class="close" src="images/close.png" alt=""/>
+    </div>
+    <div class="menu pf">
+        <ul class="clearfix">
+            <li class="on"><a href=""><span data-hover="首页">HOME</span></a></li>
+            <li><a href=""><span  data-hover="关于我们">ABOUT US</span></a></li>
+            <li><a href=""><span  data-hover="产品设计">PRODUCT DESIGN</span></a></li>
+            <li><a href=""><span  data-hover="新闻中心">NEWS CENTER</span></a></li>
+            <li><a href=""><span  data-hover="真伪查询">AUTHENTICITY  QUERY</span></a></li>
+            <li><a href=""><span  data-hover="联系我们">CONTACT US</span></a></li>
+            <li><a href=""><span  data-hover="法律声明">LEGAL STATEMENT</span></a></li>
+        </ul>
+        <div class="menu_logo"><img src="images/logo.png" alt=""/></div>
+    </div>
+    <div class="page_product pr clearfix">
+        <div class="falv">
+            <h1>AUTHENTICITY  QUERY</h1>
+            <h3>真伪查询</h3>
+            <div class="chaxun">
+                <span style="color: red;">!注意：</span> <br/>
+                bananaumbrella旗舰店为蕉下（BananaUmbrella）品牌唯一官方认证微信公众号。<br/>
+                假冒产品一般附有伪造的专柜小票或伪造的防伪验证码，无官方微信。<br/>
+                伪造的验证码均无法通过我司官网或官方微信公众号防伪系统的验证。<br/>
+                1，官方防伪验图示： <br/><br/>
+                <img src="images/chaxun_img.png" alt=""/><br/><br/>
+                2，Banana Umbrella官方防伪验证码查询，请刮开涂层后，在下方输入16位防伪验证码，进行验证。 <br/>
+                <form action="">
+                    <input class="yzm" maxlength="16" type="text"/><span class="xixi">防伪码长度不能少于16位</span>
+                    <input class="cha" type="button" value="点击查询"/>
+                </form>
+                <script>
+                    $(function(){
+                        $(".cha").click(function(){
+                            var m=$(".yzm");
+                            if(m.val()==""){
+                               $(".chaxun span.xixi").show();
+                            }else{
+                                var re=/^[0-9]*$/;
+                                if(!re.test(m.val())){
+                                    $(".chaxun span.xixi").show();
+                                    m.focus();
+                                    return false;
+                                }else{ $(".chaxun span.xixi").hide();}
+                            }
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

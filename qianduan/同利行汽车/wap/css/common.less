@@ -1,0 +1,1369 @@
+//  @import "common"
+//
+//  工具类：
+//  
+//  .reset()                            默认样式修改方法
+//  .selection(@b,@c)                   选中文字颜色设置            @b:背景,@c:字体
+//  .addfont(@url,@f:icon)              添加字体                    @url:文件路径,@f:icon:文件名
+//  .ban(@h:auto)                       横条状区域                   @h:高度(px,%)
+//  .bow(@w:auto)                       竖条状区域                   @W:宽度(px,%)
+//  .box(@w:auto, @h:auto)              盒状区域                    @w:宽度(px,%),@h:高度(px,%)
+//  .lineW(@h,@c)                       竖线                      @h:高度,@c:颜色
+//  .lineH(@w,@c)                       横线                      @w:宽度,@c:颜色
+//  .bc()                               居中方法
+//  .bc(@w)                             块状居中                    @w:宽度
+//  .clearFix()                         清除浮动
+//  .wordEsc(@w:200px)                  文字过长省略              @w:最大宽度(px,%)
+//  .circle(@r:500px)                   变圆(弧框)                  @r:半径(px)
+//  .triangle(top, @w:10px, @c:#000)    向上箭头                    @w:厚度,@c:颜色             
+//  .triangle(bottom, @w:10px, @c:#000) 向下箭头                    @w:厚度,@c:颜色     
+//  .triangle(left, @w:10px, @c:#000)   向左箭头                    @w:厚度,@c:颜色     
+//  .triangle(right, @w:10px, @c:#000)  向右箭头                    @w:厚度,@c:颜色
+//  
+//  简写类：
+//
+//  定位
+//  
+//  .pr()                               position: relative;
+//  .pa()                               position: absolute;
+//  .pf()                               position: fixed;
+//  .ps()                               position: static;
+//  .z(@z)                              z-index                     z轴():@z:1
+//  .t(@t)
+//  .r(@r)
+//  .b(@b)
+//  .l(@l)
+//  
+//  布局
+//  
+//  .dn()                               display: none
+//  .db()                               display: block;
+//  .di()                               display: inline;
+//  .dib()                              display: inline-block;
+//  .dtc()                              display: table-cell;        
+//  .fl()                               float:left;display:inline;
+//  .fr()                               float:right;display:inline;
+//  .os( /x/y)
+//  .oh( /x/y)
+//  .ov( /x/y)
+//
+//  Margin
+//  
+//  .mt(@t)                             margin-top: @t;
+//  .mr(@r)                             margin-right: @r;
+//  .mb(@b)                             margin-bottom: @b;
+//  .ml(@l)                             margin-left: @l;
+//  .mtr(@t,@r)
+//  .mrb(@r,@b)
+//  .mbl(@b,@l)
+//  .mlt(@l,@t)
+//  
+//  Padding
+//  
+//  .pt(@t)                             padding-top: @t;
+//  .pr(@r)                             padding-right: @r;
+//  .pb(@b)                             padding-bottom: @b;
+//  .pl(@l)                             padding-left: @l;
+//  .ptr(@t,@r)
+//  .prb(@r,@b)
+//  .pbl(@l,@b)
+//  .plt(@l,@t)
+//  
+//  边框
+//  
+//  .bd();
+//  
+//  背景
+//  
+//  .bgc();
+//  
+//  文字
+//  
+//  .fs(@p:12px)                        font-size:                  @p:12px(px)
+//  .fs0~100()                          font-size:0-100px
+//  .fsb()                              font-weight: bold
+//  .fsi()                              font-style: italic
+//  .fsn()                              font-style: normal
+//  .fmw()                              font-family: "Microsoft Yahei","微软雅黑";
+//  .fms()                              font-family: "SimSun","宋体";
+//  .fma()                              font-family: "Arial";
+//  .fmv()                              font-family: Verdana;
+//  .txt()                              text-decoration: overline;
+//  .txc()                              text-decoration: line-through;
+//  .txb()                              text-decoration: underline;
+//  .txn()                              text-decoration: none;
+//  .tal()
+//  .tac()
+//  .tar()
+//  .txs(@x:0,@y:0,@b:0,@c)             text-shadow:@x @y @b @c;
+//  .lr-tb()                            左右-上下
+//  .tb-rl()                            上下-右左
+//  .tb-lr()                            上下-左右
+//  .ln(@p:12px)
+//  .ln0~100()
+//  
+//  动画
+//  
+//  .tranAll(@t:200ms, @s:linear, @d:0s)状态变化                    对象:all @t:变化时间(ms,s) @s:类型(默认:linear)(ease ease-in ease-out ease-in-out) @d:延迟(s,ms默认0s)
+//  .tranTranslate(@w,@h)               平移                      @w\y:+/-x\y轴方向()px
+//  .tranOrigin(@w,@h)                  坐标原点变化              @w\h:x\y轴坐标(默认50%\50%)
+//  .tranRotate(@a)                     旋转                      @a:旋转角度(deg)
+//  .tranSkew(@w,@h)                    扭曲                      @w\h:绕x\y轴扭曲度(deg)
+//  .tranScale(@w,@h)                   缩放                      @w\h:x\y轴倍数(默认1\1)
+//  .filterGray(@c:100%)                灰度                      @c:灰度(%)
+
+//  布局类
+//  
+
+.addfont(@f:icon,@hash,@url:"../resources/fonts/") {
+    @font-face {
+        font-family: "@{f}";
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.1px;
+        src: url('@{url}@{f}.eot?@{hash}'); //IE9 兼容模式
+
+        src: url('@{url}@{f}.eot?@{hash}#iefix') format('embedded-opentype'),
+        url('@{url}@{f}.woff?@{hash}') format('woff'),
+        url('@{url}@{f}.ttf?@{hash}') format('truetype'),
+        url('@{url}@{f}.svg?@{hash}#@{f}') format('svg');
+        
+    }
+}
+.box(@w:auto, @h:auto) {
+    width: @w;
+    height: @h;
+}
+.boxp(@w:auto, @h:auto) {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: @w;
+    height: @h;
+}
+.ban(@h:auto) {
+    width: 100%;
+    height: @h;
+}
+.banp(@h:auto) {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: 100%;
+    height: @h;
+}
+.bow(@w:auto) {
+    width: @w;
+    height: 100%;
+}
+.bowp(@w:auto) {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: @w;
+    height: 100%;
+}
+.w(@w:auto) {
+    width: @w;
+}
+.h(@h:auto) {
+    height: @h;
+}
+.wp(@w:auto) {
+     ox-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: @w;
+}
+.hp(@h:auto) {
+     ox-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    height: @h;
+}
+.lineH(@w,@c:#ccc) {
+    width: @w;
+    height: 1px;
+    overflow: hidden;
+
+    background-color: @c;
+}
+.lineW(@h,@c:#ccc) {
+    width: 1px;
+    height: @h;
+    overflow: hidden;
+
+    background-color: @c;
+}
+.bc() {
+    margin-right: auto;
+    margin-left: auto;
+}
+.bc(@w) {
+    width: @w;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearFix() {
+    *zoom: 1;
+    &:after {
+        display: table;
+        clear: both;
+
+        content: "";
+    }
+}
+.wordEsc(@w:200px) {
+    width: auto;
+    max-width: 200px;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.inputBox(@w:200px,@h:20px) {
+    width: @w;
+    height: @h;
+
+    line-height: @h~"\9";
+}
+
+.circle(@r:500px) {
+    -webkit-border-radius: @r;
+       -moz-border-radius: @r;
+            border-radius: @r;
+}
+.triangle(top, @w:10px, @c:#000) {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    border-width: @w;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent @c transparent;
+}
+.triangle(bottom, @w:10px, @c:#000) {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    border-width: @w;
+    border-style: solid dashed dashed dashed;
+    border-color: @c transparent transparent transparent;
+}
+.triangle(left, @w:10px, @c:#000) {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    border-width: @w;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent @c transparent transparent;
+}
+.triangle(right, @w:10px, @c:#000) {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    border-width: @w;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent @c;
+}
+
+.selection(@b:#fff,@c:#000) {
+    ::selection {
+        color: @c;
+        background: @b;
+    }
+
+    ::-webkit-selection {
+        color: @c;
+        background: @b;
+    }
+
+    ::-moz-selection {
+        color: @c;
+        background: @b;
+    }
+}
+.reset() {
+    // a:hover { 
+    //     text-decoration: underline;
+    // }
+    abbr[title], acronym[title] {
+        cursor: help;        // 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果
+        border-bottom: 1px dotted;
+    }
+    q:before, q:after {
+        content: "";
+    }
+    // 重置表单元素
+    legend {
+        color: #000;
+    } // for ie6
+    fieldset, img {
+        border: none;
+    } // img 搭车：让链接里的 img 无边框
+    // 注：optgroup 无法扶正
+    button, input, select, textarea {
+        font-size: 100%; // 使得表单元素在 ie 下能继承字体大小
+    }
+    // 重置表格元素
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    // 重置 hr
+    hr {
+        height: 1px;
+
+        border: none;
+    }
+    // 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁
+    html {
+        overflow-y: scroll;
+    }
+    // KISSY CSS Reset
+    // 理念：清除和重置是紧密不可分的
+    // 特色：1.适应中文 2.基于最新主流浏览器
+    // 维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+    // 清除内外边距 
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    blockquote,
+    //structural elements 结构元素 
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    // list elements 列表元素 
+    pre,
+    // text formatting elements 文本格式元素 
+    fieldset,
+    lengend,
+    button,
+    input,
+    textarea,
+    // form elements 表单元素 
+    th,
+    td {
+        padding: 0;
+    // table elements 表格元素 
+        margin: 0;
+    }
+    // 设置默认字体 
+    body,
+    button,
+    input,
+    select,
+    textarea {
+    //for ie
+    // font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;
+        font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; // 用 ascii 字符表示，使得在任何编码下都无问题
+
+        border: none;
+        background-color: transparent;
+    }
+    input {
+        border: none;
+        outline: none;
+    }
+    h1 {
+        font-size: 18px;
+    }// 18px / 12px = 1.5 
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+    }
+    address,
+    cite,
+    dfn,
+    em,
+    var {
+        font-style: normal;
+    } // 将斜体扶正
+    code,
+    kbd,
+    pre,
+    samp,
+    tt {
+        font-family: "Courier New", Courier, monospace;
+    } // 统一等宽字体
+    small {
+        font-size: 12px;
+    } // 小于 12px 的中文很难阅读，让 small 正常化
+    // 重置列表元素
+    ul,
+    ol,
+    dl {
+        list-style: none;
+    }
+    // 重置文本格式元素
+    a {
+        text-decoration: none;
+    }
+    i,
+    em {
+        font-style: normal;
+    }
+}
+//定位
+//position
+.pr() {
+    position: relative;
+}
+.pa() {
+    position: absolute;
+}
+.pf() {
+    position: fixed;
+}
+.ps() {
+    postion: static;
+}
+//z-index
+.z(@z:1) {
+    z-index: @z;
+}
+.t(@t) {
+    top: @t;
+}
+.r(@r) {
+    right: @r;
+}
+.b(@b) {
+    bottom: @b;
+}
+.l(@l) {
+    left: @l;
+}
+//布局
+.dn() {
+    display: none;
+}
+.db() {
+    display: block;
+}
+.di() {
+    display: inline;
+}
+.dib() {
+    display: inline-block;
+
+    *display: inline;
+    *zoom: 1;
+}
+.dtc() {
+    display: table-cell;
+}
+.fl(@fl:left) {
+    display: inline;
+    float: @fl;
+}
+.fr(@fr:right) {
+    display: inline;
+    float: @fr;
+}
+.os() {
+    overflow: scroll;
+}
+.ov() {
+    overflow: visible;
+}
+.oh() {
+    overflow: hidden;
+}
+.os(x) {
+    overflow-x: scroll;
+}
+.ov(x) {
+    overflow-x: visible;
+}
+.oh(x) {
+    overflow-x: hidden;
+}
+.os(y) {
+    overflow-y: scroll;
+}
+.ov(y) {
+    overflow-y: visible;
+}
+.oh(y) {
+    overflow-y: hidden;
+}
+//Margin
+.mt(@t) {
+    margin-top: @t;
+}
+.mr(@r) {
+    margin-right: @r;
+}
+.mb(@b) {
+    margin-bottom: @b;
+}
+.ml(@l) {
+    margin-left: @l;
+}
+.mtr(@t,@r) {
+    margin-top: @t;
+    margin-right: @r;
+}
+.mrb(@r,@b) {
+    margin-right: @r;
+    margin-bottom: @b;
+}
+.mbl(@b,@l) {
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.mlt(@l,@t) {
+    margin-top: @t;
+    margin-left: @l;
+}
+
+//Padding
+.pt(@t) {
+    padding-top: @t;
+}
+.pr(@r) {
+    padding-right: @r;
+}
+.pb(@b) {
+    padding-bottom: @b;
+}
+.pl(@l) {
+    padding-left: @l;
+}
+.ptr(@t,@r) {
+    padding-top: @t;
+    padding-right: @r;
+}
+.prb(@r,@b) {
+    padding-right: @r;
+    padding-bottom: @b;
+}
+.pbl(@l,@b) {
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.plt(@l,@t) {
+    padding-top: @t;
+    padding-left: @l;
+}
+
+//边框
+.bd(@w,@c,@t) {
+    border: @w @t @c;
+}
+
+//背景
+.bgc(@c:#fff) {
+    background-color: @c;
+}
+
+//颜色
+.c(@c:#000) {
+    color: @c;
+}
+
+//字体、文本
+.fs(@p:12px) {
+    font-size: @p;
+}
+.fs0() {
+    font-size: 0;
+}
+.fs1() {
+    font-size: 1px;
+}
+.fs2() {
+    font-size: 2px;
+}
+.fs3() {
+    font-size: 3px;
+}
+.fs4() {
+    font-size: 4px;
+}
+.fs5() {
+    font-size: 5px;
+}
+.fs6() {
+    font-size: 6px;
+}
+.fs7() {
+    font-size: 7px;
+}
+.fs8() {
+    font-size: 8px;
+}
+.fs9() {
+    font-size: 9px;
+}
+.fs10() {
+    font-size: 10px;
+}
+.fs11() {
+    font-size: 11px;
+}
+.fs12() {
+    font-size: 12px;
+}
+.fs13() {
+    font-size: 13px;
+}
+.fs14() {
+    font-size: 14px;
+}
+.fs15() {
+    font-size: 15px;
+}
+.fs16() {
+    font-size: 16px;
+}
+.fs17() {
+    font-size: 17px;
+}
+.fs18() {
+    font-size: 18px;
+}
+.fs19() {
+    font-size: 19px;
+}
+.fs20() {
+    font-size: 20px;
+}
+.fs21() {
+    font-size: 21px;
+}
+.fs22() {
+    font-size: 22px;
+}
+.fs23() {
+    font-size: 23px;
+}
+.fs24() {
+    font-size: 24px;
+}
+.fs25() {
+    font-size: 25px;
+}
+.fs26() {
+    font-size: 26px;
+}
+.fs27() {
+    font-size: 27px;
+}
+.fs28() {
+    font-size: 28px;
+}
+.fs29() {
+    font-size: 29px;
+}
+.fs30() {
+    font-size: 30px;
+}
+.fs31() {
+    font-size: 31px;
+}
+.fs32() {
+    font-size: 32px;
+}
+.fs33() {
+    font-size: 33px;
+}
+.fs34() {
+    font-size: 34px;
+}
+.fs35() {
+    font-size: 35px;
+}
+.fs36() {
+    font-size: 36px;
+}
+.fs37() {
+    font-size: 37px;
+}
+.fs38() {
+    font-size: 38px;
+}
+.fs39() {
+    font-size: 39px;
+}
+.fs40() {
+    font-size: 40px;
+}
+.fs41() {
+    font-size: 41px;
+}
+.fs42() {
+    font-size: 42px;
+}
+.fs43() {
+    font-size: 43px;
+}
+.fs44() {
+    font-size: 44px;
+}
+.fs45() {
+    font-size: 45px;
+}
+.fs46() {
+    font-size: 46px;
+}
+.fs47() {
+    font-size: 47px;
+}
+.fs48() {
+    font-size: 48px;
+}
+.fs49() {
+    font-size: 49px;
+}
+.fs50() {
+    font-size: 50px;
+}
+.fs51() {
+    font-size: 51px;
+}
+.fs52() {
+    font-size: 52px;
+}
+.fs53() {
+    font-size: 53px;
+}
+.fs54() {
+    font-size: 54px;
+}
+.fs55() {
+    font-size: 55px;
+}
+.fs56() {
+    font-size: 56px;
+}
+.fs57() {
+    font-size: 57px;
+}
+.fs58() {
+    font-size: 58px;
+}
+.fs59() {
+    font-size: 59px;
+}
+.fs60() {
+    font-size: 60px;
+}
+.fs61() {
+    font-size: 61px;
+}
+.fs62() {
+    font-size: 62px;
+}
+.fs63() {
+    font-size: 63px;
+}
+.fs64() {
+    font-size: 64px;
+}
+.fs65() {
+    font-size: 65px;
+}
+.fs66() {
+    font-size: 66px;
+}
+.fs67() {
+    font-size: 67px;
+}
+.fs68() {
+    font-size: 68px;
+}
+.fs69() {
+    font-size: 69px;
+}
+.fs70() {
+    font-size: 70px;
+}
+.fs71() {
+    font-size: 71px;
+}
+.fs72() {
+    font-size: 72px;
+}
+.fs73() {
+    font-size: 73px;
+}
+.fs74() {
+    font-size: 74px;
+}
+.fs75() {
+    font-size: 75px;
+}
+.fs76() {
+    font-size: 76px;
+}
+.fs77() {
+    font-size: 77px;
+}
+.fs78() {
+    font-size: 78px;
+}
+.fs79() {
+    font-size: 79px;
+}
+.fs80() {
+    font-size: 80px;
+}
+.fs81() {
+    font-size: 81px;
+}
+.fs82() {
+    font-size: 82px;
+}
+.fs83() {
+    font-size: 83px;
+}
+.fs84() {
+    font-size: 84px;
+}
+.fs85() {
+    font-size: 85px;
+}
+.fs86() {
+    font-size: 86px;
+}
+.fs87() {
+    font-size: 87px;
+}
+.fs88() {
+    font-size: 88px;
+}
+.fs89() {
+    font-size: 89px;
+}
+.fs90() {
+    font-size: 90px;
+}
+.fs91() {
+    font-size: 91px;
+}
+.fs92() {
+    font-size: 92px;
+}
+.fs93() {
+    font-size: 93px;
+}
+.fs94() {
+    font-size: 94px;
+}
+.fs95() {
+    font-size: 95px;
+}
+.fs96() {
+    font-size: 96px;
+}
+.fs97() {
+    font-size: 97px;
+}
+.fs98() {
+    font-size: 98px;
+}
+.fs99() {
+    font-size: 99px;
+}
+.fs100() {
+    font-size: 100px;
+}
+//font-style
+.fsb() {
+    font-weight: bold;
+}
+.fsi() {
+    font-style: italic;
+}
+.fsn() {
+    font-style: normal;
+}
+//font-family
+.fmw() {
+    font-family: "Microsoft Yahei","微软雅黑";
+}
+.fms() {
+    font-family: "SimSun","宋体";
+}
+.fma() {
+    font-family: "Arial";
+}
+.fmv() {
+    font-family: Verdana;
+}
+.fm(@f) {
+    font-family: @f;
+}
+//text-align
+.tac() {
+    text-align: center;
+}
+.tal() {
+    text-align: left;
+}
+.tar() {
+    text-align: right;
+}
+//text-decoration
+.txt() {
+    text-decoration: overline;
+}
+.txc() {
+    text-decoration: line-through;
+}
+.txb() {
+    text-decoration: underline;
+}
+.txn() {
+    text-decoration: none;
+}
+.txs(@x:0, @y:o, @b, @c) {
+    text-shadow: @x @y @b @c;
+}
+//writing-mode
+.lr-tb() {
+    -webkit-writing-mode: horizontal-tb;
+            writing-mode: horizontal-tb;
+            writing-mode: lr-tb;
+}
+.tb-rl() {
+    -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            writing-mode: tb-rl;
+}
+.tb-lr() {
+    -webkit-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            writing-mode: tb-rl;
+}
+//
+.lh(@p:12px) {
+    fline-height: @p;
+}
+.lh0() {
+    line-height: 0;
+}
+.lh1() {
+    line-height: 1px;
+}
+.lh2() {
+    line-height: 2px;
+}
+.lh3() {
+    line-height: 3px;
+}
+.lh4() {
+    line-height: 4px;
+}
+.lh5() {
+    line-height: 5px;
+}
+.lh6() {
+    line-height: 6px;
+}
+.lh7() {
+    line-height: 7px;
+}
+.lh8() {
+    line-height: 8px;
+}
+.lh9() {
+    line-height: 9px;
+}
+.lh10() {
+    line-height: 10px;
+}
+.lh11() {
+    line-height: 11px;
+}
+.lh12() {
+    line-height: 12px;
+}
+.lh13() {
+    line-height: 13px;
+}
+.lh14() {
+    line-height: 14px;
+}
+.lh15() {
+    line-height: 15px;
+}
+.lh16() {
+    line-height: 16px;
+}
+.lh17() {
+    line-height: 17px;
+}
+.lh18() {
+    line-height: 18px;
+}
+.lh19() {
+    line-height: 19px;
+}
+.lh20() {
+    line-height: 20px;
+}
+.lh21() {
+    line-height: 21px;
+}
+.lh22() {
+    line-height: 22px;
+}
+.lh23() {
+    line-height: 23px;
+}
+.lh24() {
+    line-height: 24px;
+}
+.lh25() {
+    line-height: 25px;
+}
+.lh26() {
+    line-height: 26px;
+}
+.lh27() {
+    line-height: 27px;
+}
+.lh28() {
+    line-height: 28px;
+}
+.lh29() {
+    line-height: 29px;
+}
+.lh30() {
+    line-height: 30px;
+}
+.lh31() {
+    line-height: 31px;
+}
+.lh32() {
+    line-height: 32px;
+}
+.lh33() {
+    line-height: 33px;
+}
+.lh34() {
+    line-height: 34px;
+}
+.lh35() {
+    line-height: 35px;
+}
+.lh36() {
+    line-height: 36px;
+}
+.lh37() {
+    line-height: 37px;
+}
+.lh38() {
+    line-height: 38px;
+}
+.lh39() {
+    line-height: 39px;
+}
+.lh40() {
+    line-height: 40px;
+}
+.lh41() {
+    line-height: 41px;
+}
+.lh42() {
+    line-height: 42px;
+}
+.lh43() {
+    line-height: 43px;
+}
+.lh44() {
+    line-height: 44px;
+}
+.lh45() {
+    line-height: 45px;
+}
+.lh46() {
+    line-height: 46px;
+}
+.lh47() {
+    line-height: 47px;
+}
+.lh48() {
+    line-height: 48px;
+}
+.lh49() {
+    line-height: 49px;
+}
+.lh50() {
+    line-height: 50px;
+}
+.lh51() {
+    line-height: 51px;
+}
+.lh52() {
+    line-height: 52px;
+}
+.lh53() {
+    line-height: 53px;
+}
+.lh54() {
+    line-height: 54px;
+}
+.lh55() {
+    line-height: 55px;
+}
+.lh56() {
+    line-height: 56px;
+}
+.lh57() {
+    line-height: 57px;
+}
+.lh58() {
+    line-height: 58px;
+}
+.lh59() {
+    line-height: 59px;
+}
+.lh60() {
+    line-height: 60px;
+}
+.lh61() {
+    line-height: 61px;
+}
+.lh62() {
+    line-height: 62px;
+}
+.lh63() {
+    line-height: 63px;
+}
+.lh64() {
+    line-height: 64px;
+}
+.lh65() {
+    line-height: 65px;
+}
+.lh66() {
+    line-height: 66px;
+}
+.lh67() {
+    line-height: 67px;
+}
+.lh68() {
+    line-height: 68px;
+}
+.lh69() {
+    line-height: 69px;
+}
+.lh70() {
+    line-height: 70px;
+}
+.lh71() {
+    line-height: 71px;
+}
+.lh72() {
+    line-height: 72px;
+}
+.lh73() {
+    line-height: 73px;
+}
+.lh74() {
+    line-height: 74px;
+}
+.lh75() {
+    line-height: 75px;
+}
+.lh76() {
+    line-height: 76px;
+}
+.lh77() {
+    line-height: 77px;
+}
+.lh78() {
+    line-height: 78px;
+}
+.lh79() {
+    line-height: 79px;
+}
+.lh80() {
+    line-height: 80px;
+}
+.lh81() {
+    line-height: 81px;
+}
+.lh82() {
+    line-height: 82px;
+}
+.lh83() {
+    line-height: 83px;
+}
+.lh84() {
+    line-height: 84px;
+}
+.lh85() {
+    line-height: 85px;
+}
+.lh86() {
+    line-height: 86px;
+}
+.lh87() {
+    line-height: 87px;
+}
+.lh88() {
+    line-height: 88px;
+}
+.lh89() {
+    line-height: 89px;
+}
+.lh90() {
+    line-height: 90px;
+}
+.lh91() {
+    line-height: 91px;
+}
+.lh92() {
+    line-height: 92px;
+}
+.lh93() {
+    line-height: 93px;
+}
+.lh94() {
+    line-height: 94px;
+}
+.lh95() {
+    line-height: 95px;
+}
+.lh96() {
+    line-height: 96px;
+}
+.lh97() {
+    line-height: 97px;
+}
+.lh98() {
+    line-height: 98px;
+}
+.lh99() {
+    line-height: 99px;
+}
+.lh100() {
+    line-height: 100px;
+}
+
+.csp() {
+    cursor: pointer;
+}
+
+.tranAll(@t:200ms, @s:linear, @d:0s) {
+    -webkit-transition: all @t @s @d;
+       -moz-transition: all @t @s @d;
+        -ms-transition: all @t @s @d;
+         -o-transition: all @t @s @d;
+            transition: all @t @s @d;
+}
+//坐标
+.tranOrigin(@w,@h) {
+    -webkit-transform-origin: @w @h;
+       -moz-transform-origin: @w @h;
+        -ms-transform-origin: @w @h;
+         -o-transform-origin: @w @h;
+            transform-origin: @w @h;
+}
+//旋转
+.tranRotate(@a) {
+    -webkit-transform: rotate(@a);
+       -moz-transform: rotate(@a);
+        -ms-transform: rotate(@a);
+         -o-transform: rotate(@a);
+            transform: rotate(@a);
+}
+//移动
+.tranTranslate(@w,@h) {
+    -webkit-transform: translate(@w, @h);
+       -moz-transform: translate(@w, @h);
+        -ms-transform: translate(@w, @h);
+         -o-transform: translate(@w, @h);
+            transform: translate(@w, @h);
+}
+//伸缩
+.tranScale(@w,@h) {
+    -webkit-transform: scale(@w,@h);
+       -moz-transform: scale(@w,@h);
+        -ms-transform: scale(@w,@h);
+         -o-transform: scale(@w,@h);
+            transform: scale(@w,@h);
+}
+//扭曲
+.tranSkew(@w,@h) {
+    -webkit-transform: skew(@w,@h);
+       -moz-transform: skew(@w,@h);
+         -o-transform: skew(@w,@h);
+            transform: skew(@w,@h);
+
+    -ms-trantransform: skew(@w,@h);
+}
+//灰度
+.filterGray(@c:100%) {
+    -webkit-filter: grayscale(@c);
+       -moz-filter: grayscale(@c);
+        -ms-filter: grayscale(@c);
+         -o-filter: grayscale(@c);
+            filter: grayscale(@c);
+}
+//模糊
+.filterBlur(@f) {
+    -webkit-filter: blur(@f);
+        -ms-filter: blur(@f);
+            filter: blur(@f);
+            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=@f, MakeShadow=false);
+}
+//透明
+.filterAlpha(@o:100) {
+    opacity: (@o / 100);
+    *filter: alpha(opacity=@o);
+    filter: alpha(opacity=@o) ~"\9";
+}
+
+// * html #wrapper, *+html #wrapper { 
+// position: absolute; 
+// top: 50%; 
+// } 
+// * html #div, *+html #div { 
+// position: relative; 
+// top: -50%; 
+// }
+
+.media() {
+    @media screen and (min-width:320px){html{font-size:12px}}
+    @media screen and (min-width:360px){html{font-size:13px}}
+    @media screen and (min-width:400px){html{font-size:14px}}
+    @media screen and (min-width:480px){html{font-size:14px}}
+    @media screen and (min-width:560px){html{font-size:15px}}
+    @media screen and (min-width:600px){html{font-size:16px}}
+    @media screen and (min-width:640px){html{font-size:18px}}
+}

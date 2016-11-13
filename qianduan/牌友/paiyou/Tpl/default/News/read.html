@@ -1,0 +1,78 @@
+  <!--内页banner开始 与首页banner不同-->
+
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+	<!--内页banner结束 与首页banner不同-->
+    <!--内页开始-->
+	<div class="position">
+    <div class="wrap">
+        当前位置： <a href="/">首页 </a> / <span>{$cname.nav_name}</span>
+    </div>
+</div>
+
+<div class="wrap clearfix">
+    <div class="news-left fl">
+        <div class="news-content-detail">
+            <div class="news-content">
+
+                <div class="title-box">
+                    <h4>
+                       {$info['title']}
+                    </h4>
+                    <div class="time-div clearfix">
+                        <span class="time fl">{:date('Y年m月d日H:i',$info['published'])}</span>
+                        <span class="author fl">编辑:{$auther}</span>
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style fr">
+                            <span class="jiathis_txt">分享到：</span>
+                            <a class="jiathis_button_tools_1"></a>
+                            <a class="jiathis_button_tools_2"></a>
+                            <a class="jiathis_button_tools_3"></a>
+                            <a class="jiathis_button_tools_4"></a>
+                            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+                            <a class="jiathis_counter_style"></a>
+                        </div>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
+                    </div>
+                </div>
+                <div class="add-txt">
+                    {$info.content}
+                </div>
+                <div class="link">
+                   <!-- 上一篇：<a href="#">男子指责女生与儿子出走有关 将其打成精神分裂</a>-->
+                   
+                   {$next}
+                    <br/>
+                    <!--下一篇：<a href="#">张涛逗必</a>-->
+                    {$prev}
+                </div>
+
+
+            </div>
+
+
+            <!-- UY BEGIN -->
+            <div id="uyan_frame"></div>
+            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2043259"></script>
+            <!-- UY END -->
+        </div>
+    </div>
+    <div class="news-right fl">
+        <h5>
+            推荐新闻
+        </h5>
+        
+        <ul>
+        	<volist name="hlist" id="vo">
+            <li>
+                <a href="{:U('News/read',array('id'=>$vo['id']))}"><img src="__ROOT__{$vo.titlepic}" alt=""/></a>
+                <h6><a href="{:U('News/read',array('id'=>$vo['id']))}">
+                    {$vo.title}
+                </a></h6>
+            </li>
+           
+          </volist> 
+        </ul>
+    </div>
+</div>

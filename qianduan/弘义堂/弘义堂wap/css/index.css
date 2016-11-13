@@ -1,0 +1,553 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i,.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header .am-header-title{
+    margin: 0 14%;
+}
+.am-header-default .am-header-nav>a>i, .am-header .am-header-title i, .am-menu-dropdown1 .am-menu-toggle i{
+    color: #fff;
+    font-size: 3.5rem;
+}
+.am-header-default{
+    background: #885530;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #885530;
+}
+
+.am-navbar-default a i{
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 2rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-header .am-header-title img {
+    margin-top: 3px;
+    height: 40px;
+    vertical-align: top;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #885530;
+    border-bottom-color: #e9e9e9;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #885530;
+}
+
+/**/
+body{
+    background: url("../images/bg.jpg");
+}
+.public_title{
+    background: url("../images/title_bg.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+    font: bold 2rem/3rem "DroidSansFallback";
+    color: #fff;
+    margin: 1rem auto;
+}
+.tese {
+    border-bottom: 1px solid #d5c7bd;
+}
+.tese a{
+    display: block;
+    width: 31%;
+    float: left;
+    text-align: center;
+    background: #96592d;
+    margin-left: 2%;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font: 1.4rem/2rem "droidsansfallback";
+}
+.tese a:nth-child(1),.tese a:nth-child(4),.tese a:nth-child(7){
+    margin-left: 1.5%;
+}
+.youshi_li{
+    padding: 1rem;
+}
+.youshi_li img{
+    max-width: 35%;
+    float: left;
+    margin-right: 5%;
+}
+.youshi_li .text{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+    width: 60%;
+}
+.youshi_li .text h3{
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #96592d;
+}
+.ky ul li{
+    width: 31%;
+    float: left;
+    margin-bottom: 1rem;
+    margin-left: 1.5%;
+    position: relative;
+}
+.ky ul li img{
+    max-width: 100%;
+}
+.ky ul li:nth-child(4),.ky ul li:nth-child(5){
+    margin-left: 13%;
+}
+.ky ul li p{
+    top: 45%;
+    left: 0;
+    text-align: center;
+    position: absolute;
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #fff;
+    width: 100%;
+}
+.chanpin_img img{
+    max-width: 46%;
+    margin: 0 2%;
+    display: block;
+    float: left;
+}
+.chanpin .am-control-nav{
+    display: none;
+}
+.join{
+    width: 98%;
+    margin: 0 auto;
+}
+.join ul li{
+    width: 23%;
+    margin: 0 1% 1rem;
+    float: left;
+    text-align: center;
+}
+.join ul li i{
+    display: block;
+    margin: 0 auto;
+    font-size: 4rem;
+    color: #96592d;
+}
+.join ul li span{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #96592d;
+}
+.public_title a{
+    float: right;
+    color: #fff;
+    font: 1.6rem/3rem "droidsansfallback";
+}
+.chanpin_img ul li{
+    width: 46%;
+    margin-left: 2%;
+    float: left;
+}
+.chanpin_img ul li img{
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.chanpin_img ul li p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #96592d;
+    text-align: center;
+}
+.news{
+    padding: 1rem;
+}
+.news ul li{
+    margin-bottom: 1rem;
+}
+.news a{
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #96592d;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.news p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 0.5rem;
+}
+.shenqing {
+    padding-top: 0.5rem;
+}
+.shenqing ul li{
+    width: 93%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 86%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+    background: none;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 86%;
+    border: none;
+    resize: none;
+    outline: 0;
+    background: none;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #8a5732;
+}
+.shenqing ul li.res input{
+    border: none;
+    color: #666;
+    background: #e5e5e5;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: -34px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: -34px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.am-btn{
+    padding: 0.4em 1em;
+}
+.shenqing ul li .am-selected-list li{
+    margin-left: 0.5rem;
+}
+.am-selected-list li.am-checked .am-icon-check{
+    color: #96592d;
+}
+.am-input-group{
+    display: inline-flex;
+    float: right;
+    margin-right: 4%;
+}
+.am-input-group-btn>.am-btn{
+    border-color: transparent;
+}
+.am-datepicker tr.am-datepicker-header{
+    background: #96592d;
+}
+.img img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.fazhan ul li {
+    padding-bottom: 1rem;
+    background: url("../images/joinus_img1.png") no-repeat right top;
+    background-size: 85% 88%;
+}
+.fazhan ul li span {
+    display: block;
+    width: 25%;
+    float: left;
+    font: 1.8rem/3rem "microsoft yahei";
+    color: #96592d;
+}
+.fazhan ul li p {
+    width: 60%;
+    float: right;
+    font: 1.6rem/1.6rem "microsoft yahei";
+    color: #fff;
+}
+.fazhan ul li p em {
+    font: 1.2rem/1.2rem "microsoft yahei";
+    color: #fff;
+    display: block;
+}
+.text{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666666;
+    padding: 0 1rem;
+}
+.join_youshi ul li {
+    border: 1px dashed #96592d;
+    padding-bottom: 1rem;
+    width: 96%;
+    margin: 0 auto 1rem;
+}
+.join_youshi ul li span{
+    font: 1.6rem/2rem "droidsansfallback";
+    color: #96592d;
+    padding: 1rem 1rem 0.5rem;
+    display: block;
+}
+.join_youshi ul li i{
+    font-size: 3rem;
+    padding-right: 0.5rem;
+}
+.join_hezuo ul li{
+    width: 31%;
+    min-height: 12rem;
+    float: left;
+    margin-bottom: 1rem;
+    margin-left: 1.5%;
+}
+.join_hezuo ul li img{
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.join_hezuo ul li p{
+    text-align: center;
+    font: 1.4rem/1.6rem "droidsansfallback";
+    color: #96592d;
+}
+.join_lc a{
+    font: 1.2rem/2rem "droidsansfallback";
+    color: #96592d;
+    background: #fff;
+    border: 1px solid #96592d;
+}
+.case ul li{
+    width: 47%;
+    margin-left: 2%;
+    float: left;
+    margin-bottom: 1rem;
+    border: 1px solid #666666;
+    padding: 0.5rem;
+}
+.case ul li img{
+    max-width: 100%;
+    height: 58px;
+}
+.case ul li p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666666;
+    text-align: center;
+}
+.case_article{
+    padding: 1rem 1rem 0;
+}
+.case_article h1{
+    font: bold 2rem/2.5rem "droidsansfallback";
+    color: #96592d;
+}
+.case_article h3{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+}
+.text img{
+    max-width: 100%;
+    margin: 1rem 0;
+}
+.next_page{
+    padding: 1rem;
+}
+.next_page p{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #96592d;
+}
+.next_page p a{
+    color: #96592d;
+}
+.team_list .am-slider-a4 .am-control-nav li a.am-active{
+    background: #96592d;
+}
+.team_list .youshi_li .text h3 {
+    color: #666;
+}
+.team_list .youshi_li .text h3 em{
+    color: #96592d;
+    font-weight: bold;
+}
+.team_hezuo ul li{
+    width: 31%;
+    float: left;
+    margin-bottom: 1rem;
+    margin-left: 1.5%;
+}
+.about_title{
+    padding:0 1rem 0.5rem;
+    font:bold 1.6rem/2.2rem "droidsansfallback";
+    color: #96592d;
+}
+.about_title span{
+    border-left: 3px solid #96592d;
+    padding-left: 0.5rem;
+}
+.about .text{
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 0.5rem;
+}
+.fazhan_list {
+    padding: 1rem;
+}
+.fazhan_list ul li {
+    margin-bottom: 0.5rem;
+}
+.fazhan_list ul li h1{
+    width: 16%;
+    float: left;
+}
+.about .fazhan_list ul li .text{
+    width: 84%;
+    padding: 0;
+    border-bottom: none;
+}
+.fazhan_list ul li .am-icon-caret-right{
+    color: #96592d;
+}
+.pinpai ul li h1{
+    width: 24%;
+}
+.about .pinpai ul li .text{
+    width: 76%;
+}
+.huiyuan ul li{
+    width: 31%;
+    float: left;
+    margin-left: 1.5%;
+    border: 1px solid #96592d;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.huiyuan ul li img{
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+.huiyuan ul li p{
+    font: 1.6rem/2rem "droidsansfallback";
+    color: #96592d;
+}
+.huiyuan ul li span{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #b77a4e;
+}
+.huiyuan ul li:nth-child(4){
+    width: 97%;
+}
+.tequan {
+    padding: 1rem;
+}
+.tequan .text{
+    margin-bottom: 0.8rem;
+    background: url("../images/xx.png") no-repeat 0 0;
+    padding: 0 0 0 2rem;
+}
+
+.page_contact{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #666;
+    background: #fff;
+    padding: 1rem;
+}
+.page_contact ul li{
+    padding-left: 26px;
+    margin: 10px 0;
+}
+.mingzi{
+    background: url("../images/bg.png") no-repeat 0 -111px;
+}
+.didian{
+    background: url("../images/bg.png") no-repeat 0 -192px;
+}
+.dianhua{
+    background: url("../images/bg.png") no-repeat 0 -288px;
+}
+.tel{
+    background: url("../images/bg.png") no-repeat 0 -268px;
+}
+.qq{
+    background: url("../images/bg.png") no-repeat 0 -316px;
+}
+.e-mail{
+    background: url("../images/bg.png") no-repeat 0 -343px;
+}
+.weixin{
+    background: url("../images/bg.png") no-repeat 0 -171px;
+}
+.kangyang .text img{
+    margin:0 0 0.5rem;
+}
+.zengzhi ul li img{
+    height: 136px;
+}
+.news_list ul li:first-child{
+    position: relative;
+}
+.news_list ul li img{
+    max-width: 100%;
+}
+.news_list ul li span{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+    height: 2.2rem;
+    font: 1.6rem/2.2rem "droidsansfallback";
+   color: #fff;
+    width: 100%;
+    padding: 0 2%;
+}
+.news_list ul li p{
+    border-bottom: none;
+}
+.news_list ul li h4{
+    font: 1.3rem/1.6rem "droidsansfallback";
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.tuijian{
+    padding: 1rem;
+}
+.tuijian a{
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #96592d;
+    display: block;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.tuijian a i{
+    padding-right: 0.5rem;
+}
+.zs ul li img{
+    height: 106px;
+}

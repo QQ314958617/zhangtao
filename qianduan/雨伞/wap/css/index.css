@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+.am-header {
+    background: #000;
+}
+
+.am-header .am-header-nav img {
+    height: 40px;
+}
+
+.am-menu-offcanvas1 .am-menu-toggle {
+    font-size: 2rem;
+}
+
+.am-slider-a5 .am-control-nav li a {
+    background: none;
+}
+
+.am-slider-a5 .am-control-nav li a.am-active {
+    background: none;
+}
+
+.am-navbar-default .am-navbar-nav{
+    background: #000;
+}
+.am-navbar .am-navbar-nav{
+    overflow:visible;
+}
+.am-navbar .am-navbar-nav li:first-child{
+    border-right: 1px solid #393939;
+}
+.am-navbar .am-navbar-nav li:last-child{
+    border-left: 1px solid #393939;
+}
+.am-navbar-nav a i{
+    font-size: 1.8em;
+    display: block;
+    vertical-align: middle;
+    width: 24px;
+    margin: 8px auto 0;
+}
+.am-header-default .am-header-nav>a{
+    line-height: 7px;
+}
+.am-header-default .am-header-nav>a>i{
+    padding-top: 16px;
+    display: block;
+}
+.am-header .am-header-title img{
+    height: 37px;
+}
+.index_product,.news{
+    background: url("../images/index_pro.jpg") no-repeat top center;
+    background-size:auto 100%;
+}
+.index_product h1,.news h1,.about h1{
+    font:2rem/3rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.index_product h3,.news h3,.about h3{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+}
+.about h1,.about h3{
+    color: #333;
+}
+.index_product .am-slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.index_product .am-slides li img{
+    max-width: 100%;
+}
+.am-slider-default .am-control-nav li a.am-active{
+    background: #fff;
+}
+.am-slider-default .am-control-nav li a{
+    background: #666;
+}
+.am-with-fixed-navbar{
+    padding-bottom: 49px;
+}
+.index_news .am-slider{
+    width: 65%;
+}
+.am-slider-default .am-direction-nav a{
+    padding: 0;
+}
+.index_product ul li a{
+    font: 1.2rem/1.8rem "microsoft yahei";
+    color: #333;
+    padding: 0.5rem 0;
+}
+.index_product ul li p{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+    text-align: right;
+}
+.news ul li {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.news ul li img{
+    max-width: 30%;
+    margin-right: 5%;
+    float: left;
+}
+.news ul li h3{
+    width: 65%;
+    float: left;
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #333;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.news ul li span{
+    width: 65%;
+    float: left;
+    display: block;
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+    text-align: left;
+}
+.news ul li p{
+    width: 65%;
+    float: left;
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+    text-align: left;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.page,.pages {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.page a ,.page span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    margin-right: 6px;
+}
+.pages a ,.pages span{
+    color: #333;
+    border: 1px solid #333;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 10px;
+    margin-right: 6px;
+}
+.page a:hover,.page span{
+    color: #666;
+    background: #666;
+    border: 1px solid #666;
+}
+.pages a:hover,.pages span{
+    color: #333;
+    background: #666;
+    border: 1px solid #666;
+}
+.product {
+    padding: 1rem 0;
+}
+.product ul li{
+    float: left;
+    width: 46%;
+    margin: 0 2% 1rem;
+}
+.product ul li img{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 0.52rem;
+}
+.product ul li p{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #333;
+}
+.product_article{
+    padding: 1rem;
+}
+.pro_left{
+    width: 40%;
+    margin-right: 5%;
+}
+.pro_left img{
+    max-width: 100%;
+}
+.pro_right{
+    width: 55%;
+}
+.pro_right span{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #333;
+}
+.pro_right p{
+    font: 1.2rem/1.8rem "microsoft yahei";
+    color: #666;
+}
+.pro_right a{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    background: #333333;
+    font: 1.4rem/3rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+}
+.pro_detail h3{
+    background: #333333;
+    font: 1.4rem/3rem "microsoft yahei";
+    color: #fff;
+    padding: 0 1rem;
+}
+.pro_detail .am-slider{
+    width: 80%;
+    margin:2rem auto;
+}
+.about .am-tabs-default .am-tabs-nav>.am-active a{
+    background: #666;
+}
+[data-am-widget=tabs]{
+    margin: 1rem 0 0;
+}
+.am-tabs-bd{
+    border: none;
+}
+.about .text{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #333;
+    padding: 1rem;
+}
+.bigimg{
+    width: 60%;
+    margin: 0 auto 2rem;
+}
+.bigimg img{
+    max-width: 100%;
+}
+.bigimg p,.smallimg ul li p{
+    position: absolute;
+    bottom:2rem;
+    left: 0;
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    width: 98%;
+    margin: 0 1%;
+    border: 1px solid #fff;
+}
+.smallimg ul li {
+    width: 46%;
+    float: left;
+    margin: 0 2% 1rem;
+    position: relative;
+}
+.smallimg ul li img{
+    max-width: 100%;
+}
+.contact {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #666;
+}
+.contact{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #666;
+}
+.contact ul li{
+    padding-left: 26px;
+    margin: 10px 0;
+}
+.mingzi{
+    background: url("../images/bg.png") no-repeat 0 -111px;
+}
+.didian{
+    background: url("../images/bg.png") no-repeat 0 -192px;
+}
+.dianhua{
+    background: url("../images/bg.png") no-repeat 0 -288px;
+}
+.tel{
+    background: url("../images/bg.png") no-repeat 0 -268px;
+}
+.qq{
+    background: url("../images/bg.png") no-repeat 0 -316px;
+}
+.e-mail{
+    background: url("../images/bg.png") no-repeat 0 -343px;
+}
+.weixin{
+    background: url("../images/bg.png") no-repeat 0 -171px;
+}
+.about img{
+    max-width: 100%;
+}
+.nextpage{
+    padding: 1rem;
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #333;
+}

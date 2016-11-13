@@ -1,0 +1,1201 @@
+@import "common";
+@import "BEM";
+.media();
+.bembase();
+@nc:#087ec4;
+@ac:#ba1217;
+body {
+	background-color: #ececec;
+}
+.am-header .am-header-title {
+	margin: 0px 18%;
+	font-size: 1.4rem;
+}
+.am-header-default .am-header-icon {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.am-menu-offcanvas1 .am-menu-toggle {
+	font-size: 2rem;
+}
+.am-offcanvas-bar {
+	width:80%;
+}
+.am-menu-offcanvas1 .am-menu-sub a {
+	font-size:1rem;
+}
+.e_linkbox {
+	display: block;
+}
+.am-header-default {
+	background-color: #272526;
+}
+.am-header-default .am-header-nav>a {
+	color: #4e4e4e;
+}
+.am-menu-offcanvas1 .am-menu-toggle{
+	color: #4e4e4e;
+}
+
+
+.footer {
+	.clearFix();
+	border-top: 1px solid #b5b5b5;
+	background-color: #f8f8f8;
+	li {
+		width:25%;
+		text-align: center;
+		float:left;
+		padding: 1rem 0;
+		.am-icon-home {
+			font-size: 1.4rem;
+		}
+		.iconfont {
+			font-size: 1.2rem;
+			color: #7e7e7e;
+		}
+		p {
+			font-size: 1rem;
+			color: #7e7e7e;
+		}
+	}
+
+}
+//新闻详情 
+.artical {
+	padding: 2rem 0;
+
+	font-size: 1rem;
+	line-height: 1.4rem;
+	color: #626567;
+	text-align: justify;
+	.e_title {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		text-align: center;
+		color: #333333;
+	}
+	.e_time-box {
+		margin-top: 0;
+		text-indent: 1rem;
+		line-height: 1.6rem;
+		border-bottom:1px solid #e6e6e6;
+	}
+	.e_time-title {
+		font-size: 0.8rem;
+		color: #666;
+	}
+	.e_time {
+		font-size: 0.8rem;
+		color: #999;
+	}
+	.more_news-box {
+		margin-top: 0;
+		text-indent: 0px;
+	}
+	.text-box {
+		padding:2rem 0;
+	}
+	.e_more-title {
+		color: #333;
+	}
+	.e_more {
+		color: #666;
+	}
+	img {
+		width:100%;
+		display:block;
+	}
+	p {
+		margin-top: 1.4rem;
+		text-indent: 2rem;
+		text-align: justify;
+	}
+	span {
+		text-align: justify;
+	}
+}
+
+//用品
+.item_list {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	.item_list-item {
+		width:46%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 1.6rem;
+	}
+	.e_img-box {
+		width: 100%;
+		height: 38.64%;
+	}
+	.e_title {
+		color: #76868f;
+		font: 1.4rem;
+		line-height: 1.6rem;
+	}
+}
+
+//手册
+.shouce_list {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	.shouce_list-item {
+		width:46%;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 1.6rem;
+	}
+	.e_img-box {
+		width: 100%;
+		height: 38.64%;
+	}
+	.e_link {
+		display: block;
+		width: 100%;
+		height: 1.6rem;
+		font-size: 1rem;
+		font-weight: bold;
+		line-height: 1.6rem;
+		background-color: #bac2ca;
+		color: #fff;
+	}
+}
+
+//内页头部导航
+.page_nav {
+	width:96%;
+	padding:1%;
+	margin-top: 1rem;
+	background: url(../images/page_nav.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	.page_nav-list {
+		text-align: center;
+		font-size: 0;
+		overflow: hidden;
+		height:1.6rem;
+		padding-left: 0;
+	}
+	.page_nav-item {
+		.dib();
+		width:16%;
+		margin-left: 5%;
+		height:1.6rem;
+		font-size: 1rem;
+		line-height: 1.6rem;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		background-color: #087ec4;
+	}
+	.page_nav-item.on {
+		background-color: @ac;
+	}
+	a {
+		color: #fff;
+	}
+}
+
+//联系我们
+.contain {
+	background-color: #f4f4f4;
+	border:1px solid #b3b3b3;
+	border-radius: 5%;
+	overflow: hidden;
+	padding:2%;
+	color:#666;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	.map_block {		
+		overflow: hidden;
+	}
+	.info_t {
+		font-size: 1.4rem;
+		line-height: 3rem;
+	}
+	.info_d {
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+}
+.chaxun {
+	color:#666;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	.map_block {		
+		overflow: hidden;
+	}
+	.info_t {
+		font-size: 1.4rem;
+		line-height: 3rem;
+	}
+	.info_d {
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+}
+#map{
+	min-width:300px;
+	min-height: 260px;
+}
+
+// 汽车列表头部
+.B_select-box {
+	color: #455056;
+	padding-bottom: 10px;
+	padding-left:2%;
+	padding-right: 2%;
+	.B_select-box-item {
+		overflow: hidden;
+		padding:0px 0 10px;
+		border-bottom: 1px dashed #eaeaea;
+		margin-bottom: 5px;
+	}
+	.b_select-title {
+		.dib();
+		float: left;
+		width:15%;
+		height:1.4rem;
+		line-height: 1.4rem;
+		text-align: right;
+		margin-top: 0.4rem;
+	}
+	.b_select-list {
+		overflow: hidden;
+		margin:0 0 0 16%;
+		//width:680px;
+	}
+	.e_select-list-item {
+		.dib();
+		line-height: 1.4rem;
+		padding: 0px 1.2rem;
+		border-left:1px solid #333;
+		margin-top: 0.4rem;
+		a {
+			color: #455056;
+		}
+	}
+	.e_select-list-item:hover {
+		a {
+			color: @ac;
+		}
+	}
+	.e_select-list-item.first {
+		border-left:none;
+	}
+}
+
+//表单
+.form_block {
+	.b_normal-block {
+		margin-top: 2rem;
+		width:100%;
+		background: url(../images/form_bg.jpg) center center no-repeat;
+		background-size: 100% 100%;
+		padding:5% 5% 10%;
+	}
+	.b_spec-block1 {
+		margin-top: 2rem;
+		width:100%;
+		background: url(../images/form_bg.jpg) center center no-repeat;
+		background-size: 100% 100%;
+		padding:5% 5% 10%;
+	}
+	.b_spec-block2 {
+		margin-top: 2rem;
+		width:100%;
+		background: url(../images/form_bg.jpg) center center no-repeat;
+		background-size: 100% 100%;
+		padding:5% 5% 10%;
+	}
+	.e_form-title {
+		font-size: 1.4rem;
+		line-height: 2.3rem;
+		font-weight: bold;
+		border-bottom:2px solid #ececec;
+	}
+	.b_text-info {
+		overflow: hidden;
+		margin-top: 0.8rem;
+	}
+	.e_input-box {
+		overflow: hidden;
+		padding-left: 20px;
+	}
+	.e_title {
+		float:left;
+		font-size: 1rem;
+		line-height: 1.6rem;
+		color: #666;
+	}
+	.e_radio {
+	}
+	.e_half-select {
+		width:42%;
+	}
+	label {
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		color: #6c6c6c;
+		font-weight: normal;
+		margin-right: 1rem;
+	}
+	.e_input {
+		height: 1.5rem;
+		padding-left: 0.6rem;
+	}
+	.e_one-input {
+		width:70%;
+	}
+	.e_half-input {
+		width:42%;
+	}
+	.e_spec-select {
+
+	}
+	.e_spec-select {
+		width:49%;
+	}
+	.e_spec-input {
+		width:49%;
+	}
+	.e_textarea {
+		margin-top: 1rem;
+		width: 99%;
+		height:5rem;
+		padding:0.5rem 1rem ;
+	}
+	.e_submit {
+		width: 25%;
+		background-color: @nc;
+		color: #fff;
+		border:none;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+//新闻
+.news_list {
+	text-align: center;
+	padding:1.4rem 0;
+	.news_main {
+		width:100%;
+		background: url(../images/form_bg.jpg) center center no-repeat;
+		background-size: 100% 100%;
+		padding:4% 4%;
+	}
+	.e_title {
+		color: #4a4949;
+		display: block;
+		text-align: left;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
+	.e_info {
+		text-align: left;
+		font-size: 1rem;
+		line-height: 2rem;
+		color: #cccccc;
+	}
+	.e_detail {
+		margin-top: 0.2rem;
+		color: #666;
+		font-size: 1rem;
+		text-align: left;
+		line-height: 1.4rem;
+		text-indent: 2rem;
+
+	}
+	.e_img-box {
+		width:100%;
+		.pr();
+	}
+	.e_img-info {
+		width:100%;
+		height:2.4rem;
+		font-size: 1rem;
+		.pa();
+		bottom:0;
+		text-align: left;
+		color: #fff;
+		line-height: 2.4rem;
+		text-indent: 0.4rem;
+		background-color: rgba(0,0,0,0.6);
+	}
+	.more-box {
+		display: block;
+		font-size: 1rem;
+		line-height: 2.6rem;
+		border-top:1px solid #eaeaea;
+		margin-top: 0.4rem;
+		.clearFix();
+		.fl {
+			float: left;
+			color: #333;
+		}
+		.fr {
+			float: right;
+			color: #999999;
+		}
+	}
+	.timer {
+		margin-top: 1.6rem;
+		.dib();
+		background-color: #cecece;
+		font-size: 0.4rem;
+		line-height: 1rem;
+		color: #fff;
+		padding:5px;
+		border-radius: 5%;
+	}
+	.more_news-list {
+		margin-top: 0.6rem;
+	}
+	.more_news-item {
+		padding:0.6rem 0.4rem;
+		.clearFix();
+		border-top:1px solid #eaeaea;
+		.e_img-box {
+			width:25%;
+			height:18%;
+			float: left;
+		}
+		.e_title {
+			font-size: 1rem;
+			margin-left: 27%;
+			color: #666;
+		}
+	}
+	.more_news-lists {
+		margin-top: 0.6rem;
+	}
+	.more_news-items {
+		padding:0.6rem 0.4rem;
+		.clearFix();
+		border-top:1px solid #eaeaea;
+		.e_title {
+			font-size: 1rem;
+			line-height: 2rem;
+			color: #666;
+		}
+	}
+}
+.index_form {
+	margin-top: 2rem;
+	padding:1.4rem 2%;
+	background-color: #fff;
+	color: #76868f;
+	.clearFix();
+	.left {
+		float: left;
+		width: 66%;
+	}
+	.right {
+		float: right;
+		width:30%
+	}
+	input.e_form-item,select.e_form-item {
+		border-left:none;
+		border-top:none;
+		border-right:none;
+		border-bottom:1px solid #e4e4e4;
+	}
+	.e_form-item {
+		margin-bottom: 0.4rem;
+		width: 100%;
+		height:1.4rem;
+		line-height: 1.4rem;
+		font-size: 1rem;
+		padding-left: 0.4rem;
+		
+	}
+	.e_form-text {
+		width:100%;
+		height:10rem;
+		background-color: #f4f4f4;
+		margin-top: 1rem;
+		padding:0.2rem 0.4rem;
+	}
+	.e_title {
+		color: #4d606b;
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 1.6rem;
+	}
+	.e_img-box {
+		width: 100%;
+		margin:0.4rem 0;
+	}
+	.e_line {
+		width: 100%;
+		height: 1px;
+		background-color: #ddd;
+	}
+	.e_sub {
+		background-color: #078dd7;
+		width: 100%;
+		font-size: 1rem;
+		text-align: center;
+		height: 2rem;
+		line-height: 2rem;
+		color: #fff;
+		border:none;
+	}
+
+}
+.index_brief {
+	background-color: #fff;
+	padding:2%;
+	margin-top: 2rem;
+	.clearFix();
+	.e_img-box {
+		width:48%;
+		float: left;
+	}
+	.b_info-box {
+		overflow: hidden;
+		margin-left: 49%;
+	}
+	color: #4d606b;
+	.e_title {
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: 1.8rem;
+	}
+	.e_line {
+		display:none;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		width:6%;
+		background-color: #828282;
+		height:3px;
+	}
+	.e_detail {
+		margin-top: 0.8rem;
+		text-indent: 2rem;
+		overflow : hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+	}
+}	
+.b_sub-car-show {
+	border: 1px solid #eaeaea;
+	.b_sub-hotsale-item {
+		width:100%;
+	}
+	.e_img-box {
+		width:48%;
+		height:40%;
+		float: left;
+		font-size: 0;
+	}
+	.b_sub-right-info {
+		display: block;
+		overflow: hidden;
+		width:48%;
+		float: left;
+		margin-left: 2%;
+	}
+}
+.tragger-btn-box {
+	width:100%;
+	text-align: center;
+
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
+	.tragger-btn {
+		width:20%;
+		text-align: center;
+		.dib();
+		color: #fff;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		background-color: @nc;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.tragger-btn.on {
+		background-color: @ac;
+	}
+}
+.b_sub-hotsale-item {
+	overflow: hidden;
+	.clearFix();
+	margin:10px 0;
+	float: left;
+	.e_title {
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: 1.6rem;
+		a {
+			color:#35444d;
+		}
+	}
+	.b_hotsale-detal-box{
+		float: left;
+		width:100%;
+		li {
+			height:1.4rem;
+			border-bottom: 1px dashed #b7b7b7;
+			line-height:1.4rem;
+		}
+		.b_info-box {
+			border-top: 1px dashed #b7b7b7;
+		}
+		.e_star {
+			color:#465258;
+			height:1.4rem;
+			font-weight: bold;
+		}
+		.e_info {
+			font-size: 1rem;
+			color:#76868f;
+		}
+	}
+	.e_info-big {
+		line-height: 2rem;
+		font-weight: bold;
+	}
+	.e_text {
+		line-height: 2rem;
+		font-size: 1rem;
+		color:#465258;
+	}
+	.e_price {
+		line-height: 2rem;
+		font-size: 1.8rem;
+		color:#d60d0d;
+	}
+	.e_price-dw {
+		line-height: 1.8rem;
+		font-size: 1.4rem;
+		color:#d60d0d;
+	}
+}
+.index_carlist {
+	background-color: #fff;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
+	.am-slider-a1 {
+		box-shadow:0 0 0 #ffffff;
+	}
+	.b_sub-hotsale-item {
+		width:48%;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-bottom: 2rem;
+	}
+	.e_img-box {
+		width:100%;
+		height:96%;
+		font-size: 0;
+	}
+	.b_sub-right-info {
+		display: block;
+		overflow: hidden;
+		width:100%;
+		float: left;
+		margin-left: 2%;
+	}
+}
+.index_itemlist {
+	margin-top: 1rem;
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom: 2rem;
+	background-color: #fff;
+	.item-item {
+		width:48%;
+		margin-top: 1rem;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.e_img-box {
+		width: 100%;
+		border:1px solid #ececec;
+	}
+	.e_title {
+		font-size: 1rem;
+		line-height: 2rem;
+		color: #484d50;
+	}
+	.am-slider-a1 {
+		padding-bottom: 1rem;
+		box-shadow: none;
+	}
+}
+.index_service {
+	background: url(../images/index_service-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding:2%;
+	margin-top: 2rem;
+	.clearFix();
+	.phone-box {
+		width:50%;
+		background-color: #0271b2;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		float: left;
+	}
+	.phone_title {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		color: #fff;
+		font-weight: bold;
+	}
+	.phone_en {
+		font-size: 0.4rem;
+		line-height: 0.6rem;
+		color: #6b9ec8;
+		display: none;
+	}
+	.phone_num {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		color: #fff;
+		font-weight: bold;
+	}
+	.b_main-box-left-bottom {
+		font-size: 0;
+	}
+	.b_link-block {
+		width:25%;
+		height:6.6rem;
+		padding-top: 1.4rem;
+		overflow: hidden;
+		.dib();
+		text-align: center;
+		color: #4d606b;
+		.e_icon {
+			line-height: 2.6rem;
+			font-size: 2rem;
+			vertical-align: bottom;
+		}
+		.e_title {
+			font-size: 1rem;
+		}
+	}
+}
+.index_show {
+	margin-top: 2rem;
+	background-color: #fff;
+	overflow: hidden;
+}
+.b_left-news-block {
+	margin-top: 2rem;
+	padding-left:2%;
+	padding-right: 2%;
+	background-color: #fff;
+	padding-top: 1.6rem;
+	padding-bottom: 1rem;
+	.clearfix{
+		.clearFix();
+	}
+	.e_img-box {
+		float:left;
+		width:41%;
+		.pr();
+	}
+	.b_detail-box {
+		overflow: hidden;
+		margin-left: 43%;
+		.e_title {
+			font-weight: bold;
+			color:#4d606b;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			.db();
+		}
+		.b_infobox {
+			color:#76868f;
+			font-size: 1rem;
+			line-height: 1.4rem;
+		}
+		.e_detail {
+			color:#4d606b;
+			font-size: 1rem;
+			line-height: 1.4rem;
+			text-indent: 2rem;
+			overflow : hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+		.e_link {
+			color:#4d606b;
+		}
+	}
+	.b_news2-list {
+		margin-top: 0.8rem;
+		.b_news2-list-item {
+			line-height: 1.6rem;
+			height: 1.6rem;
+			font-size: 1rem;
+			border-bottom: 1px solid #d5d2d2;
+			text-indent: 6px;
+			.e_title {
+				color:#4d606b;
+			}
+			.e_link {
+				color:#4d606b;
+				float:right;
+				display: none;
+			}
+		}
+	}
+}
+.car_detail {
+	padding:2% 2% 0 2%;
+	background-color: #fff;
+	margin-top: 2rem;
+}
+.B_sub-right {
+	overflow: hidden;
+	color: #35444d;
+	margin-bottom: 2rem;
+	.e_all-price {
+		line-height: 1.4rem;
+		height: 1.4rem;
+		font-size: 1rem;
+		margin-top: 2rem;
+	}
+	.e_text-a {
+		float: right;
+		.db();
+		width: 25%;
+		height: 2rem;
+		line-height: 2rem;
+		text-align: center;
+		font-weight: bold;
+		color: #fff;
+		background-color: #d6dadd;
+		font-size: 1rem;
+	}
+	.b_box {
+		.clearFix();
+		margin-top: 1rem;
+		height: 2rem;
+	}
+	.b_box1 {
+		height: 4rem;
+	}
+	.e_our-price {
+		font-size: 1rem;
+	}
+	.e_price {
+		line-height: 4rem;
+		font-size: 2.6rem;
+		font-weight: bold;
+		i {
+			font-size: 2rem;
+		}
+	}
+	.e_time {
+		line-height: 2rem;
+		font-size: 1rem;
+	}
+	.e_text-a:hover {
+		background-color: @ac;
+	}
+	.b_info-box {
+		margin-top: 1.2rem;
+		background-color: #d6dadd;
+		text-align: center;
+		overflow: hidden;
+		padding:10px 10px 20px;
+		font-size: 0;
+	}
+	.e_select-title {
+		text-align: left;
+		font-size: 1rem;
+	}
+	.b_select-box {
+		font-size: 0;
+	}
+	.b_select {
+		.dib();
+		width: 40%;
+		margin: 0.8rem;
+	}
+	.e_select {
+		.dib();
+		width: 100%;
+		height: 2.4rem;
+		line-height: 2.4rem;
+		text-align: center;
+		color: #fff;
+		background-color: #a9b0b6;
+		font-size: 1rem;
+	}
+	.b_select.on {
+		.e_select {
+			background-color: @ac;
+		}
+	}
+	.b_select:hover {
+		.e_select {
+			background-color: @ac;
+		}
+	}
+}
+.cardetail_img {
+	.cardetail_img-title-box {
+		background-color: #d6dadd;
+		line-height: 2rem;
+		height: 2rem;
+	}
+	.cardetail_table-title-box {
+		background-color: #eaeaea;
+		line-height: 2rem;
+		height: 2rem;
+	}
+	.cardetail-title-block {
+		width:30%;
+		height: 2rem;
+		line-height: 2rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		text-align: center;
+		background-color: @nc;
+		color: #fff;
+	}
+	table {
+		width: 100%;
+	}
+	td {
+
+	}
+	img {
+		width:100%;
+		display:block;
+		font-size: 0;
+	}
+}
+
+.helpcenter_block {
+	margin-top: 2rem;
+	color:#4d606b;
+	.b_helpcenter-left {
+		float: left;
+		width:48%;
+	}
+	.b_helpcenter-right {
+		float: right;
+		width:48%;
+	}
+	.e_title {
+		display: block;
+	}
+	.e_img-box {
+		width: 100%;
+	}
+	.e_title {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		color:#4d606b;
+	}
+	.b_hplb-box-item {
+		margin-bottom: 0.4rem;
+	}
+}
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+	.form_block {
+		.e_one-input {
+			width:70%;
+		}
+		.e_half-input {
+			width:70%;
+		}
+		.e_half-select {
+			width:70%;
+		}
+	}
+}
+@media screen and (min-width:300px) and (max-width:340px) {
+	
+	.page_nav {
+		.page_nav-item {
+			width:18%;
+			margin-left: 5%;
+		}
+	}
+	.index_brief {
+		.e_detail {
+			margin-top: 0;
+		}
+	}
+
+}
+
+@media screen and (min-width:640px){
+	//新闻详情
+	.artical {
+		img {
+			width:60%;
+			margin: 0 auto;
+		}
+	}
+
+	.item_list {
+		.item_list-item {
+			width:31%;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+	}
+
+	#map{
+		min-width:400px;
+		min-height: 340px;
+	}
+
+	.shouce_list {
+		.shouce_list-item {
+			width:31%;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+	}
+
+	.index_brief {
+		.b_info-box {
+			margin-left: 53%;
+		}
+		.e_title {
+			margin-top: 1rem;
+		}
+		.e_line {
+			display:block;
+		}
+	}
+
+	.index_service {
+		.phone_en {
+			display: block;
+		}
+	}
+	.index_form {
+		.e_img-box {
+			width: 70%;
+			display:block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.b_left-news-block {
+		.b_detail-box {
+			.e_detail {
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 8;
+				-webkit-box-orient: vertical;
+			}
+		}
+		.b_news2-list {
+			.b_news2-list-item {
+				.e_link {
+					display:inline;
+				}
+			}
+			
+		}
+	}
+	.b_sub-car-show {
+		.b_sub-right-info {
+			padding-top: 2.4rem;
+		}
+		
+	}
+	.B_select-box {
+		.b_select-title {
+			width:8%;
+		}
+		.b_select-list {
+			margin:0 0 0 9%;
+			//width:680px;
+		}
+	}
+}
+
+@media screen and (min-width:1000px){
+	.item_list {
+		.item_list-item {
+			width:23%;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+	}
+
+	#map{
+		min-width: 600px;
+		min-height: 400px;
+	}
+
+	.shouce_list {
+		.shouce_list-item {
+			width:23%;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+	}
+
+	.B_select-box {
+		.b_select-title {
+			width:5%;
+		}
+		.b_select-list {
+			margin:0 0 0 6%;
+			//width:680px;
+		}
+	}
+
+	.b_sub-car-show {
+		.b_sub-right-info {
+			padding-top: 3.4rem;
+			.e_title {
+				font-size: 2rem;
+				line-height: 2.4rem;
+			}
+		}
+		
+	}
+}
+
+
+.m_ostar {
+	.dib();
+	width:12px;
+	height:12px;
+	margin-right: 3px;
+	background: url(../images/star-on.png) center center no-repeat;
+}
+.m_hstar {
+	.dib();
+	width:12px;
+	height:12px;
+	margin-right: 3px;
+	background: url(../images/star-half.png) center center no-repeat;
+}
+.m_nstar {
+	.dib();
+	width:12px;
+	height:12px;
+	margin-right: 3px;
+	background: url(../images/star-off.png) center center no-repeat;
+}
+.m_starnum {
+	color:#e9a048;
+}

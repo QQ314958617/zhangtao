@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+       关于爱帮
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-dropdown1" data-am-menu-collapse>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+    <ul class="am-menu-nav am-avg-sm-1 am-collapse">
+        <li class="am-parent">
+            <a href="##" class="">公司</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">人物</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="#c3" class="">趋势</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+                <li class="am-menu-nav-channel">
+                    <a href="#c3" class="" title="趋势">泥煤 &raquo;</a>
+                </li>
+            </ul>
+        </li>
+        <li class="am-parent">
+            <a href="##" class="">投融资</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">趋势</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">投融资</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">创业人物</a>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="##" class="">创业公司</a>
+        </li>
+        <li class="">
+            <a href="##" class="">创业人物</a>
+        </li>
+    </ul>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="wrap about">
+    <div class="img"><img src="images/about_img1.jpg" alt=""/></div>
+    <div class="title tac">
+        <h1>公司介绍</h1>
+        <h4>company introduction</h4>
+    </div>
+    <div class="text">
+        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆在保证主食量的同时适当增加高蛋白质和高维生豆在保证主食量的同时
+        <br/><br/>
+        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种。
+    </div>
+    <div class="title tac">
+        <h1>企业文化</h1>
+        <h4>corporate culture</h4>
+    </div>
+    <div class="wenhua">
+        <div data-am-widget="slider" class="am-slider am-slider-c1" data-am-slider='{&quot;directionNav&quot;:false}' >
+            <ul class="am-slides">
+                <li>
+                    <img src="images/about_img2.jpg">
+                    <div class="am-slider-desc">爱帮愿景:创造、品质、生活</div>
+
+                </li>
+                <li>
+                    <img src="images/about_img2.jpg">
+                    <div class="am-slider-desc">爱帮愿景:创造、品质、生活</div>
+
+                </li>
+                <li>
+                    <img src="images/about_img2.jpg">
+                    <div class="am-slider-desc">爱帮愿景:创造、品质、生活</div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="title tac">
+        <h1>爱帮团队</h1>
+        <h4>corporate culture</h4>
+    </div>
+    <div class="wrap team">
+        <div data-am-widget="slider" class="am-slider am-slider-a4" data-am-slider='{&quot;directionNav&quot;:false}' >
+            <ul class="am-slides">
+                <li>
+                    <img src="images/about_img3.jpg">
+                    <div class="text">
+                        <h4>张涛董事长</h4>
+                        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆在保证主食量的同时适当增加高蛋白质和高维生豆在保证主食量的同时
+                    </div>
+                </li>
+                <li>
+                    <img src="images/about_img3.jpg">
+                    <div class="text">
+                        <h4>张涛董事长</h4>
+                        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆在保证主食量的同时适当增加高蛋白质和高维生豆在保证主食量的同时
+                    </div>
+                </li>
+                <li>
+                    <img src="images/about_img3.jpg">
+                    <div class="text">
+                        <h4>张涛董事长</h4>
+                        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆在保证主食量的同时适当增加高蛋白质和高维生豆在保证主食量的同时
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="title tac">
+        <h1>爱帮责任</h1>
+        <h4>corporate culture</h4>
+    </div>
+    <div class="wrap text">
+        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆在保证主食量的同时适当增加高蛋白质和高维生豆在保证主食量的同时
+        <br/><br/>
+        ⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种蔬菜和水果酸奶、豆⑴ 首先应注意膳食平衡，在保证主食量的同时适当增加高蛋白质和高维生素食物如鸡蛋、酸奶、豆制品、瘦肉、多种。
+        <br/><br/>
+    </div>
+    <div class="img"><img src="images/about_img4.jpg" alt=""/></div>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

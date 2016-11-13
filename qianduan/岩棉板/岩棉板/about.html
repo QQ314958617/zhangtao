@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        关于我们
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="wrap">
+    <div class="img">
+        <img src="images/about_img.jpg" alt=""/>
+        <img src="images/about_text.jpg" alt=""/>
+    </div>
+    <div class="text">
+        公司成立于2001年12月，项目位于欧亚铁路大陆桥经过的丝绸之路
+        经济带甘肃金昌国家级经济技术开发区，是国家产业西移的重要工
+        业基地。 <br/><br/>
+        我公司主要利用多种工业废渣研发与制造新型无机纤维材料及下游
+        系列产品，致力于绿色建筑节能系统的生产应用；解决了工业废渣
+        制造无机纤维的关键共性技术，填补了国际国内该行业技术空白；
+        项目已列入工信部301项国家级重大科技成果转化项目；主要产品用
+        于建筑节能领域，尤其在A级防火保温材料中具有绝对竞争力。
+    </div>
+    <div class="title title_red">
+        <h3>企业文化</h3>
+        <p>corporate culture</p>
+    </div>
+    <div class="wenhua">
+        <ul>
+            <li>
+                <h3>经营目标</h3>
+                <p>立足高新科技，争创一流企业</p>
+            </li>
+            <li>
+                <h3>经营宗旨</h3>
+                <p>技术让客服放心，服务让客户满意</p>
+            </li>
+            <li>
+                <h3>做事原则</h3>
+                <p>务实而不虚妄，谦虚而不骄狂，坚定而不动摇</p>
+            </li>
+            <li>
+                <h3>共赢法则</h3>
+                <p>合作中求发展，互利中求生存</p>
+            </li>
+        </ul>
+    </div>
+    <div class="title title_red">
+        <h3>发展历程</h3>
+        <p>development history</p>
+    </div>
+    <div class="fazhan">
+        <ul>
+            <li>
+                <h3>2001</h3>
+                <div class="text">
+                    公司成立于2001年12月，项目位于欧亚铁路
+                    大陆桥经过的丝绸之路经济带甘肃金昌国家级
+                    经济技术开发区，是国家产业西移的重要工业
+                    基地。公司成立于2001年12月，项目位于欧
+                    亚铁路大陆桥经过的丝绸之路经济带甘肃金昌
+                    国家级经济技术开发区，是国家产业西移的重
+                    要工业基地。
+                </div>
+            </li>
+            <li>
+                <h3>2001</h3>
+                <div class="text">
+                    公司成立于2001年12月，项目位于欧亚铁路
+                    大陆桥经过的丝绸之路经济带甘肃金昌国家级
+                    经济技术开发。
+
+                </div>
+            </li>
+            <li>
+                <h3>2001</h3>
+                <div class="text">
+                    公司成立于2001年12月，项目位于欧亚铁路
+                    大陆桥经过的丝绸之路经济带甘肃金昌国家级
+                    经济技术开发。
+
+                </div>
+            </li>
+            <li>
+                <h3>2001</h3>
+                <div class="text">
+                    公司成立于2001年12月，项目位于欧亚铁路
+                    大陆桥经过的丝绸之路经济带甘肃金昌国家级
+                    经济技术开发。
+
+                </div>
+            </li>
+            <li>
+                <h3>2001</h3>
+                <div class="text">
+                    公司成立于2001年12月，项目位于欧亚铁路
+                    大陆桥经过的丝绸之路经济带甘肃金昌国家级
+                    经济技术开发。
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

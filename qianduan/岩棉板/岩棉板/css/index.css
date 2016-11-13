@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i,.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header .am-header-title{
+    margin:0 12% 0 22%;
+}
+.am-header-default .am-header-nav>a>i, .am-header .am-header-title i, .am-menu-dropdown1 .am-menu-toggle i{
+    color: #333333;
+}
+.am-header-default{
+    background: #fff;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #171717;
+}
+.am-navbar-default a i{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-header .am-header-title img {
+    margin-top: 3px;
+    height: 40px;
+    vertical-align: top;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #ff9900;
+    border-bottom-color: #faad39;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #ff9900;
+}
+.am-slider-default .am-control-nav{
+    display: none;
+}
+.am-header-default .am-header-title{
+    color: #333;
+}
+.am-header-default .am-header-title img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+}
+.am-slider-default{
+    margin: 0;
+}
+/**/
+.title{
+   margin: 1rem auto 2rem;
+}
+.title h3{
+    display: inline-block;
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #333;
+    background: url("../images/h3_bg.jpg") no-repeat center;
+    background-size:100% auto;
+    width: 100%;
+    text-align: center;
+}
+.title h3 span{
+    color: #e20705;
+}
+.title p{
+  font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    text-align: center;
+}
+.bb {
+    width: 100%;
+    height: 0.1rem;
+    border-bottom: 1rem solid #f5f5f5;
+}
+.pinpai ul li{
+    width: 48.5%;
+    margin-left: 1%;
+    margin-bottom: 1rem;
+    float: left;
+    border-bottom: 1px dashed #cccccc;
+}
+.pinpai ul li img,.product ul li img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.pinpai ul li span,.product ul li span{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #e20705;
+    display: block;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.pinpai ul li p,.product ul li p{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+    overflow : hidden;
+    height: 4rem;
+}
+.product ul li{
+    width: 48.5%;
+    margin-left: 1%;
+    margin-bottom: 1rem;
+    float: left;
+    background: #ececec;
+    text-align: center;
+    padding: 0.5rem;
+}
+.product ul li span{
+    color: #333;
+}
+.three_list ul li{
+    width: 32%;
+    margin-left: 1%;
+    float: left;
+    margin-bottom: 1rem;
+}
+.three_list ul li img{
+    max-width: 100%;
+}
+.am-slider-a4 .am-control-nav li a.am-active{
+    background: #333;
+}
+.news_first {
+    width: 100%;
+    position: relative;
+}
+.news_first img{
+    max-width: 100%;
+}
+.news_first p{
+    width: 100%;
+    padding: 0 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font: 1.4rem/2.2rem "microsoft yahei";
+    color: #fff;
+    background: #000;
+    opacity: 0.8;
+}
+.news {
+    padding-bottom: 1.5rem;
+}
+.news ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.news ul li .txt{
+    width: 25%;
+    font: 2rem/2.4rem "microsoft yahei";
+    color: #666;
+    text-align: center;
+}
+.news ul li .txt em{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #999;
+}
+.news ul li .text {
+    width: 73%;
+    float: right;
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #666;
+}
+.news ul li .text h3{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #333;
+}
+.pagenews ul li{
+    border-bottom: none;
+}
+.pagenews ul li:nth-child(2n+1){
+    background: #f6f6f6;
+}
+.news_text h3{
+    font: 1.6rem/2.2rem "microsoft yahei";
+    color: #6e3d3d;
+    text-align: center;
+}
+.news_text h4{
+    font: 1.4rem/1.8rem "microsoft yahei";
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.news_detail .text img{
+    display: block;
+    margin: 0.5rem auto;
+    width: 100%;
+}
+.nextpage{
+    margin-top: 1rem;
+}
+.nextpage p{
+    font: 1.4rem/2.2rem "microsoft yahei";
+    color: #6e3d3d;
+}
+.nextpage p a{
+    color: #6e3d3d;
+}
+.text{
+    font: 1.2rem/1.6rem "microsoft yahei";
+    color: #333;
+}
+.page {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.page a ,.page span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    margin-right: 6px;
+}
+.page a:hover,.page span{
+    color: #fff;
+    background: #000000;
+    border: 1px solid #000;
+}
+.product_list ul li{
+    width: 48.5%;
+    margin-left: 1%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 3px #ccc;
+}
+.product_art{
+    margin-bottom: 2rem;
+}
+.img img{
+    width: 100%;
+}
+.product_art h3{
+    font: 1.8rem/2.4rem "microsoft yahei";
+    color: #333;
+    margin: 0.5rem 0;
+}
+.product_art h4{
+    font: 1.8rem/2.4rem "microsoft yahei";
+    color: #e00003;
+    margin: 0.5rem 0;
+}
+.case ul li span{
+    color: #e00003;
+}
+.title {
+    padding: 0.5rem 0;
+}
+.fazhan ul li {
+    margin-bottom: 1rem;
+}
+.fazhan ul li h3{
+    font: 1.6rem/2.8rem "microsoft yahei";
+    color: #fff;
+    padding: 0.8rem 0 0.8rem 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/fazhan_bg.jpg") no-repeat 0 0;
+    background-size: auto 100%;
+    width: 20%;
+}
+.fazhan ul li .text{
+    width: 78%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5rem;
+    background: #eee;
+}
+.title_red h3{
+    color: #e00003;
+}
+.title_red p{
+    text-transform: uppercase;
+}
+.wenhua ul li{
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem;
+}
+.wenhua ul li h3{
+    font: 1.8rem/2.2rem "microsoft yahei";
+    color: #333;
+}
+.wenhua ul li p{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #666;
+}
+.contact_text {
+    margin: 1rem 0;
+}
+.contact_text p{
+    font: 1.4rem/2.4rem "microsoft yahei";
+    color: #333;
+}
+.contact_text p i{
+    font-size: 1.6rem;
+    color: #666;
+    padding-right: 0.5rem;
+}
+.shenqing {
+    background: #fff;
+    padding-top: 0.5rem;
+}
+.shenqing ul li{
+    width: 98%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    font: 1.2rem/3rem "microsoft yahei";
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 86%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 86%;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+    float: left;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #e00003;
+}
+.shenqing ul li.res input{
+    border: none;
+    color: #666;
+    background: #e5e5e5;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.join_question ul li{
+    margin-bottom: 1rem;
+}
+.join_question ul li em{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    background: #e00003;
+    color: #fff;
+    text-align: center;
+}
+.join_question ul li .text{
+    width: 88%;
+    padding-left: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+.tell {
+    font: 1.4rem/2.4rem "microsoft yahei";
+    color: #e00003;
+    border: 1px solid #e00003;
+    border-radius: 2rem;
+    text-align: center;
+}
+.tell span{
+    font: bold 1.8rem/3rem "microsoft yahei";
+    color: #e00003;
+}
+.jianzheng ul li{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 2px 3px #ccc;
+}
+.jianzheng ul li em{
+    width: 15%;
+    background: url("../images/join_img9.jpg") no-repeat top center;
+    background-size: auto 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font: 1.6rem/2.4rem "microsoft yahei";
+    padding: 0.5rem 0;
+}
+.jianzheng ul li .text {
+    width: 82%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.jianzheng ul li .text h3{
+    font: 1.6rem/2rem "microsoft yahei";
+    color: #333;
+}
+.yaoqiu ul li em{
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 1.8rem/2.4rem "microsoft yahei";
+    color: #fff;
+    background: url("../images/join_img11.jpg") no-repeat top center;
+    background-size: auto 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.yaoqiu ul li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+.yaoqiu ul li .text{
+    width: 82%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.yaoqiu ul li .text h3{
+    font: 1.4rem/2rem "microsoft yahei";
+    color: #333;
+}
+.liucheng ul li{
+    width: 32%;
+    margin-left: 1%;
+    float: left;
+    margin-bottom: 1rem;
+}
+.liucheng ul li img{
+    width: 100%;
+}
+.liucheng ul li p{
+    font: 1.2rem/1.8rem "microsoft yahei";
+    color: #333;
+    text-align: center;
+}

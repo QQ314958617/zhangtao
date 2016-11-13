@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <img src="images/logo.png" alt=""/>
+    </div>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div data-am-widget="slider" class="am-slider am-slider-default">
+    <ul class="am-slides">
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+    </ul>
+</div>
+<div class="title tac">
+    <img src="images/project_title.jpg" alt="">
+    <span>四大项目</span><em></em>
+</div>
+<div class="wrap sdxm">
+    <h3><a href="">more＋</a></h3>
+    <img src="images/project_img3.jpg" alt=""/>
+    <div class="text">
+        <img src="images/project_logo.png" alt=""/>
+        <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时间。外地......</p>
+        <a href="">查看详情</a>
+    </div>
+</div>
+<div class="fuwu">
+    <div class="title tac">
+        <img src="images/service_title.jpg" alt="">
+        <span>6s服务</span><em></em>
+    </div>
+    <div class="fuwu_list">
+        <ul>
+            <li>
+               <h4><img src="images/services_img1.jpg" alt=""/>私人候诊</h4>
+                <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时间。外地患者就更不用说了</p>
+                <a href="">查看详情</a>
+            </li>
+            <li>
+                <h4><img src="images/services_img1.jpg" alt=""/>私人候诊</h4>
+                <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时间。外地患者就更不用说了</p>
+                <a href="">查看详情</a>
+            </li>
+        </ul>
+        <h3><a href="">more+</a></h3>
+    </div>
+</div>
+<div class="title tac">
+    <img src="images/here_title.jpg" alt="">
+    <span>臻康国际热门项目</span><em></em>
+</div>
+<div class="service">
+    <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}' >
+        <ul class="am-slides">
+            <li>
+                <img src="images/here_img1.jpg" alt=""/>
+                <h3>健康管理</h3>
+                <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时 <a href=""> [查看详情］</a></p>
+            </li>
+            <li>
+                <img src="images/here_img1.jpg" alt=""/>
+                <h3>健康管理</h3>
+                <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时 <a href=""> [查看详情］</a></p>
+            </li>
+            <li>
+                <img src="images/here_img1.jpg" alt=""/>
+                <h3>健康管理</h3>
+                <p>在很多情况下,患者看病时间只不过几分钟,但挂号、候诊去医院的往返时间,可能会耽误一个上午或整天时 <a href=""> [查看详情］</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="title tac">
+    <img src="images/news_title.jpg" alt="">
+    <span>新闻中心</span><em></em>
+</div>
+<div class="wrap news">
+    <ul>
+        <li>
+            <div class="time">
+                <span>18</span>
+                <em>01</em>
+            </div>
+            <div class="text">
+                <h3><a href="">健康管理</a></h3>
+                <p>往返时间,可能会耽误一个上午或整天时间。外地患者就更不用说了在很多情况下, <a href="">［更多详情］</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="time">
+                <span>18</span>
+                <em>01</em>
+            </div>
+            <div class="text">
+                <h3><a href="">健康管理</a></h3>
+                <p>往返时间,可能会耽误一个上午或整天时间。外地患者就更不用说了在很多情况下, <a href="">［更多详情］</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="time">
+                <span>18</span>
+                <em>01</em>
+            </div>
+            <div class="text">
+                <h3><a href="">健康管理</a></h3>
+                <p>往返时间,可能会耽误一个上午或整天时间。外地患者就更不用说了在很多情况下, <a href="">［更多详情］</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe604;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe602;</i>
+                <span class="am-navbar-label">新闻动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+            </a>
+        </li>
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">集团专利</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe600;</i>
+                <span class="am-navbar-label">团队展示</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

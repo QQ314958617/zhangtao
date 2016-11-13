@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<title></title>
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.source.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<title>联系我们</title>
+</head>
+<body>
+	<div class="p_banner">
+        <div class="bd">
+            <ul>
+                <li style="background: url(../images/in_img_01.jpg) no-repeat top center"></li>
+            </ul>
+        </div>
+    </div>
+<!-- banner结束 -->
+<div class="nav">
+    <div class="wrap clearfix">
+        <div class="logo fl"><a href=""><img src="../images/logo.png" alt=""/></a></div>
+        <div class="menu fr">
+            <ul>
+                <li class="on"><a href="">首页<span>home</span></a></li>
+                <li><a href="">企业简介<span>Company profile</span></a></li>
+                <li><a href="">产品中心<span>Product Center</span></a></li>
+                <li><a href="">核心优势<span>Core strengths</span></a></li>
+                <li><a href="">品牌故事<span>Brand story</span></a></li>
+                <li><a href="">旗下产业<span>Its industry</span></a></li>
+                <li><a href="">服务与支持<span>Service support</span></a></li>
+                <li><a href="">联系我们<span>contact us</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrap clearfix">
+	<div class="g_map fr">
+		<a href="">首页</a>
+		<b>></b>
+		<a href="">联系我们</a>
+		<b>></b>
+		<span>联系我们</span>
+	</div>
+</div>
+<div class="clearfix wrap">
+	<div class="l_news fl">
+		<div class="k_lnews1">
+			<h2>联系我们</h2>
+			<p>Product classification</p>
+		</div>
+		<ol>
+			<li class="first_newsl"><a href="">联系我们</a></li>
+			<li><a href="">法律声明</a></li>
+			<li><a href="">人力资源</a></li>
+			<li><a href="">使用帮助</a></li>
+		</ol>
+			<div class="k_cotent">
+				<div class="k_contentt">
+					<h2>联系德力克</h2>
+				</div>
+				<div class="k_contentn">
+					<div class="k_cotenti">
+						<img src="../images/kefu.png" alt="">
+					</div>
+					<div class="k_zixun">
+						<h3>咨询热线：</h3>
+						<ul>
+							<li><h2>400-1818-355</h2></li>
+							<li><span>地址：</span>浙江省绍兴市上虞区<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王充路颖泰大厦23楼</li>
+							
+							<li><span>电话：</span>0575-89285286</li>
+							<li><span>邮箱：</span>dlk68688@163.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="fr n_fr clearfix p_xia">
+		<div class="in_legal3">
+			<h2>联系我们</h2>
+			<p>contact us</p>
+		</div>
+		<div class="map">
+			<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uwhXIneyNS9V1COxe00VNSP1"></script>
+            
+                <!--百度地图容器-->
+                <div id="allmap" style="height:100%;"></div>
+                <script type="text/javascript">
+                    // 百度地图API功能    
+                    map = new BMap.Map("allmap");
+                    map.centerAndZoom(new BMap.Point(120.884135,30.041461), 17);
+                    var data_info = [[120.884135,30.041461,"地址：浙江省绍兴市上虞区王充路颖泰大厦23楼"]
+                                    ];
+                    var opts = {
+                                width : 250,     // 信息窗口宽度
+                                height: 80,     // 信息窗口高度
+                                title : "得力克" , // 信息窗口标题
+                                enableMessage:true//设置允许信息窗发送短息
+                               };
+                    for(var i=0;i<data_info.length;i++){
+                        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+                        var content = data_info[i][2];
+                        map.addOverlay(marker);               // 将标注添加到地图中
+                        addClickHandler(content,marker);
+                    }
+                    function addClickHandler(content,marker){
+                        marker.addEventListener("click",function(e){
+                            openInfo(content,e)}
+                        );
+                    }
+                    function openInfo(content,e){
+                        var p = e.target;
+                        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+                        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+                        map.openInfoWindow(infoWindow,point); //开启信息窗口
+                    }
+                </script>
+		</div>
+		<div class="k_in_content clearfix">
+			<div class="fl k_in_contentl">
+				<ul>
+					<li class="clearfix">
+						<h2>联系地址</h2>
+						<div class="fl in_cotentlnr">
+							<i class="iconfont">&#xe603;</i>
+						</div>
+						<div class="fl in_cotentlnr2">
+							<p>浙江省绍兴市</p>
+							<p>上虞区王充路568号颖泰大厦23F</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2>联系电话</h2>
+						<div class="fl in_cotentlnr">
+							<i class="iconfont">&#xe601;</i>
+						</div>
+						<div class="fl in_cotentlnr2">
+							<p>0575-89285277 /18888796625</p>
+							<p>0575-89285288 /18888796500</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2>技术支持</h2>
+						<div class="fl in_cotentlnr">
+							<i class="iconfont">&#xe600;</i>
+						</div>
+						<div class="fl in_cotentlnr2">
+							<p>0575-89285286</p>
+							<p>18888796591</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2>邮箱</h2>
+						<div class="fl in_cotentlnr">
+							<i class="iconfont">&#xe602;</i>
+						</div>
+						<div class="fl in_cotentlnr2">
+							<p>52185128@qq.com</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="fr k_zhengze">
+				<form action="">
+	            	<ul class="clearfix">
+	            	<li class="k_xim clearfix"><input type="text" class="username" placeholder="姓名" maxlength="10"/><div class="bt01 bt">请填写您的姓名！</div></li>
+	            	<li class="clearfix"><input type="text" class="email" placeholder="邮箱"/><div class="bt04 bt">邮箱格式不正确！</div></li>	                
+	                <li class="k_sjh clearfix"><input type="text"placeholder="主题" maxlength="11"/></li>
+	                <textarea name=""placeholder="留言内容"></textarea>
+	                <li class="clearfix k_tijiao"><input class="submit_message" type="submit"/></li>
+	            	</ul>
+	        	</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+    <div class="wrap clearfix">
+        <dl class="fotGy fotT1">
+            <dt><img src="../images/tit_fot_01.png" alt=""></dt>
+            <dd><a href="">德力克介绍</a></dd>
+            <dd><a href="">企业文化</a></dd>
+            <dd><a href="">荣誉资质</a></dd>
+            <dd><a href="">设计团队</a></dd>
+            <dd><a href="">人才招聘</a></dd>
+        </dl>
+        <dl class="fotGy fotT2">
+            <dt><img src="../images/tit_fot_02.png" alt=""></dt>
+            <dd><a href="">天然气半补强炭黑</a></dd>
+            <dd><a href="">纯天然气半补强炭黑</a></dd>
+            <dd><a href="">冶金炭黑</a></dd>
+            <dd><a href="">N550炭黑</a></dd>
+            <dd><a href="">N990炭黑</a></dd>
+            <dd><a href="">导电炭黑</a></dd>
+        </dl>
+        <dl class="fotGy fotT3">
+            <dt><img src="../images/tit_fot_03.png" alt=""></dt>
+            <dd><a href="">包装及运输</a></dd>
+            <dd><a href="">售后服务</a></dd>
+            <dd><a href="">服务团队</a></dd>
+            <dd><a href="">网站地图</a></dd>
+        </dl>
+        <dl class="fotGy fotT4">
+            <dt><img src="../images/tit_fot_04.png" alt=""></dt>
+            <dd><a href="">德力克新闻</a></dd>
+            <dd><a href="">行业动态</a></dd>
+            <dd><a href="">最新热评</a></dd>
+            <dd><a href="">常见问答</a></dd>
+        </dl>
+        <dl class="fotLx">
+            <dt><img src="../images/tit_fot_05.png" alt=""></dt>
+            <dd>
+                <em>全国统一联系热线</em>
+                <b>400-1818-355</b>
+                <p>地址：浙江绍兴市上虞区王充路568号颖泰大厦23F <br>传真：0575-89285286<br>
+                邮箱：dlk68688@163.com<br>
+                <br>Copyright © db 2015, All Rights Reserved</p>
+                <span>津ICP备：15020744号</span><br>
+                <span>技术支持:<a href="">九口袋</a></span>
+                <div class="qylj">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                        <li><a href="" title="" target="_blank">海棠木家具</a></li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+    </div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.submit_message').click(function(){
+        var nam = $(".username");
+        var qq = $(".qq");
+        var pho = $(".telephone");
+        var mai = $(".email");
+        var add = $(".dizhi");
+
+        if(nam.val() == ''){
+            $(".bt01").css({"display":"block"});
+            nam.focus();
+            return false;
+        }else{
+            var re = /[^\u0000-\u00FF]/;
+            if(!re.test(nam.val())){
+                $(".bt01").html("请填写您的真实姓名！").css({"display":"block"});
+                nam.focus();
+                return false;
+            }else{$(".bt01").css({"display":"none"});}}
+
+        if(mai.val()=='')
+        {
+            $(".bt04").css({"display":"block"});
+            mai.focus();
+            return false;
+        }else{
+            var re = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;
+            if(!re.test(mai.val())){
+                $(".bt04").html("邮箱格式不正确！").css({"display":"block"});
+                mai.focus();
+                return false;
+            }else{ $(".bt04").css({"display":"none"});}}
+
+        if(add.val()=='')
+        {
+            $(".bt05").css({"display":"block"});
+            add.focus();
+            return false;
+        }
+
+        if($('textarea').val()=='')
+        {
+            $("textarea").html("请填写您的留言");
+            $("textarea").focus();
+            return false;
+        }
+    });
+});
+</script>
+</body>
+</html>

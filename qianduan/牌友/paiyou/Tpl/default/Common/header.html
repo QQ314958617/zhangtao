@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+        <link href="__ROOT__/Home/Tpl/default/Public/css/base.css" type="text/css" media="all" rel="stylesheet" />
+		<link rel="stylesheet" href="__ROOT__/Home/Tpl/default/Public/css/hover-min.css" />
+		<link rel="stylesheet" href="__ROOT__/Home/Tpl/default/Public/css/home.css" />
+		<link rel="icon" type="image/png" href="__ROOT__/Home/Tpl/default/Public/i/favicon.png">
+        <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery-1.6.3.min.js"></script>
+        <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery.js"></script>
+        <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/jquery.SuperSlide.js"></script>
+        <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/jq.orbit.js"></script>
+        <script type="text/javascript" src="__ROOT__/Home/Tpl/default/Public/js/base.js"></script>
+		<php>
+		$mname=strtolower(MODULE_NAME);
+        $aname=strtolower(ACTION_NAME);
+		$id=(int)$_GET['id'];
+		$sinfo=SystemSeo($mname,$id);
+		</php><title><php>if($sinfo['web_title']){</php>{$sinfo['web_title']}<php>}else{</php>{$site.SITE_INFO.name}<php>}</php></title>
+	    <meta name="keywords" content="<php>if($sinfo['keywords']){</php>{$sinfo['keywords']}<php>}else{</php>{$site.SITE_INFO.keyword}<php>}</php>">
+        <meta name="description" content="<php>if($sinfo['description']){</php>{$sinfo['description']}<php>}else{</php>{$site.SITE_INFO.description}<php>}   </php>">
+	</head>
+
+	<body>
+    <div class="header">
+    <div class="header-top clearfix">
+        <div class="wrap">
+            <div class="wellcome fl">
+                欢迎进入琦顺鞋业官网！
+            </div>
+            <div class="link fr">
+                <a href="javascript:void(0)"  onclick="shoucang(document.title,window.location)">收藏本站</a>
+                <span>|</span>
+                <a  href="{:U('/contract')}#liuyan" target="_blank" >在线留言</a>
+                <span> | </span>
+                <a href="http://weibo.com/u/5697597282" target="_blank"> 新浪微博 </a>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+            function shoucang(sTitle, sURL) {
+                try {
+                    window.external.addFavorite(sURL, sTitle);
+                }
+                catch (e) {
+                    try {
+                        window.sidebar.addPanel(sTitle, sURL, "");
+                    }
+                    catch (e) {
+                        alert("请使用Ctrl+D进行添加");
+                    }
+                }
+            } //收藏
+        </script>
+    <div class="header-middle clearfix wrap">
+        <div class="left fl">
+            康城鞋业——为您打造最激情四射的年轻人生
+        </div>
+        <div class="center fl pr">
+            <h1 class="pa">
+            <a href="/">
+                <img src="__ROOT__/Home/Tpl/default/Public/images/logo.jpg" alt=""/>
+            </a>
+            </h1>
+        </div>
+        <div class="right fl clearfix">
+            <div class="ch">
+                招商热线
+            </div>
+            <div class="num">
+                <img src="__ROOT__/Home/Tpl/default/Public/images/phone.jpg" alt=""/> {$site.SITE_INFO.tel} 
+            </div>
+        </div>
+    </div>
+    <php>	
+    	$navmap['parent_id']=0;
+    	$navlist=getNav($navmap,0);
+    </php>
+    <div class="nav wrap">
+         <ul class="clearfix">
+         	
+             <li class="on">
+             	
+                 <a href="{:U('/')}">
+                     康城首页
+                 </a>
+             </li>
+              <li>
+             	
+                 <a href='{:U('/product')}'>
+                     产品中心
+                 </a>
+             </li>
+             <li>
+             	
+                 <a href='{:U('/join')}'>
+                     加盟康城
+                 </a>
+             </li>
+            <li>
+             	
+                 <a href='{:U('/about')}'>
+                     关于我们
+                 </a>
+             </li>
+             <li>
+             	
+                 <a href='{:U('/news')}'>
+                     新闻资讯
+                 </a>
+             </li>
+             <li>
+             	
+                 <a href='{:U('/contract')}'>
+                     联系我们
+                 </a>
+             </li>
+         </ul>
+    </div>
+</div>

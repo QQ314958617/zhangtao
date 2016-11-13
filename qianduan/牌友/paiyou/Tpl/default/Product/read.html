@@ -1,0 +1,94 @@
+  <!--内页banner开始 与首页banner不同-->
+<div class="sub-banner" style="background: url('__ROOT__/Uploads/pictures/{$ad_info['ad_img']}') no-repeat center top">
+</div>
+	<!--内页banner结束 与首页banner不同-->
+	
+	<!--内页开始-->
+<div class="position">
+    <div class="wrap">
+    	
+        当前位置： <a href="/">首页 </a> / <span>{$info['type']|msubstr=0,2,'utf-8',false}</span>
+    </div>
+</div>
+
+<!--产品详情-->
+<div class="product-info">
+    <div class="wrap clearfix">
+        <div class="img-show fl">
+            <div class="right-extra" >
+                <!--产品参数开始-->
+							<php>
+								$img = explode(",",$info['titlepic'])
+							</php>
+                <div id="preview" class="spec-preview"> <span class="jqzoom"><img src="__ROOT__{$img[0]}" /></span> </div>
+                <!--缩图开始-->
+                <div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+                    <div class="items">
+                        <ul>
+                        	<volist name="img" id="vo">
+                            <li><img alt=""  src="__ROOT__{$vo}" ></li>
+                           </volist>
+                        </ul>
+                    </div>
+                </div>
+                <!--缩图结束-->
+            </div>
+
+        </div>
+        <div class="info-show fl">
+            <div class="product-title">
+                {$info['title']}/{$info['ftitle']}
+            </div>
+            <div class="canshu">
+                <ul class="clearfix">
+                    <li>
+                        款号: {$info['style']}
+                    </li>
+                    <li>
+                        颜色分类: {$info['color']}
+                    </li>
+                    <li>
+                        帮面材质: {$info['bmate']}
+                    </li>
+                    <li>
+                        外底材料: {$info['wmate']}
+                    </li>
+                    <li>
+                        鞋码: {$info['size']}
+                    </li>
+                    <li>
+                        上市时间: {$info['time']}
+                    </li>
+                    <li>
+                        流行元素: {$info['ele']}
+                    </li>
+                    <li>
+                        闭合方式: {$info['close']}
+                    </li>
+                    <li>
+                        生产地：{$info['dizhi']}
+                    </li>
+                    <li>
+                        适合人群：{$info['people']}
+                    </li>
+                </ul>
+                <a href="" class="buy">
+                    去旗舰店购买
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-detail">
+    <div class="wrap">
+     <h6>
+         商品详情
+     </h6>
+       <div class="content">
+           <img src="__ROOT__/Home/Tpl/default/Public/images/detail1.jpg" alt=""/>
+           <img src="__ROOT__/Home/Tpl/default/Public/images/detail2.jpg" alt=""/>
+           <img src="__ROOT__/Home/Tpl/default/Public/images/detail3.jpg" alt=""/>
+
+       </div>
+    </div>
+</div>

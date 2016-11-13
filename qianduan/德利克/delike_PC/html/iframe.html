@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/CloudCarousel.1.0.5.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<title>Document</title>
+</head>
+<style>
+	#carousel1 {
+	width:770px;
+	height:644px;
+	overflow:hidden;
+	position:relative;
+	border-bottom:solid 1px #d8d9da;
+	margin:0 auto;
+	}
+	#carousel1 img {
+		border:none;
+		width:240px;
+		height:180px;
+		border:solid 1px #000;
+	}
+	#carousel1 #title-text {
+		font-size:22px;
+		margin:10px 20px 0 0;
+		padding:0;
+		text-align:right;
+	}
+	#carousel1 #alt-text {
+		font-size:14px;
+		margin:5px 20px 0 0;
+		padding:0;
+		text-align:right;
+	}
+	#carousel1 #user-c {
+		padding:0;
+		position:absolute;
+		right:15px;
+		bottom:10px;
+	}
+	#carousel1 .carouselLeft, #carousel1 .carouselRight {
+		position:absolute;
+		bottom:20px;
+		width:29px;
+		height:30px;
+		overflow:hidden;
+		cursor:pointer;
+	}
+</style>
+<body>
+
+<div id="carousel1">
+  				<p id="title-text"></p>
+				<p id="alt-text"></p>
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a>
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a> 
+				<a target="_parent" ><img class="cloudcarousel"  src="../images/in_img_32.jpg"/></a>
+				<div id="but1" class="carouselLeft"></div>
+			  <div id="but2" class="carouselRight"></div>
+	</div>
+<script type="text/javascript">
+$(document).ready(function(){						   
+	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
+	$("#carousel1").CloudCarousel({			
+		xPos:350,
+		yPos:110,
+		buttonLeft: $('#but1'),
+		buttonRight: $('#but2'),
+		altBox: $("#alt-text"),
+		titleBox: $("#title-text"),				
+		FPS:30,
+		reflHeight:86,
+		reflGap:2,
+		yRadius:180,
+		autoRotateDelay: 1200,
+		speed:0.2,
+		mouseWheel:false,
+		bringToFront:true
+	});	
+});
+</script>
+</body>
+</html>

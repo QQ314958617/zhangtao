@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i,.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header .am-header-title{
+    margin: 0 14%;
+}
+.am-header-default .am-header-nav>a>i, .am-header .am-header-title i, .am-menu-dropdown1 .am-menu-toggle i{
+    color: #fff;
+}
+.am-header-default{
+    background: #ff9900;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #ff9900;
+}
+.am-navbar-default a i{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-header .am-header-title img {
+    margin-top: 3px;
+    height: 40px;
+    vertical-align: top;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #ff9900;
+    border-bottom-color: #faad39;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #ff9900;
+}
+.am-slider-default .am-control-nav{
+    display: none;
+}
+.am-header-default .am-header-title{
+    color: #fff;
+}
+
+/**/
+body{
+    background: #f5f0f0;
+}
+.about,.news{
+    margin-bottom: 1rem;
+    background: #fff;
+}
+.about h3,.news h3,.dzsy_text h3{
+    text-align: center;
+    font: 2rem/3rem "droidsansfallback";
+    color: #333;
+}
+.about ul li{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+.about ul li:nth-child(3),.about ul li:last-child{
+    margin-right: 0;
+}
+.about ul li a{
+    display: block;
+    padding: 1.5rem 0;
+    background: #3064bb;
+    font: 1.6rem/3.2rem "droidsansfallback";
+    color: #fff;
+}
+.news ul li{
+    width: 48%;
+    margin: 0 1% 0.5rem;
+    float: left;
+    text-align: center;
+    background: #666666;
+}
+.news ul li a{
+    font: 1.6rem/2.6rem "droidsansfallback";
+    color: #fff;
+}
+.ad{
+    margin-bottom: 0.5rem;
+}
+.dzsy_text h3{
+    width: 100%;
+    float: left;
+}
+.dzsy_text .dzsy_left{
+    width: 40%;
+}
+.dzsy_text .dzsy_left ul li a{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.dzsy_text .dzsy_right{
+    width: 55%;
+    text-align: center;
+    padding-top: 3rem;
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+}
+.dzsy_text{
+    background: url("../images/dzsy.jpg") no-repeat top center;
+    background-size: auto 100%;
+    padding-bottom: 0.5rem;
+}
+.dzdc_text{
+    background: url("../images/dzdc.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.xxyg_text{
+    background: url("../images/xxyg.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.jsgf_text{
+    background: url("../images/jsgf.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.tgxm_text{
+    background: url("../images/tgxm.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.zbky_text{
+    background: url("../images/zbky.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.yyzj_text{
+    background: url("../images/yyzj.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.gycs_text{
+    background: url("../images/gycs.jpg") no-repeat top center;
+    background-size: auto 100%;
+}
+.menu_nav{
+    margin: 1rem auto;
+    background: #fff;
+    width: 96%;
+    padding: 0.5rem;
+}
+.menu_nav ul li a{
+    display: block;
+    font: 1.8rem/2.6rem "droidsansfallback";
+    color: #333333;
+}
+.text{
+    background: #fff;
+    padding: 0.5rem;
+    font:1.4rem/2rem "droidsansfallback";
+    color: #333;
+}
+.text p{
+    text-indent: 2em;
+}
+.am-dropdown{
+    width: 100%;
+    margin: 1rem auto;
+}
+.am-btn-primary{
+    width: 100%;
+    background: none;
+    border-color: #ff9900;
+    color: #ff9900;
+}
+.am-btn-primary:active, .am-btn-primary.am-active, .am-active .am-btn-primary.am-dropdown-toggle{
+    background: #ff9900;
+    border-color: #ff9900;
+}
+ul.am-dropdown-content>.am-active>a, ul.am-dropdown-content>.am-active>a:hover, ul.am-dropdown-content>.am-active>a:focus{
+    background: #ff9900;
+    border-color: #ff9900;
+}
+.am-active>.am-dropdown-content{
+    width: 96%;
+    left: 2%;
+}
+ul.am-dropdown-content>li>a{
+    font: 1.6rem/2.2rem "droidsansfallback";
+}
+.menu_nav h3{
+    font: 2rem/3rem "droidsansfallback";
+    text-align: center;
+}
+.about_text h3{
+    font: 1.4rem/2.4rem "droidsansfallback";
+    color: #333;
+    padding-top: 1rem;
+}
+.about_text h4{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+}
+.about_text .text img{
+    max-width: 100%;
+}
+.nextpage {
+    background: #fff;
+}
+.nextpage a{
+    font: 1.4rem/3rem "droidsansfallback";
+    color: #666;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+.tuijian {
+   margin: 1rem auto;
+}
+.tuijian .tuijian_img{
+    width: 30%;
+}
+.tuijian .tuijian_img img{
+    width: 100%;
+}
+.tuijian .tuijian_text{
+    width: 66%;
+}
+.tuijian .tuijian_text a{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+}
+.tuijian .tuijian_text p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+}
+.dzdc_text .dzsy_right,.jsgf_text .dzsy_right,.yyzj_text .dzsy_right,.zbky_text .dzsy_right,.jsgf_text .dzsy_right,.gycs_text .dzsy_right{
+    bottom: 0;
+    left: 40%;
+    text-align: left;
+}

@@ -1,0 +1,561 @@
+@charset "UTF-8";
+
+
+.am-header-default .am-header-nav>a>i,.am-header .am-header-title i,.am-menu-dropdown1 .am-menu-toggle i{
+    font-size: 2.5rem;
+    color: #666666;
+}
+.am-header .am-header-title{
+    margin: 0 14%;
+}
+.am-header-default .am-header-nav>a>i, .am-header .am-header-title i, .am-menu-dropdown1 .am-menu-toggle i{
+    color: #fff;
+}
+.am-header-default{
+    background: #000;
+}
+.am-navbar-default .am-navbar-nav{
+    background: #000;
+}
+.am-navbar-default a i{
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+.am-slider-a1 .am-control-nav{
+    display: none;
+}
+.am-header .am-header-title img {
+    margin-top: 3px;
+    height: 40px;
+    vertical-align: top;
+}
+.am-menu-dropdown1 .am-menu-nav>li>a{
+    background: #000;
+    border-bottom-color: #999;
+}
+.am-menu-dropdown1 .am-menu-nav>li.am-parent.am-open>a{
+    background: #000;
+}
+.am-slider-default .am-control-nav{
+    display: none;
+}
+/**/
+body{
+    background: #f6f8f8;
+}
+.fenlei {
+    background: #fff;
+    padding-top: 1rem;
+}
+.fenlei ul li{
+    width: 22.5%;
+    float: left;
+    margin-left: 2%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 1%;
+}
+.fenlei ul li img{
+    max-width: 100%;
+}
+.fenlei ul li p{
+    font: 1.4rem/2.2rem "microsoft yahei";
+    color: #333;
+}
+.public_title{
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border-bottom: 2px solid #e8e8e8;
+}
+.public_title span{
+    border-left: 3px solid #c10000;
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+    padding-left: 0.5rem;
+    float: left;
+}
+.public_title a{
+    float: right;
+    font: 1.2rem/2rem "droidsansfallback";
+    color: #333;
+    padding-right: 2rem;
+    background: url("../images/go.jpg") no-repeat center right;
+    background-size: auto 100%;
+}
+.three_product{
+    background: #fff;
+    padding: 1rem 0;
+}
+.three_product ul li,.six_product ul li{
+    width: 29%;
+    padding: 0 1%;
+    margin-left: 2%;
+    float: left;
+    border-left: 1px solid #e8e8e8;
+}
+.three_product ul li:first-child{
+    border-left: none;
+}
+.three_product ul li img,.six_product ul li img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 91px;
+}
+.three_product ul li p,.twp_product ul li p{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.three_product ul li span,.twp_product ul li span{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #c10000;
+}
+.ad{
+    padding: 1rem;
+}
+.ad img{
+    max-width: 100%;
+}
+.six_product {
+    background: #fff;
+    padding-top: 1rem;
+}
+.six_product ul li{
+    width: 30.5%;
+    padding: 0.5rem 1%;
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 3px #e6e6e6;
+}
+.title{
+    font: 1.6rem/2.3rem "droidsansfallback";
+    color: #333;
+}
+.twp_product ul li{
+    width: 47%;
+    margin-left: 2%;
+    float: left;
+    background: #fff;
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 3px #e6e6e6;
+}
+.twp_product ul li img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.case_article{
+    padding: 1rem 1rem 0;
+}
+.case_article h1{
+    font: bold 2rem/2.5rem "droidsansfallback";
+    color: #96592d;
+}
+.case_article h3{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+    border-bottom: 1px solid #e6e6e6;
+}
+.text {
+    padding: 1rem;
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #333;
+}
+.text img{
+    max-width: 100%;
+    margin: 1rem auto;
+    display: block;
+}
+.next_page{
+    padding: 1rem;
+}
+.next_page p{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #96592d;
+}
+.next_page p a{
+    color: #96592d;
+}
+.product_text {
+    padding: 0.5rem 1rem;
+    background: #fff;
+}
+.product_text h3{
+    font: 1.6rem/2.4rem "droidsansfallback";
+    color: #c10000;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 0.5rem;
+}
+.product_text h4{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 0.5rem;
+}
+.product_text h4 span{
+    color: #c10000;
+}
+.product_text ul li{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 0.5rem;
+}
+.product_text ul li span{
+    color: #666;
+}
+.product_img{
+    padding: 0.5rem 1rem;
+    background: #fff;
+}
+.product_img img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.product_title {
+    margin: 2rem auto 1rem;
+}
+.product_title h3{
+    display: inline;
+    border: 1px solid #999;
+    padding: 0.5rem 1rem;
+    font: 1.6rem/2.4rem "droidsansfallback";
+    color: #333;
+    text-align: center;
+}
+.product_title p{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #666;
+}
+.pro_dretail ul li,.pro_de ul li{
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+}
+.pro_dretail ul li img{
+    max-width: 100%;
+    border: 1px solid #be9b40;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.pro_dretail ul li span{
+    border: 1px solid #999;
+    padding: 0.5rem 1rem;
+    font: 1.6rem/2.4rem "droidsansfallback";
+    color: #333;
+    text-align: center;
+}
+.pro_de {
+    background: #f0ac15;
+    padding: 1rem 0;
+}
+.pro_de ul li img{
+    max-width: 100%;
+}
+.pro_de ul li span{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #fff;
+}
+.pro_de ul li p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #fff;
+}
+.product_title span{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #666;
+}
+.contact_title{
+    margin: 2rem auto 1rem;
+}
+.contact_title h3{
+    font: bold 1.6rem/2.4rem "droidsansfallback";
+    color: #333;
+}
+.contact_title span{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #666;
+}
+.text h3{
+    font: 1.6rem/2.4rem "droidsansfallback";
+    color: #333;
+}
+
+.shenqing {
+    background: #fff;
+    padding-top: 0.5rem;
+}
+.shenqing ul li{
+    width: 98%;
+    padding-left: 1%;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid #ccc;
+    font: 1.2rem/3rem "microsoft yahei";
+    position: relative;
+}
+.shenqing ul li input[type="text"]{
+    width: 86%;
+    height: 2.4rem;
+    border: none;
+    outline: 0;
+}
+.shenqing ul li.liuyan{
+    height:8.5rem;
+}
+.shenqing ul li textarea{
+    height: 8rem;
+    width: 86%;
+    border: none;
+    resize: none;
+    outline: 0;
+}
+.shenqing ul li.sub,.shenqing ul li.res{
+    width: 40%;
+    margin-left: 5%;
+    border: none;
+    float: left;
+}
+.shenqing ul li.sub input,.shenqing ul li.res input{
+    width: 100%;
+    height: 3rem;
+    font: 1.8rem/3rem "microsoft yahei";
+    outline: 0;
+}
+.shenqing ul li.sub input{
+    border: none;
+    color: #fff;
+    background: #d1ac35;
+}
+.shenqing ul li.res input{
+    border: none;
+    color: #666;
+    background: #e5e5e5;
+}
+.shenqing ul li .dui{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/yes.png") no-repeat left center;
+}
+.shenqing ul li .cuo{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 0px;
+    display: none;
+    background: url("../images/no.png") no-repeat left center;
+}
+.wenhua {
+    padding: 1rem;
+    background: #fff;
+}
+.wenhua span{
+    background: #be9b40;
+    font: 1.6rem/2.6rem "droidsansfallback";
+    color: #fff;
+    padding: 0.4rem 1.5rem;
+}
+.wenhua p{
+    font: 1.2rem/1.8rem "droidsansfallback";
+    color: #333;
+    margin: 0.5rem 0 1rem;
+}
+.dingzhi{
+    padding: 1rem;
+}
+.dingzhi ul li{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+    padding-left: 2.5rem;
+}
+.dingzhi ul li.dingzhi_01{
+    background: url("../images/six_01.jpg") no-repeat left top;
+    background-size:auto 20px;
+}
+.dingzhi ul li.dingzhi_02{
+    background: url("../images/six_02.jpg") no-repeat left top;
+    background-size: auto 20px;
+}
+.dingzhi ul li.dingzhi_03{
+    background: url("../images/six_03.jpg") no-repeat left top;
+    background-size: auto 20px;
+}
+.dingzhi ul li.dingzhi_04{
+    background: url("../images/six_04.jpg") no-repeat left top;
+    background-size:auto 20px;
+}
+.dingzhi ul li.dingzhi_05{
+    background: url("../images/six_05.jpg") no-repeat left top;
+    background-size: auto 20px;
+}
+.why {
+    padding: 0 1rem;
+}
+.why ul li {
+    margin-bottom: 1rem;
+}
+.why ul li em{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #333;
+    text-align: center;
+    float: left;
+}
+.why ul li .text{
+    width: 100%;
+    padding: 0 0.5rem;
+}
+.no_bor ul li{
+    border: none;
+}
+.no_bor ul li img{
+    height: 134px;
+}
+.news .hd{
+    padding: 1rem;
+    background: #fff;
+}
+.news .hd a{
+    font: 1.4rem/2.6rem "droidsansfallback";
+    color: #333;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    border: 1px solid #be9b40;
+}
+.news .hd a.on{
+    background: #be9b40;
+    color: #fff;
+}
+.news ul li{
+    background: #fff;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.news ul li img{
+    width: 40%;
+    margin-right: 2%;
+    float: left;
+}
+.news ul li .text{
+    width: 58%;
+    float: left;
+    padding: 0.2rem;
+}
+.news ul li .text a{
+    font: 1.4rem/2.2rem "droidsansfallback";
+    color: #333;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.news ul li .text span{
+    font: 1.2rem/1.8rem "droidsansfallback";
+    color: #666;
+}
+.news ul li .text p{
+    font: 1.2rem/1.6rem "droidsansfallback";
+    color: #333;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.fazhan {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.fazhan ul li{
+    background: url("../images/dian.jpg") no-repeat 0 0;
+    padding-left: 2rem;
+    font: 1.4rem/1.8rem "droidsansfallback";
+    color: #333;
+    margin-bottom: 1rem;
+}
+.diff{
+    padding: 1rem;
+}
+.diff ul li i{
+    float: left;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #be9b40;
+    display: block;
+    width: 12%;
+    margin-right: 3%;
+}
+.diff ul li .txt{
+    width: 85%;
+}
+.diff ul li .txt span{
+    font: 1.4rem/2rem "droidsansfallback";
+    color: #c10000;
+}
+.diff ul li .txt p{
+    font: 1.2rem/1.6rem"droidsansfallback";
+    color: #333;
+}
+.diff1 ul li .txt span{
+    color: #333;
+}
+.diff1 ul li:nth-child(1) i,.diff1 ul li:nth-child(2) i{
+    color: #999;
+}
+.diff1 ul li:nth-child(3) i,.diff1 ul li:nth-child(4) i{
+    color: #c10000;
+}
+.diff1 ul li:nth-child(5) i,.diff1 ul li:nth-child(6) i{
+    color: #be9b40;
+}
+.diff1 ul li:nth-child(7) i,.diff1 ul li:nth-child(8) i{
+    color: #0063b4;
+}
+.what{
+    background: #fff;
+    padding: 1rem;
+}
+.what ul li{
+    margin-bottom: 1rem;
+}
+.what ul li h3{
+    font: 1.4rem/2.4rem "droidsansfallback";
+    color: #fff;
+    background: #be9b40;
+    padding: 0.2rem 1rem;
+    margin-bottom: 0.5rem;
+}
+.what ul li .txt{
+    font: 1.2rem/1.8rem "droidsansfallback";
+    color: #666;
+}
+.lc ul li{
+    width: 31%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.lc ul li i{
+    font-size: 4rem;
+    color: #be9b40;
+}

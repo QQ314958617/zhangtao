@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>{$MainNav.web_title}</title>  
+   <meta name="keywords" content="{$MainNav.keywords}">
+    <meta name="description" content="{$MainNav.description}">
+    <script src="__PUBLIC__/Home/js/jquery-1.7.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.mousewheel.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.easing.1.3.js"></script>
+    <script src="__PUBLIC__/Home/js/raphael-min.js"></script>
+    <script src="__PUBLIC__/Home/js/icarousel.js"></script>
+    <script src="__PUBLIC__/Home/js/move.js"></script>
+    <script src="__PUBLIC__/Home/js/index.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/index.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/public.css"/>
+    <script src="__PUBLIC__/Home/js/My97DatePicker/WdatePicker.js"></script>
+<!--     <script>
+        var b='$(8).h(2(){$("#4").6({7:5,9:a,b:"c\\d",e:"f",g:"1",i:"j",k:"l",m:3,n:0.5,o:"#p",q:r,s:t})}); | split |Spielen|function||icarousel||iCarousel|slides|document|slidesSpace|200|nextLabel|N|u00e4chste|previousLabel|Vorherige|playLabel|ready|pauseLabel|Pause|timer|360Bar|timerPadding|timerOpacity|timerColor|0F0|timerX|15|timerY|30 replace  \\w+ \\b g'.split(" ");
+        $(document).ready(function(){$("#icarousel").iCarousel({slides:3,slidesSpace:200,nextLabel:"N\u00e4chste",previousLabel:"Vorherige",playLabel:"Spielen",pauseLabel:"Pause",timer:"360Bar",timerPadding:3,timerOpacity:0.5,timerColor:"#0F0",timerX:35,timerY:30})});
+    </script> -->
+</head>
+<body>
+    <!---------------------------------top------------------------------------->
+                                  <!--head-->
+    <div class="bigframe clearfix">
+        <div class="clearfix heard">
+                <div class="clearfix w1000">
+                    <div class="heardleft">
+                        <a >
+                            <span>Welcome tuofeng skydiving website！</span>
+                        </a>
+                    </div>
+                    <div class="heardright">
+                        <ul>
+                            <li><a href="">login</a></li>
+                            <li><a href="">register</a></li>
+                            <li><a href="http://weibo.com/u/3840564746/home?wvr=5" target="_blank">microblog</a></li>
+                            <li class="weila"><a href="">WeChat</a>
+                                <div class="img">
+                                    <img src="__PUBLIC__/Home/images/erweima_28.jpg" alt=""/>
+                                </div>
+                            </li>
+                            <li><a href="index">中文</a></li>
+                            <li><a href="__ROOT__/en">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                <!--导航-->
+        <div class="w1000 clearfix">
+            <div class="navigation w1000 clearfix">
+                <div class="loge">
+                    <a href="{:U('/en')}">
+                        <img src="__PUBLIC__/Home/images/logo.png" alt=""/>
+                    </a>
+                </div>
+
+                <div class="navigation1 clearfix">
+                    <ul>
+                        <li><a href="{:U('/en')}">
+                            <h5>Home</h5>
+                            <span>Home</span>
+                           
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/double')}">
+                            <h5>Tandem Skydive</h5>
+                            <span>Skydive</span>
+                            <div class="xiala">
+                                <p><a href="{:U('en/double')}">About Tandem Skydive</a></p>
+                                <p><a href="{:U('en/jiage')}">Skydive Price</a></p>
+                                <p><a href="{:U('en/question')}">FAQ</a></p>
+                                <p><a href="{:U('en/yuding')}">Book Now</a></p>
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/matrix')}">
+                            <h5> Drop Zone </h5>
+                            <span>Drop Zone</span>
+                            <div class="xiala">
+                                <p><a href="{:U('en/matrix')}?id=13">Yunnan Pu Er</a></p>
+                                <p><a href="{:U('en/matrix')}?id=14">Hebei Shijiazhuang</a></p>
+                                <p><a href="{:U('en/matrix')}?id=15">Guangdong Yangjiang</a></p>
+                                <p><a href="{:U('en/matrix')}?id=36">Other Zone</a></p>
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/team')}">
+                            <h5>Coach</h5>
+                            <span>Coach</span>
+                            <div class="xiala">
+                            <volist name="teamsNav" id="vo">
+                                <p><a href="{:U('en/team')}?id={$vo.id}">{$vo.nav_fname}</a></p>
+                            </volist>    
+                                
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/share')}">
+                            <h5>Share</h5>
+                            <span>Share</span>
+                           <div class="xiala">
+                                <p><a href="{:U('en/share')}">Sky dive video</a></p>
+                                <p><a href="{:U('en/tupian')}">Sky dive photo</a></p>
+                                <p><a href="{:U('en/gushi')}">Sky dive story</a></p>
+                                
+                            </div> 
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/shop')}">
+                            <h5>Shop</h5>
+                            <span>Shop</span>
+                            <div class="xiala">
+                            <volist name="shopsNav" id="vo">
+                                <p><a href="{:U('en/shop')}?id={$vo.id}">{$vo.nav_fname}</a></p>
+                            </volist> 
+                            </div>
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/study')}">
+                            <h5>Learn to Skydive</h5>
+                            <span>Learn to Skydive</span>
+                           <div class="xiala">
+                                <p><a href="{:U('en/study')}">Introduce License</a></p>
+                                <p><a href="{:U('en/danren')}">single jump training</a></p>
+                                <p><a href="{:U('en/shuangren')}">Tandem jump training</a></p>
+                                <p><a href="{:U('en/zhizhao')}">Wingsuit Flying</a></p>
+                            </div>  
+                        </a>
+                        </li>
+                        <li><a href="{:U('en/about')}">
+                            <h5>About Us</h5>
+                            <span>About Us</span>
+                            <div class="xiala">
+                                
+                                <p><a href="{:U('en/about')}">company introduction</a></p>
+                                <p><a href="{:U('en/news')}">news center</a></p>
+                                <p><a href="{:U('en/join')}">join us</a></p>
+                                <p><a href="{:U('en/contact')}">contact us</a></p>
+                                
+                            </div> 
+                        </a>
+                        </li>
+                    </ul>
+                    <span class="telnet">
+                        <img src="__PUBLIC__/Home/images/tubiao.jpg" alt=""/>
+                        <a>The national hotline :</a>
+                        <span><?php $C=C('SITE_INFO'); echo $C['tel'];?></span>
+                    </span>
+                    <script>
+                       $(function(){
+                        $(".navigation1 ul li").hover(function(){
+                            $(this).find('.xiala').slideDown(500);
+                        },function(){
+                            $(this).find('.xiala').slideUp(500);
+                        })
+                       })
+                    </script>
+                </div>
+                <!-- <div class="ewm">
+                    <img src="__PUBLIC__/Home/images/images_06.jpg" alt=""/>
+                </div> -->
+            </div>
+        </div>
+
+{__CONTENT__}
+
+<div class="button clearfix">
+        <div class="w1000 button_center">
+            <div class="button_left clearfix">
+                <ul>
+                <volist name="navs" id="vo">
+                    <li>
+                        <img src="__PUBLIC__/Home/images/biaodian_21.jpg" alt=""/>
+                        <a href="<?php echo U($vo['link'])?>">{$vo.nav_fname}</a>
+                    </li>
+                </volist>
+
+                </ul>
+            </div>
+            <div class="button_right">
+                <div class="button_right_top">
+                    <h5>LINK</h5>
+                    <ul class="clearfix">
+                    <volist name="linkList" id="vo">
+                        <li>
+                            <a href="{$vo.link}" target="_blank">{$vo.title}</a>
+                        </li>
+
+                    </volist>
+
+                    </ul>
+                </div>
+                <div class="button_right_center clearfix">
+                    <img src="__PUBLIC__/Home/images/loge_25.jpg" alt=""/>
+                    <img src="__PUBLIC__/Home/images/erweima_28.jpg" alt=""/>
+                    <div class="button_right_center_text">
+                        <p><?php echo $C['name'];?></p>
+                        <p><?php echo $C['icp'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technical Support：<a href="http://www.9koudai.cn" target="_blank">9koudai Website</a></p>
+                        <p>Address : <?php echo $C['address'];?></p>
+                        <p>TEL：<?php echo $C['tel'];?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax：<?php echo $C['fax'];?></p>
+                        <p>Email: <?php echo $C['service'];?></p>
+                        <p><script>
+                        var _hmt = _hmt || [];
+                        (function() {
+                          var hm = document.createElement("script");
+                          hm.src = "//hm.baidu.com/hm.js?ba4d2c8380a792192fac726654f08b7a";
+                          var s = document.getElementsByTagName("script")[0]; 
+                          s.parentNode.insertBefore(hm, s);
+                        })();
+                        </script></p>
+                        <p><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255514504'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255514504' type='text/javascript'%3E%3C/script%3E"));</script>
+                        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?90b476f95ee8f06b04c3a25e50ce7576";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+                        </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

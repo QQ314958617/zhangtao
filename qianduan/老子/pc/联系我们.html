@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>老子</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="font/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="wrap">
+        <div class="header_top clearfix">
+            <span>道家道教传文化播网</span>
+            <p><a href="">首页</a>|<a href="">我想学道</a>|<a href="">招聘启事</a>|<a href="">联系我们</a>|<a href="">注册</a>|<a
+                    href="">登录</a></p>
+        </div>
+        <div class="header_content clearfix">
+            <div class="logo fl"><a href="/"><img src="images/logo.png" alt=""/></a></div>
+            <div class="header_right fr">
+                <div class="time tar fr">
+                    道历4712年 <br/>
+                    2015年12月31日<br/>
+                    乙末丰年 十年 二十六年<br/>
+                </div>
+                <div class="head_text fr">
+                    <span>全国哲学社会科学规划办公室</span>
+                    <span>四川大学老子研究院</span>
+                    <span>国家社会科学基金特别委托重大项目《百年道教文化研究与创新工程》亳州行动小组</span>
+                    <span>亳州市谯城区老子研究会</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="wrap">
+        <ul class="clearfix">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">实时资讯</a></li>
+            <li><a href="">道宗溯源</a></li>
+            <li><a href="">道藏典籍</a></li>
+            <li><a href="">修行仪规</a></li>
+            <li><a href="">健身功法</a></li>
+            <li><a href="">健身功法</a></li>
+            <li><a href="">占卜堪舆</a></li>
+            <li><a href="">推广项目</a></li>
+            <li><a href="">公益慈善</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page_banner" style="background: url(images/about_banner.jpg) no-repeat top center"></div>
+<div class="page_content">
+    <div class="wrap">
+        <div class="pos clearfix">
+            <em>联系我们</em>
+            <div class="weizhi fr">当前位置: <a href="">首页</a> > <span>联系我们</span></div>
+        </div>
+        <div class="ggcs">
+            <div class="map">
+                    <!--引用百度地图API-->
+                    <style type="text/css">
+                        html,body{margin:0;padding:0;}
+                        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+                        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+                    </style>
+                    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+                <!--百度地图容器-->
+                <div style="width:1200px;height:450px;border:#ccc solid 1px;" id="dituContent"></div>
+                <script type="text/javascript">
+                    //创建和初始化地图函数：
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                        addMarker();//向地图中添加marker
+                    }
+
+                    //创建地图函数：
+                    function createMap(){
+                        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                        var point = new BMap.Point(115.785975,33.882595);//定义一个中心点坐标
+                        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+                        window.map = map;//将map变量存储在全局
+                    }
+
+                    //地图事件设置函数：
+                    function setMapEvent(){
+                        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+                        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                        map.enableKeyboard();//启用键盘上下左右键移动地图
+                    }
+
+                    //地图控件添加函数：
+                    function addMapControl(){
+                        //向地图中添加缩放控件
+                        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                        map.addControl(ctrl_nav);
+                        //向地图中添加缩略图控件
+                        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                        map.addControl(ctrl_ove);
+                        //向地图中添加比例尺控件
+                        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                        map.addControl(ctrl_sca);
+                    }
+
+                    //标注点数组
+                    var markerArr = [{title:"亳州市谯城区老子研究会",content:"地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：亳州市谯城区政府中间政务楼307室",point:"115.785629|33.882572",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+                    ];
+                    //创建marker
+                    function addMarker(){
+                        for(var i=0;i<markerArr.length;i++){
+                            var json = markerArr[i];
+                            var p0 = json.point.split("|")[0];
+                            var p1 = json.point.split("|")[1];
+                            var point = new BMap.Point(p0,p1);
+                            var iconImg = createIcon(json.icon);
+                            var marker = new BMap.Marker(point,{icon:iconImg});
+                            var iw = createInfoWindow(i);
+                            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                            marker.setLabel(label);
+                            map.addOverlay(marker);
+                            label.setStyle({
+                                borderColor:"#808080",
+                                color:"#333",
+                                cursor:"pointer"
+                            });
+
+                            (function(){
+                                var index = i;
+                                var _iw = createInfoWindow(i);
+                                var _marker = marker;
+                                _marker.addEventListener("click",function(){
+                                    this.openInfoWindow(_iw);
+                                });
+                                _iw.addEventListener("open",function(){
+                                    _marker.getLabel().hide();
+                                })
+                                _iw.addEventListener("close",function(){
+                                    _marker.getLabel().show();
+                                })
+                                label.addEventListener("click",function(){
+                                    _marker.openInfoWindow(_iw);
+                                })
+                                if(!!json.isOpen){
+                                    label.hide();
+                                    _marker.openInfoWindow(_iw);
+                                }
+                            })()
+                        }
+                    }
+                    //创建InfoWindow
+                    function createInfoWindow(i){
+                        var json = markerArr[i];
+                        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                        return iw;
+                    }
+                    //创建一个Icon
+                    function createIcon(json){
+                        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                        return icon;
+                    }
+
+                    initMap();//创建和初始化地图
+                </script>
+            </div>
+            <div class="clearfix">
+                <div class="contact_left fl">
+                    <h3>亳州市谯城区老子研究会</h3>
+                    地     址：亳州市谯城区政府中间政务楼307室 <br/>
+                    电     话：400-5215215<br/>
+                    办公电话：0558-5522903<br/>
+                    联 系 人：顾道长<br/>
+                    邮     箱： 123456789@qq.com<br/>
+                    手     机：1887766554
+                </div>
+                <div class="contact_right fr">
+                    <h4>在线咨询</h4>
+                    <form action="">
+                    <div class="table_left fl">
+                        <ul>
+                            <li> 姓&emsp;&emsp;名：<input class="username" type="text"/><div class="bt01 bt">请填写您的姓名！</div></li>
+                            <li> 手机号码：<input class="telephone" maxlength="11" type="text"/><div class="bt03 bt">手机号码格式不正确！</div></li>
+                            <li> 邮&emsp;&emsp;箱：<input class="email" type="text"/><div class="bt04 bt">请填写您的邮箱！</div></li>
+                        </ul>
+                    </div>
+                    <div class="table_right pr fr">
+                                <span style="float: left;">留&emsp;&emsp;言：</span>
+                                <textarea class="message" name="" id=""></textarea><div class="bt05 bt">请填写您的留言！</div>
+                    </div>
+                    <div class="tijiao fl">
+                        <input class="submit_message" type="submit"><input type="reset">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <div class="footet_top clearfix">
+            <div class="logo fl"><a href=""><img src="images/logo.jpg" alt=""/></a></div>
+            <div class="sub_nav fr">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">道藏经典</a>
+                        <div class="footer_nav">
+                            <a href=""> 《黄帝内经》</a>
+                            <a href="">《易经》</a>
+                            <a href="">《道德经》</a>
+                            <a href="">《文子》</a>
+                            <a href="">《西升经》</a>
+                            <a href="">《南华经》</a>
+                            <a href="">《太上感应篇》</a>
+                            <a href="">《功过格》</a>
+                            <a href="">仙神圣像</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">入门仪规</a>
+                        <div class="footer_nav">
+                            <a href=""> 修行须知</a>
+                            <a href="">三皈五戒</a>
+                            <a href="">道家服饰</a>
+                            <a href="">道家礼仪</a>
+                            <a href="">我要学道</a>
+                            <a href="">皈依须知</a>
+                            <a href="">恭请神像</a>
+                            <a href="">礼神祭祀须知</a>
+                            <a href="">业因果报录</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">健身功法</a>
+                        <div class="footer_nav">
+                            <a href=""> 导引</a>
+                            <a href="">服气</a>
+                            <a href="">辟谷</a>
+                            <a href="">胎息</a>
+                            <a href="">龟息</a>
+                            <a href="">子午流注</a>
+                            <a href="">五禽戏</a>
+                            <a href="">六合八法拳</a>
+                            <a href="">八卦掌</a>
+                            <a href="">太极拳</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">医药针灸</a>
+                        <div class="footer_nav">
+                            <a href=""> 《灵枢》《素问》</a>
+                            <a href="">《神农本草经》</a>
+                            <a href="">《肘后备急方》</a>
+                            <a href="">《雷公药性赋》</a>
+                            <a href="">《中药配伍》</a>
+                            <a href="">《经络图解》</a>
+                            <a href="">《针灸医案》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">占卜堪舆</a>
+                        <div class="footer_nav">
+                            <a href=""> 《易经》</a>
+                            <a href="">《奇门遁甲》</a>
+                            <a href="">《渊海子平》</a>
+                            <a href="">《心相篇》</a>
+                            <a href="">《梅花易数》</a>
+                            <a href="">《麻衣神相》</a>
+                            <a href="">《卜筮正宗》</a>
+                            <a href="">《断易天机》</a>
+                            <a href="">《阳宅三要》</a>
+                            <a href="">《海底眼》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">推广项目</a>
+                        <div class="footer_nav">
+                            <a href="">道家闭关强身浴料</a>
+                            <a href="">道家戒衣法衣、养生服饰</a>
+                            <a href="">养生酒</a>
+                            <a href="">中华药都加盟</a>
+                            <a href="">养生技能功法教学</a>
+                            <a href="">网上医患交流平台</a>
+                            <a href="">五大千万爱心加盟工程</a>
+                            <a href="">道行天下计划</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">公益慈善</a>
+                        <div class="footer_nav">
+                            <a href="">扶老</a>
+                            <a href="">助残</a>
+                            <a href="">救孤 </a>
+                            <a href="">济困 </a>
+                            <a href="">赈灾</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_text clearfix">
+            <div class="footer_text_left fl">
+                <p><i class="iconfont">&#xe604;</i>400-888-8888</p>
+                <p><i class="iconfont">&#xe603;</i>安徽省亳州市蒙城县篱笆镇什么村88号</p>
+                <p><i class="iconfont">&#xe600;</i>友情链接</p>
+                <p><a href="">百度</a><a href="">友情链接</a><a href="">百度</a><a href="">友情链接</a></p>
+                <p class="clearfix"><a href=""><i class="iconfont">&#xe601;</i></a><a href=""><i class="iconfont">&#xe602;</i></a></p>
+            </div>
+            <div class="footer_text_right fl">
+                <span>
+                    微信扫码关注 <br/>
+                    <img src="images/weixin.jpg" alt=""/>
+                </span>
+                 <span>
+                    微博扫码关注 <br/>
+                    <img src="images/weixin.jpg" alt=""/>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copy tac"><a href="">关于我们</a> | <a href="">安全保障</a> | <a href="">360招聘</a> | <a href="">联盟品牌认证</a> | Copyright ©360.cn. All Rights Reserved. 京ICP证080047号 京公网安备110000000006号&emsp;&emsp;&emsp;技术支持：<a href="">九口袋</a></div>
+</div>
+<div class="side">
+    <ul>
+        <li><a href="#"><div class="sidebox"><img src="images/phone.png">400-888-888</div></a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes" ><div class="sidebox"><img src="images/qq.png">QQ 客服</div></a></li>
+        <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/return.png"></a></li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"150px"},200).css({"opacity":"1","filter":"Alpha(opacity=80)","background":"#000"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=70)","background":"#000"})
+        });
+    });
+    function goTop(){$('html,body').animate({'scrollTop':0},300);}
+</script>
+</body>
+</html>

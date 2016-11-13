@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin form Examples</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+<div class="page_nav wrap">
+  <ul class="page_nav-list">
+    <li class="page_nav-item on"><a href="#" class="e_linkbox">售后预约</a></li>
+    <li class="page_nav-item"><a href="#" class="e_linkbox">试驾预约</a></li>
+  </ul>
+  <script>
+  $(function() {
+    $(".page_nav-item:eq(0)").css({"margin-left":0});
+  })
+  </script>
+</div>
+
+<div class="form_block wrap">
+  <form action="" class="B_sub_form">
+    <div class="b_normal-block">
+      <p class="e_form-title">基本信息</p>
+
+      <div class="b_text-info">
+        <span class="e_title">您的姓名:</span>
+        <div class="e_input-box">
+          <input type="text" name="username" id="" class="e_input e_half-input" placeholder="请输入您的称呼">
+        </div>
+      </div>
+
+      <div class="b_text-info">
+        <span class="e_title">您的性别:</span>
+        <div class="e_input-box">
+          <input type="radio" name="gender" id="man" checked="checked" class="e_radio"><label for="man">男</label>
+          <input type="radio" name="gender" id="woman" class="e_radio"><label for="woman">女</label>
+        </div>
+        
+      </div>
+      <div class="b_text-info">
+        <span class="e_title">手机号码:</span>
+        <div class="e_input-box">
+          <input type="text" name="" id="phone" class="e_input e_half-input" placeholder="方便我们与您联系">
+        </div>
+      </div>
+
+      <div class="b_text-info">
+        <span class="e_title">所在地区:</span>
+        <div class="e_input-box">
+          <input type="text" name="" id="position" class="e_input e_one-input" placeholder="您所在的县市">
+        </div>
+      </div>
+    </div>
+
+    <div class="b_spec-block2">
+      <p class="e_form-title">试驾预约</p>
+      
+      <div class="b_text-info">
+        <div class="b_input-box">
+          <select name="" id="" class="e_input e_spec-select">
+            <option value="">请选择品牌</option>
+          </select>
+          <select name="" id="" class="e_input e_spec-select">
+            <option value="">请选择车系</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="b_text-info">
+      <p class="b_input-box">
+        <select name="" id="car-style" class="e_input e_spec-select">
+          <option value="">请选择车型</option>
+        </select>
+        <input type="text" name="" id="" placeholder="你的电话(必填)" class="e_input  e_spec-input">
+      </p>
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10" class="e_textarea" placeholder="请将您的具体需求填写在这里..."></textarea>
+      </p>
+      <input type="submit" value="确认提交" class="e_submit">
+    </div>
+
+   
+  </form>
+</div>
+
+
+</body>
+</html>

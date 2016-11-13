@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <a href="javascript:history.go(-1);"><i class="am-icon-angle-left"></i></a>
+    </div>
+    <h1 class="am-header-title">
+        陈老师
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div class="wrap">
+    <div class="teacher">
+        <h1>中国特级修脚大师  — 陈鲲鹏</h1>
+        <img src="images/about_c.jpg" alt=""/>
+        <em>陈老师个人简介</em>
+        <div class="text">
+            陈鲲鹏，1976年出生于四川，中国著名修脚大师、专家国内著名培训讲师。 <br/>
+            陈鲲鹏大师是扬州第一代女子修脚大师、全国人大代表陆琴的得意门生。<br/>
+            2000年3月毕业于扬州陆琴脚艺职业培训学校。<br/>
+            2003年进入陆琴脚艺中心工作。<br/>
+            2006年考上国家级修脚技师，同年，参加全国修脚大赛荣获前三甲，并授予“特级修脚大师”荣誉。<br/>
+            2007年2月被聘为陆琴脚艺职业培训学校实践课老师。<br/>
+            2009年被陆琴校长评为“优秀培训老师”。<br/>
+            同年在修脚界又一次被授予“扬州名师”荣誉称号。<br/>
+            修脚十余载，曾被中央新闻频道、台湾电视台、四川科教频道、新疆巴州电视台、库尔勒晚报、成都商报、新疆老年康乐报报道过他的事迹。
+        </div>
+    </div>
+    <div class="linian">
+        <div class="img tac"><img src="images/ln.jpg" alt=""/></div>
+        <div class="ln clearfix">
+            <img src="images/linian.jpg" alt=""/>
+            <h3>秉承“客户至上” 以客户为中心服务第一的理念</h3>
+        </div>
+        <div class="text">
+            发展战略重点，是“十三五”时期我国发展的“衣领子“牛鼻子”。抓准、抓住、抓好战略重点，是保证“十三五”发展开好头、起好步的关键，是保证全面建。
+        </div>
+    </div>
+    <div class="img tac"><img src="images/gongzuo.jpg" alt=""/></div>
+    <div class="gongzuo">
+        <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+            <ul class="am-slides">
+                <li>
+                     <div class="gongzuo_list">
+                         <ul class="clearfix">
+                             <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                             <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                         </ul>
+                     </div>
+                </li>
+                <li>
+                    <div class="gongzuo_list">
+                        <ul class="clearfix">
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="gongzuo_list">
+                        <ul class="clearfix">
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                            <li><img src="images/gongzuo_img2.jpg" alt=""/><p>陈老师为老人修脚</p></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="img"><img src="images/rongyu.jpg" alt=""/></div>
+    <div class="rongyu">
+        <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}' >
+            <ul class="am-slides">
+                <li>
+                    <img src="images/zhengshu.png">
+                    <div class="am-slider-desc">陈老师专业资格</div>
+                </li>
+                <li>
+                    <img src="images/zhengshu.png">
+                    <div class="am-slider-desc">陈老师专业资格</div>
+                </li>
+                <li>
+                    <img src="images/zhengshu.png">
+                    <div class="am-slider-desc">陈老师专业资格</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">专业团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

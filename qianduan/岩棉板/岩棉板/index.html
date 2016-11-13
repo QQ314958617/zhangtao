@@ -1,0 +1,411 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default top">
+    <div class="am-header-left am-header-nav">
+        <img src="images/logo.jpg" alt=""/>
+    </div>
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            <img src="images/logo_title.jpg" alt=""/>
+        </a>
+    </h1>
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+    </a>
+
+    <div class="am-offcanvas" >
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+
+            <ul class="am-menu-nav am-avg-sm-1">
+                <li class="am-parent">
+                    <a href="##" class="" >公司</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="##" class="" title="公司">进入栏目 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >人物</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="#c3" class="" >趋势</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                        <li class="am-menu-nav-channel"><a href="#c3" class="" title="趋势">泥煤 &raquo;</a></li>
+                    </ul>
+                </li>
+                <li class="am-parent">
+                    <a href="##" class="" >投融资</a>
+                    <ul class="am-menu-sub am-collapse  am-avg-sm-3 ">
+                        <li class="">
+                            <a href="##" class="" >公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >人物</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >趋势</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >投融资</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业公司</a>
+                        </li>
+                        <li class="">
+                            <a href="##" class="" >创业人物</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="" >创业人物</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('ul.am-menu-nav').each(function(){
+            if($(this).children().length < 1){
+                $(this).parent().removeClass('am-open');
+                $(this).parent().addClass('menu_parent');
+                $(this).remove();
+            }
+        });
+        $('.menu_parent a').click(function(){
+            var url = $(this).attr('href');
+            location.href = url;
+        });
+
+    });
+</script>
+<div data-am-widget="slider" class="am-slider am-slider-default">
+    <ul class="am-slides">
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+        <li><img src="images/banner.jpg" alt=""/></li>
+    </ul>
+</div>
+<div class="title">
+    <h3><span>以科技为灵魂，</span>打造真正值得信赖的品牌</h3>
+    <p>核心项目已列入工信部301项国家级重大科技成果转化项目</p>
+</div>
+<div class="pinpai tac">
+    <ul class="clearfix">
+        <li>
+            <img src="images/i1.jpg" alt=""/>
+            <span>A1级防火标准</span>
+            <p>全国独家，A1级防火标准，全新换代产品！全新换代产品！</p>
+        </li>
+        <li>
+            <img src="images/i2.jpg" alt=""/>
+            <span>防水性能最好</span>
+            <p>全国独家，A1级防火标准，全换代产品！</p>
+        </li>
+        <li>
+            <img src="images/i3.jpg" alt=""/>
+            <span>易施工，防扎痒</span>
+            <p>全国独家，A1级防火标准，全新换代产品！全新换代产品！</p>
+        </li>
+        <li>
+            <img src="images/i4.jpg" alt=""/>
+            <span>性价比高</span>
+            <p>全国独家，A1级防火标准，全新换代产品！全新换代产品！</p>
+        </li>
+    </ul>
+</div>
+<div class="bb"></div>
+<div class="title">
+    <h3><span>不断创新，</span>只为做出更好的产品</h3>
+    <p>研发打造业内性价比最高岩棉制品-包沃特防水岩棉</p>
+</div>
+<div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}' >
+    <ul class="am-slides">
+        <li>
+            <div class="product">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/product_img1.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/product_img2.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="product">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/product_img1.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/product_img2.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="bb"></div>
+<div class="title">
+    <h3><span>工程</span>案例</h3>
+    <p>我们说了不算，看看他们怎么说！</p>
+</div>
+<div data-am-widget="slider" class="am-slider am-slider-default am-no-layout">
+    <ul class="am-slides">
+        <li>
+            <div class="three_list">
+                <ul class="clearfix">
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="three_list">
+                <ul class="clearfix">
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/ry.jpg" alt=""/>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="bb"></div>
+<div class="title">
+    <h3><span>荣誉</span>资质</h3>
+    <p>包沃特荣誉认可，值得信赖！</p>
+</div>
+<div data-am-widget="slider" class="am-slider am-slider-a4" >
+    <ul class="am-slides">
+        <li>
+            <div class="product">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/case_img.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/case_img.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="product">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/case_img.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/case_img.jpg" alt=""/>
+                            <span>绿色安全有机植物食品</span>
+                            <p>发酵能力强，产酸能力高</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="bb"></div>
+<div class="title">
+    <h3><span>新闻</span>中心</h3>
+    <p>我们说了不算，看看他们怎么说！</p>
+</div>
+<div class="news_first">
+    <a href="">
+        <img src="images/news.jpg" alt=""/>
+        <p>硅质改性板在外墙保温系统中的隐患！</p>
+    </a>
+</div>
+<div class="news">
+    <ul>
+        <li class="clearfix">
+            <a href="">
+                <span class="txt fl">
+                    01/16
+                    <em>2016</em>
+                </span>
+                <span class="text fr">
+                    <h3>硅质改性板在外墙保温系统中的隐患！</h3>
+                    硅质改性板在外墙保温系统中的隐患！对建筑防火新规的正确解析...
+                </span>
+            </a>
+        </li>
+        <li class="clearfix">
+            <a href="">
+                <span class="txt fl">
+                    01/16
+                    <em>2016</em>
+                </span>
+                <span class="text fr">
+                    <h3>硅质改性板在外墙保温系统中的隐患！</h3>
+                    硅质改性板在外墙保温系统中的隐患！对建筑防火新规的正确解析...
+                </span>
+            </a>
+        </li>
+        <li class="clearfix">
+            <a href="">
+                <span class="txt fl">
+                    01/16
+                    <em>2016</em>
+                </span>
+                <span class="text fr">
+                    <h3>硅质改性板在外墙保温系统中的隐患！</h3>
+                    硅质改性板在外墙保温系统中的隐患！对建筑防火新规的正确解析...
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default ">
+    <ul class="am-navbar-nav am-cf am-avg-sm-4">
+        <li>
+            <a href="/" class="">
+                <i class="icon iconfont">&#xe603;</i>
+                <span class="am-navbar-label">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe601;</i>
+                <span class="am-navbar-label">产品中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="">
+                <i class="icon iconfont">&#xe607;</i>
+                <span class="am-navbar-label">关于我们</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" >
+                <i class="icon iconfont">&#xe605;</i>
+                <span class="am-navbar-label">联系我们</span></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
